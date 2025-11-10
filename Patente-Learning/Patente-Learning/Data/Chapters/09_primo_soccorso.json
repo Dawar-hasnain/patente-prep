@@ -1,0 +1,343 @@
+{
+  "chapter": "Primo Soccorso",
+  "words": [
+    {
+      "italian": "ambulanza",
+      "english": "ambulance",
+      "examples": [
+        {
+          "sentence": "Il segnale raffigurato indica un’area di sosta per ambulanze",
+          "label": "falso"
+        },
+        {
+          "sentence": "È vietato sorpassare accodandosi ad un’ambulanza in servizio di emergenza",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "arrivata",
+      "english": "arrived",
+      "examples": [
+        {
+          "sentence": "Durante un intervento di primo soccorso non bisogna mai toccare il ferito se non è ancora arrivata la polizia",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "arrivi",
+      "english": "Arrivals",
+      "examples": [
+        {
+          "sentence": "Il fine del primo soccorso è quello di assistere il ferito, come meglio possibile, in attesa che arrivi il soccorso medico",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "corpi",
+      "english": "bodies",
+      "examples": [
+        {
+          "sentence": "Durante un intervento di primo soccorso, se l’infortunato ha una ferita sanguinante, con presenza di corpi estranei con­",
+          "label": "vero"
+        },
+        {
+          "sentence": "I guanti da motociclisti omologati proteggono in particolar modo il dorso della mano in caso di impatto con corpi duri",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "dannosi",
+      "english": "harmful",
+      "examples": [
+        {
+          "sentence": "Nelle operazioni di primo soccorso bisogna evitare che al ferito vengano praticati interventi sbagliati o dannosi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "disteso",
+      "english": "stretched out",
+      "examples": [
+        {
+          "sentence": "Un ferito in stato di shock va disteso, tenendo possibilmente le gambe sollevate",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "estranei",
+      "english": "strangers",
+      "examples": [
+        {
+          "sentence": "Durante un intervento di primo soccorso, se l’infortunato ha una ferita sanguinante, con presenza di corpi estranei con­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "eventua",
+      "english": "eventual",
+      "examples": [
+        {
+          "sentence": "Durante un intervento di primo soccorso, se l’infortunato ha una ferita sanguinante, si devono togliere subito gli eventua­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "gambe",
+      "english": "legs",
+      "examples": [
+        {
+          "sentence": "Un ferito in stato di shock va messo a terra e, se possibile, con le gambe sollevate",
+          "label": "vero"
+        },
+        {
+          "sentence": "Un ferito in stato di shock va disteso, tenendo possibilmente le gambe sollevate",
+          "label": "vero"
+        },
+        {
+          "sentence": "In presenza di un ferito in stato di shock, occorre dargli piccoli schiaffi su guance e gambe, per riattivargli la circolazione",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "guance",
+      "english": "cheeks",
+      "examples": [
+        {
+          "sentence": "In presenza di un ferito in stato di shock, occorre dargli piccoli schiaffi su guance e gambe, per riattivargli la circolazione",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "immediati",
+      "english": "immediate",
+      "examples": [
+        {
+          "sentence": "Il fine del primo soccorso è quello di cercare di mantenere in vita il ferito con semplici e immediati interventi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "interventi",
+      "english": "interventions",
+      "examples": [
+        {
+          "sentence": "Il fine del primo soccorso è quello di cercare di mantenere in vita il ferito con semplici e immediati interventi",
+          "label": "vero"
+        },
+        {
+          "sentence": "Nelle operazioni di primo soccorso bisogna evitare che al ferito vengano praticati interventi sbagliati o dannosi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "intervento",
+      "english": "intervention",
+      "examples": [
+        {
+          "sentence": "Il fine del primo soccorso è quello di cercare di mantenere in vita il ferito con semplici e immediati interventi",
+          "label": "vero"
+        },
+        {
+          "sentence": "Nell’intervento di primo soccorso bisogna evitare, per quanto possibile, che il ferito subisca ulteriori danni",
+          "label": "vero"
+        },
+        {
+          "sentence": "Nelle operazioni di primo soccorso bisogna evitare che al ferito vengano praticati interventi sbagliati o dannosi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 7
+    },
+    {
+      "italian": "mostrare",
+      "english": "show",
+      "examples": [
+        {
+          "sentence": "Chi guida autoveicoli o motocicli deve mostrare, a richiesta degli agenti, la valigetta di pronto soccorso",
+          "label": "falso"
+        },
+        {
+          "sentence": "Chi guida autoveicoli o motocicli deve mostrare, a richiesta degli agenti, l’attestazione di pagamento della tassa di posses­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "piccole",
+      "english": "small",
+      "examples": [
+        {
+          "sentence": "La segnaletica in figura indica un attraversamento pedonale che può trovarsi anche nei piccoli centri abitati",
+          "label": "vero"
+        },
+        {
+          "sentence": "In presenza di un ferito in stato di shock, occorre dargli piccoli schiaffi su guance e gambe, per riattivargli la circolazione",
+          "label": "falso"
+        },
+        {
+          "sentence": "In presenza di un ferito in stato di shock, occorre fargli bere piccole quantità di superalcolici",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "praticati",
+      "english": "practiced",
+      "examples": [
+        {
+          "sentence": "Nelle operazioni di primo soccorso bisogna evitare che al ferito vengano praticati interventi sbagliati o dannosi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "preposta",
+      "english": "in charge",
+      "examples": [
+        {
+          "sentence": "Il salvagente è una persona preposta al primo soccorso",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "raffreddi",
+      "english": "cool down",
+      "examples": [
+        {
+          "sentence": "Un ferito in stato di shock va coperto come meglio possibile, per evitare che si raffreddi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "riattivargli",
+      "english": "reactivate them",
+      "examples": [
+        {
+          "sentence": "In presenza di un ferito in stato di shock, occorre farlo camminare, per riattivargli la circolazione del sangue",
+          "label": "falso"
+        },
+        {
+          "sentence": "In presenza di un ferito in stato di shock, occorre dargli piccoli schiaffi su guance e gambe, per riattivargli la circolazione",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "sbagliati",
+      "english": "wrong",
+      "examples": [
+        {
+          "sentence": "Nelle operazioni di primo soccorso bisogna evitare che al ferito vengano praticati interventi sbagliati o dannosi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "schiaffi",
+      "english": "slaps",
+      "examples": [
+        {
+          "sentence": "In presenza di un ferito in stato di shock, occorre dargli piccoli schiaffi su guance e gambe, per riattivargli la circolazione",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "seduta",
+      "english": "sitting",
+      "examples": [
+        {
+          "sentence": "Un ferito in stato di shock va messo in posizione seduta",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "semplici",
+      "english": "simple",
+      "examples": [
+        {
+          "sentence": "Il fine del primo soccorso è quello di cercare di mantenere in vita il ferito con semplici e immediati interventi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sollevate",
+      "english": "raised",
+      "examples": [
+        {
+          "sentence": "Nel caso in cui il rimorchio rimanga inattivo per lungo tempo è consigliabile, se possibile, mantenere gli pneumatici sollevati da",
+          "label": "vero"
+        },
+        {
+          "sentence": "Un ferito in stato di shock va messo a terra e, se possibile, con le gambe sollevate",
+          "label": "vero"
+        },
+        {
+          "sentence": "Un ferito in stato di shock va disteso, tenendo possibilmente le gambe sollevate",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "superalcolici",
+      "english": "spirits",
+      "examples": [
+        {
+          "sentence": "In presenza di un ferito in stato di shock, occorre fargli bere piccole quantità di superalcolici",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "valigetta",
+      "english": "briefcase",
+      "examples": [
+        {
+          "sentence": "Chi guida autoveicoli o motocicli deve mostrare, a richiesta degli agenti, la valigetta di pronto soccorso",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    }
+  ]
+}

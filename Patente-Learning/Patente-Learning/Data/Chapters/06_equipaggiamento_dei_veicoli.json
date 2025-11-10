@@ -1,0 +1,2623 @@
+{
+  "chapter": "Equipaggiamento dei Veicoli",
+  "words": [
+    {
+      "italian": "accendersi",
+      "english": "light up",
+      "examples": [
+        {
+          "sentence": "Le luci rosse accese lampeggianti in figura indicano che sta per accendersi la luce verde",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "accertamenti",
+      "english": "tests",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando il conducente rifiuta di sottoporsi agli accertamenti sul suo eventuale",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "acustici",
+      "english": "acoustic",
+      "examples": [
+        {
+          "sentence": "Su tutte le strade sono vietati gli avvisatori acustici (clacson, trombe)",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "adattarsi",
+      "english": "adapt",
+      "examples": [
+        {
+          "sentence": "Non bisogna mai invertire la posizione degli pneumatici, per permettere loro di adattarsi meglio",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "agganciamento",
+      "english": "coupling",
+      "examples": [
+        {
+          "sentence": "La spia che indica il mancato agganciamento delle cinture può essere disabilitata dal conducente con apposito coman­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "agganciate",
+      "english": "hooked up",
+      "examples": [
+        {
+          "sentence": "Le cinture di sicurezza vanno agganciate solo se si circola a velocità uguale o superiore a 30 km/h",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "agisce",
+      "english": "acts",
+      "examples": [
+        {
+          "sentence": "L’A.B.S. agisce anche quando gli pneumatici sono usurati",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’A.B.S. agisce anche quando l’asfalto è bagnato",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’A.B.S. non agisce sulle ruote motrici",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "alcolica",
+      "english": "alcoholic",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando il conducente guida in stato di ebbrezza alcolica",
+          "label": "vero"
+        },
+        {
+          "sentence": "Bere un liquore ad alta gradazione alcolica permette di migliorare l’attenzione dopo circa 10 minuti dall’ingestione",
+          "label": "falso"
+        },
+        {
+          "sentence": "Chi guida in stato di ebbrezza alcolica rischia l’arresto",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "allaccia",
+      "english": "fasten",
+      "examples": [
+        {
+          "sentence": "Se non si allaccia la cintura di sicurezza, in caso d’improvvisa frenata si può essere proiettati contro il parabrezza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "allaccino",
+      "english": "fasten",
+      "examples": [
+        {
+          "sentence": "È possibile alloggiare nei caravan (roulotte) durante la circolazione, purché tutti i passeggeri allaccino le cinture di sicu­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "alloggiare",
+      "english": "accommodate",
+      "examples": [
+        {
+          "sentence": "È possibile alloggiare nei caravan (roulottes) durante la circolazione",
+          "label": "falso"
+        },
+        {
+          "sentence": "È possibile alloggiare nei caravan (roulotte) durante la circolazione, purché tutti i passeggeri allaccino le cinture di sicu­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "altez",
+      "english": "altez",
+      "examples": [
+        {
+          "sentence": "Si possono utilizzare le cinture di sicurezza al posto dei sistemi di ritenuta per trasportare un bambino, purché sia di altez­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "amma",
+      "english": "amma",
+      "examples": [
+        {
+          "sentence": "È consentito l’uso intermittente dei proiettori di profondità (a luce abbagliante), solo quando si trasportano feriti o amma­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "anabbagliante",
+      "english": "low beam",
+      "examples": [
+        {
+          "sentence": "Durante la marcia nei centri abitati, è obbligatorio tenere accese le luci anabbaglianti da mezz’ora dopo il tramonto del",
+          "label": "vero"
+        },
+        {
+          "sentence": "Di notte, in caso di sosta fuori dalla carreggiata, è obbligatorio tenere accese le luci anabbaglianti",
+          "label": "falso"
+        },
+        {
+          "sentence": "È obbligatorio accendere i proiettori anabbaglianti, anche di giorno, quando si transita in galleria",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 33
+    },
+    {
+      "italian": "anno",
+      "english": "year",
+      "examples": [
+        {
+          "sentence": "I ciclomotori sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni",
+          "label": "vero"
+        },
+        {
+          "sentence": "I motocicli sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni",
+          "label": "vero"
+        },
+        {
+          "sentence": "I tricicli a motore sono soggetti a revisione dopo quattro anni dalla prima immatricolazione, successivamente ogni due anni",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 45
+    },
+    {
+      "italian": "applicarla",
+      "english": "apply it",
+      "examples": [
+        {
+          "sentence": "Quando si traina un rimorchio occorre staccare la targa della motrice e applicarla nella parte posteriore del rimorchio",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "arrotolatore",
+      "english": "reel",
+      "examples": [
+        {
+          "sentence": "L’arrotolatore delle cinture di sicurezza può essere disattivato o modificato dal conducente, se crea fastidio al passeggero",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "attaccato",
+      "english": "attached",
+      "examples": [
+        {
+          "sentence": "Se un ferito della strada si è ustionato, è consigliabile non togliere i vestiti rimasti attaccati alla pelle bruciata",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le cinture di sicurezza hanno lo scopo di mantenere il corpo attaccato al sedile in caso di urto violento",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "attiva",
+      "english": "active",
+      "examples": [
+        {
+          "sentence": "L’airbag può essere pericoloso se si attiva mentre non si indossa la cintura di sicurezza",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’A.B.S. non si attiva se gli pneumatici sono usurati",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il simbolo raffigurato si trova su una spia che si attiva quando sono accese le luci di posizione",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "attraversarla",
+      "english": "cross it",
+      "examples": [
+        {
+          "sentence": "La luce verde accesa del semaforo in figura consente ai pedoni di impegnare la carreggiata per attraversarla",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "automaticamente",
+      "english": "automatically",
+      "examples": [
+        {
+          "sentence": "Nel rimorchio è presente un dispositivo di sicurezza che, in caso di sganciamento accidentale, aziona automaticamente",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di categoria A1, trascorsi i primi due anni dal conseguimento, diventa automaticamente patente di categoria",
+          "label": "falso"
+        },
+        {
+          "sentence": "L’airbag si gonfia automaticamente grazie al comando di un sensore",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "avver",
+      "english": "warn",
+      "examples": [
+        {
+          "sentence": "È consentito l’uso intermittente dei proiettori di profondità (a luce abbagliante), sia di giorno che di notte, per dare avver­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "avvicinandosi",
+      "english": "approaching",
+      "examples": [
+        {
+          "sentence": "Avvicinandosi ad un semaforo, che già da molto tempo ha la luce verde accesa, occorre proseguire con prudenza, pron­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Avvicinandosi ad un semaforo, che già da molto tempo ha la luce verde accesa, occorre accelerare, senza che vi sia",
+          "label": "falso"
+        },
+        {
+          "sentence": "Avvicinandosi ad un passaggio a livello con luci rosse lampeggianti alternativamente e semibarriera ancora alzata,",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 12
+    },
+    {
+      "italian": "avvisatori",
+      "english": "warnings",
+      "examples": [
+        {
+          "sentence": "Su tutte le strade sono vietati gli avvisatori acustici (clacson, trombe)",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "azio",
+      "english": "action",
+      "examples": [
+        {
+          "sentence": "La frenatura del rimorchio dotato di freno a inerzia non avviene simultaneamente a quella della motrice, in quanto l’azio­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "azoto",
+      "english": "nitrogen",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici gonfiati con l’azoto devono essere tenuti a minore pressione rispetto a quelli con aria compressa",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "azzeramento",
+      "english": "reset",
+      "examples": [
+        {
+          "sentence": "La revisione della patente di guida è disposta a seguito di azzeramento dei “punti” della patente di guida",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sospensione della patente è disposta contestualmente alla comunicazione di azzeramento dei punti",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "blocchino",
+      "english": "block",
+      "examples": [
+        {
+          "sentence": "Con freni squilibrati può avvenire che, in frenata, si blocchino soltanto le ruote di un lato",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "bollo",
+      "english": "stamp",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando non si è pagato nei termini il bollo dell’auto",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "bombolette",
+      "english": "cans",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici “tubeless” possono essere riparati solo con apposite bombolette contenenti uno speciale mastice, che chiudo­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "camera",
+      "english": "chamber",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici con camera d’aria, in caso di foratura, si sgonfiano lentamente",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "cerchioni",
+      "english": "rims",
+      "examples": [
+        {
+          "sentence": "La pressione di gonfiaggio degli pneumatici va stabilita in base al materiale con cui sono realizzati i cerchioni (acciaio, lega",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "certificate",
+      "english": "certified",
+      "examples": [
+        {
+          "sentence": "Le donne in stato di gravidanza con particolari condizioni di rischio certificate non sono obbligate ad agganciare la cintu­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le persone che soffrono di particolari malattie certificate non sono tenute ad agganciare la cintura di sicurezza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "chiodati",
+      "english": "studded",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici chiodati possono essere usati limitatamente ad un predeterminato periodo dell’anno",
+          "label": "vero"
+        },
+        {
+          "sentence": "Gli pneumatici chiodati vanno montati solo su due ruote dello stesso asse",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "chiodo",
+      "english": "nail",
+      "examples": [
+        {
+          "sentence": "La striscia discontinua in figura può essere sostituita con alcuni “chiodi” o catadiottri, messi a distanza di 50 centimetri",
+          "label": "falso"
+        },
+        {
+          "sentence": "La striscia bianca discontinua in figura può essere sostituita da una serie di “chiodi” per segnaletica stradale",
+          "label": "falso"
+        },
+        {
+          "sentence": "Se in uno pneumatico del tipo “tubeless” si è conficcato un chiodo, è possibile, con le necessarie cautele, continuare a",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "chiudo",
+      "english": "close",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici “tubeless” possono essere riparati solo con apposite bombolette contenenti uno speciale mastice, che chiudo­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "colonnine",
+      "english": "columns",
+      "examples": [
+        {
+          "sentence": "Il salvagente può essere segnalato da colonnine luminose a luce gialla fissa",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "coman",
+      "english": "coman",
+      "examples": [
+        {
+          "sentence": "La spia che indica il mancato agganciamento delle cinture può essere disabilitata dal conducente con apposito coman­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "compresa",
+      "english": "included",
+      "examples": [
+        {
+          "sentence": "La patente di categoria B abilita a condurre le macchine agricole, comprese quelle definite eccezionali",
+          "label": "vero"
+        },
+        {
+          "sentence": "Si deve controllare periodicamente la pressione di gonfiaggio dei pneumatici, compresa quella della ruota di scorta",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "compressa",
+      "english": "tablet",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici gonfiati con l’azoto devono essere tenuti a minore pressione rispetto a quelli con aria compressa",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "comunicazione",
+      "english": "communication",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta contestualmente alla comunicazione di azzeramento dei punti",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "conficcato",
+      "english": "stuck",
+      "examples": [
+        {
+          "sentence": "Se in uno pneumatico del tipo “tubeless” si è conficcato un chiodo, è possibile, con le necessarie cautele, continuare a",
+          "label": "vero"
+        },
+        {
+          "sentence": "Se in uno pneumatico del tipo “tubeless” si è conficcato un chiodo, bisogna estrarlo subito, per evitare che il pneumatico",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "consumati",
+      "english": "consumed",
+      "examples": [
+        {
+          "sentence": "È consigliabile sostituire gli pneumatici dopo alcuni anni, anche se non sono consumati",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "consumato",
+      "english": "consumed",
+      "examples": [
+        {
+          "sentence": "È consigliabile sostituire gli pneumatici dopo alcuni anni, anche se non sono consumati",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il fenomeno dell’aquaplaning inizia a velocità più bassa se il pneumatico è molto consumato",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "contenenti",
+      "english": "containing",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici “tubeless” possono essere riparati solo con apposite bombolette contenenti uno speciale mastice, che chiudo­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "contestualmente",
+      "english": "contextually",
+      "examples": [
+        {
+          "sentence": "La patente di categoria BE si può conseguire anche contestualmente alla patente di categoria B, sostenendo la prova di",
+          "label": "falso"
+        },
+        {
+          "sentence": "La patente di categoria B con codice armonizzato 96 può essere conseguita anche contestualmente alla patente di catego­",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sospensione della patente è disposta contestualmente alla comunicazione di azzeramento dei punti",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "continuativamente",
+      "english": "continuously",
+      "examples": [
+        {
+          "sentence": "In caso di nebbia fitta è opportuno suonare continuativamente il clacson",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "contraffatto",
+      "english": "counterfeit",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente può essere disposta nei confronti di chi abbia falsificato o contraffatto i documenti relativi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "correnti",
+      "english": "current",
+      "examples": [
+        {
+          "sentence": "Quando il vigile si dispone di profilo con le braccia aperte come in figura è consentito il passaggio delle correnti di traffi­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Quando il vigile si dispone di profilo con le braccia aperte come in figura, le correnti di traffico che scorrono parallele alle",
+          "label": "vero"
+        },
+        {
+          "sentence": "La posizione di profilo del vigile con le braccia aperte come in figura equivale alla luce verde del semaforo per le correnti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "cruscotto",
+      "english": "dashboard",
+      "examples": [
+        {
+          "sentence": "L’airbag si gonfia premendo un pulsante posto sul cruscotto",
+          "label": "falso"
+        },
+        {
+          "sentence": "La spia rossa contraddistinta dal simbolo in figura può essere disattivata con apposito comando posto sul cruscotto",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "cuscino",
+      "english": "cushion",
+      "examples": [
+        {
+          "sentence": "L’airbag è un cuscino gonfiabile di nylon o altro materiale sintetico",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "definitivamente",
+      "english": "definitively",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando il titolare della patente perde definitivamente i requisiti fisici",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "differente",
+      "english": "different",
+      "examples": [
+        {
+          "sentence": "Gli specchi retrovisori esterni degli autoveicoli possono essere sostituiti con altri di tipo differente, purché di superficie",
+          "label": "falso"
+        },
+        {
+          "sentence": "Una frenatura poco efficiente o squilibrata può essere causata dalla differente pressione di gonfiaggio dei pneumatici",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "disabilitata",
+      "english": "disabled",
+      "examples": [
+        {
+          "sentence": "La spia che indica il mancato agganciamento delle cinture può essere disabilitata dal conducente con apposito coman­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "disattivabile",
+      "english": "deactivable",
+      "examples": [
+        {
+          "sentence": "L’airbag può essere talvolta disattivabile",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "disattivato",
+      "english": "deactivated",
+      "examples": [
+        {
+          "sentence": "L’arrotolatore delle cinture di sicurezza può essere disattivato o modificato dal conducente, se crea fastidio al passeggero",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "diver",
+      "english": "diver",
+      "examples": [
+        {
+          "sentence": "La patente di guida viene immediatamente ritirata, durante la circolazione, se si circola con pneumatici di dimensioni diver­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "documenti",
+      "english": "documents",
+      "examples": [
+        {
+          "sentence": "Quando si guida un veicolo a motore, bisogna avere con sé tutti i documenti necessari per la guida (carta di circolazio­",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sospensione della patente può essere disposta nei confronti di chi abbia falsificato o contraffatto i documenti relativi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "dubbi",
+      "english": "doubts",
+      "examples": [
+        {
+          "sentence": "La revisione della patente di guida può essere disposta quando sorgono dubbi che il conducente sia ancora in possesso",
+          "label": "vero"
+        },
+        {
+          "sentence": "La revisione della patente di guida può essere disposta qualora sorgano dubbi che il conducente sia ancora in possesso",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sospensione della patente è disposta quando sorgono dubbi sulla persistenza dei requisiti prescritti",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "durezza",
+      "english": "hardness",
+      "examples": [
+        {
+          "sentence": "La “durezza” dello sterzo può essere indice di insufficiente pressione dei pneumatici",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "ebbrezza",
+      "english": "intoxication",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando il conducente guida in stato di ebbrezza alcolica",
+          "label": "vero"
+        },
+        {
+          "sentence": "Se si è in stato di ebbrezza lieve, si riesce a guidare comunque in sicurezza",
+          "label": "falso"
+        },
+        {
+          "sentence": "Chi guida in stato di ebbrezza alcolica rischia l’arresto",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "efficienti",
+      "english": "efficient",
+      "examples": [
+        {
+          "sentence": "Le cinture di sicurezza devono essere di tipo omologato e devono essere mantenute sempre efficienti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le cinture di sicurezza devono essere di tipo omologato e mantenute sempre efficienti",
+          "label": "vero"
+        },
+        {
+          "sentence": "I sistemi di ritenuta per bambini devono essere di tipo omologato e mantenuti sempre efficienti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "equivale",
+      "english": "equals",
+      "examples": [
+        {
+          "sentence": "La posizione del vigile con le braccia aperte verso la nostra direzione come in figura equivale alla luce rossa del semaforo",
+          "label": "vero"
+        },
+        {
+          "sentence": "La posizione del vigile con le braccia aperte verso la nostra direzione come in figura equivale alla luce verde del semaforo",
+          "label": "falso"
+        },
+        {
+          "sentence": "La posizione di profilo del vigile con le braccia aperte come in figura equivale alla luce verde del semaforo per le correnti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "estrarlo",
+      "english": "extract it",
+      "examples": [
+        {
+          "sentence": "Se in uno pneumatico del tipo “tubeless” si è conficcato un chiodo, bisogna estrarlo subito, per evitare che il pneumatico",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "età",
+      "english": "age",
+      "examples": [
+        {
+          "sentence": "La guida dei quadricicli non leggeri è consentita già al compimento del quattordicesimo anno di età",
+          "label": "falso"
+        },
+        {
+          "sentence": "La patente AM si può conseguire a 14 anni di età",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di categoria A1 può essere conseguita da chi ha almeno 16 anni di età",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 18
+    },
+    {
+      "italian": "evitano",
+      "english": "avoid",
+      "examples": [
+        {
+          "sentence": "Le persone obese possono utilizzare appositi strumenti che evitano che la cintura di sicurezza stia aderente al corpo",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "falsificato",
+      "english": "falsified",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente può essere disposta nei confronti di chi abbia falsificato o contraffatto i documenti relativi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "farle",
+      "english": "make them",
+      "examples": [
+        {
+          "sentence": "Quando le persone anziane attraversano la carreggiata bisogna lampeggiare e suonare il clacson per farle attraversare",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "forata",
+      "english": "punctured",
+      "examples": [
+        {
+          "sentence": "Il giubbotto retroriflettente ad alta visibilità è utile solo quando si deve sostituire una ruota forata",
+          "label": "falso"
+        },
+        {
+          "sentence": "In caso di foratura di un pneumatico, lo sterzo tira nella direzione della ruota forata",
+          "label": "vero"
+        },
+        {
+          "sentence": "In caso di foratura di un pneumatico, lo sterzo tira nella direzione opposta a quella della ruota forata",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "fredda",
+      "english": "cold",
+      "examples": [
+        {
+          "sentence": "Lo stato di shock si manifesta con pelle molto pallida e fredda",
+          "label": "vero"
+        },
+        {
+          "sentence": "Lo stato di shock si manifesta con presenza di brividi, pelle molto pallida e sudorazione fredda alla fronte",
+          "label": "vero"
+        },
+        {
+          "sentence": "Lo stato di shock si manifesta con pelle molto pallida, sudorazione fredda, frequenti battiti del cuore",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "frequentemente",
+      "english": "frequently",
+      "examples": [
+        {
+          "sentence": "Bisogna controllare frequentemente nello specchietto retrovisore se sopraggiunge un ciclista o un motociclista",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "fugge",
+      "english": "escapes",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando il conducente fugge senza prestare soccorso alla persona investita",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "gomma",
+      "english": "rubber",
+      "examples": [
+        {
+          "sentence": "In presenza di tratti di strada ghiacciati è opportuno non usare le catene, ma gomme chiodate sulle ruote anteriori",
+          "label": "falso"
+        },
+        {
+          "sentence": "Gli stivali ad uso motociclistico devono essere interamente realizzati in gomma ignifuga",
+          "label": "falso"
+        },
+        {
+          "sentence": "La pressione di gonfiaggio dei pneumatici deve essere controllata quando la gomma è fredda",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "gonfia",
+      "english": "swollen",
+      "examples": [
+        {
+          "sentence": "L’airbag si gonfia automaticamente grazie al comando di un sensore",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’airbag si gonfia in pochi millisecondi",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’airbag si gonfia in pochi secondi",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "gonfiabile",
+      "english": "inflatable",
+      "examples": [
+        {
+          "sentence": "L’airbag è un cuscino gonfiabile di nylon o altro materiale sintetico",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "gonfiati",
+      "english": "inflated",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici gonfiati con l’azoto devono essere tenuti a minore pressione rispetto a quelli con aria compressa",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "gonfiato",
+      "english": "inflated",
+      "examples": [
+        {
+          "sentence": "L’airbag deve essere gonfiato periodicamente per verificarne l’efficienza",
+          "label": "falso"
+        },
+        {
+          "sentence": "Gli pneumatici gonfiati con l’azoto devono essere tenuti a minore pressione rispetto a quelli con aria compressa",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "idoneo",
+      "english": "suitable",
+      "examples": [
+        {
+          "sentence": "La revoca della patente è disposta quando il titolare, sottoposto ad esame di revisione, non risulti più idoneo alla guida",
+          "label": "vero"
+        },
+        {
+          "sentence": "I bambini di età inferiore a 3 anni non possono viaggiare su autovetture sprovviste degli idonei sistemi di ritenuta",
+          "label": "vero"
+        },
+        {
+          "sentence": "Se un’autovettura è munita di airbag, è possibile trasportare bambini sul sedile anteriore assicurati ad idoneo seggiolino",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "illeggibile",
+      "english": "illegible",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando si circola con patente illeggibile o deteriorata",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "improvvisi",
+      "english": "sudden",
+      "examples": [
+        {
+          "sentence": "Per una maggiore sicurezza, bisogna controllare le condizioni dei pneumatici anche sui lati, per prevenire improvvisi scoppi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "inattività",
+      "english": "inactivity",
+      "examples": [
+        {
+          "sentence": "Nei rimorchi con freno a inerzia, dopo un prolungato periodo di inattività, i freni potrebbero aver perso efficienza a causa",
+          "label": "vero"
+        },
+        {
+          "sentence": "In caso di prolungata inattività del rimorchio è consigliabile, se non è possibile sollevarlo da terra, aumentare la pressione di",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "inattivo",
+      "english": "inactive",
+      "examples": [
+        {
+          "sentence": "Nel caso in cui il rimorchio rimanga inattivo per lungo tempo è consigliabile, se possibile, mantenere gli pneumatici sollevati da",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "indice",
+      "english": "index",
+      "examples": [
+        {
+          "sentence": "La “durezza” dello sterzo può essere indice di insufficiente pressione dei pneumatici",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "indossa",
+      "english": "wear",
+      "examples": [
+        {
+          "sentence": "L’airbag può essere pericoloso se si attiva mentre non si indossa la cintura di sicurezza",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il conducente che non indossa il casco è soggetto alla decurtazione di punti dalla patente di guida",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "indossate",
+      "english": "worn",
+      "examples": [
+        {
+          "sentence": "Le cinture di sicurezza devono essere indossate sia dal conducente che dai passeggeri delle autovetture che ne siano",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "inerzia",
+      "english": "inertia",
+      "examples": [
+        {
+          "sentence": "I rimorchi trainati da autovetture sono muniti, in genere, di freno ad inerzia",
+          "label": "vero"
+        },
+        {
+          "sentence": "Nei rimorchi con freno a inerzia, dopo un prolungato periodo di inattività, i freni potrebbero aver perso efficienza a causa",
+          "label": "vero"
+        },
+        {
+          "sentence": "La frenatura del rimorchio dotato di freno a inerzia non avviene simultaneamente a quella della motrice, in quanto l’azio­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "influiscono",
+      "english": "influence",
+      "examples": [
+        {
+          "sentence": "Sulla distanza di sicurezza influiscono l’aderenza e le condizioni dei pneumatici",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "inserisca",
+      "english": "insert",
+      "examples": [
+        {
+          "sentence": "Durante la sosta è opportuno che il conducente azioni il freno di stazionamento ed inserisca il rapporto più basso del",
+          "label": "vero"
+        },
+        {
+          "sentence": "Durante la sosta nelle strade a forte pendenza, è opportuno che il conducente azioni il freno di stazionamento, inserisca",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’azione frenante esercitata dal motore è massima se si inserisce la prima marcia del cambio di velocità",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "integrata",
+      "english": "integrated",
+      "examples": [
+        {
+          "sentence": "La barriera raffigurata può essere integrata da lanterna a luce rossa fissa in caso di scarsa visibilità",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le luci in figura sono integrate da un dispositivo di segnalazione acustica",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "intensa",
+      "english": "intense",
+      "examples": [
+        {
+          "sentence": "Durante la marcia, in caso di pioggia intensa, oltre alle luci anabbaglianti bisogna tenere accesa la luce posteriore per",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "intermittenza",
+      "english": "intermittency",
+      "examples": [
+        {
+          "sentence": "Per evitare rumori fastidiosi durante la guida, occorre sostituire il clacson con le luci ad intermittenza, ma solamente di notte",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "invecchiamento",
+      "english": "aging",
+      "examples": [
+        {
+          "sentence": "Il casco subisce un processo di invecchiamento dovuto a luce e calore",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "investita",
+      "english": "invested",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando il conducente fugge senza prestare soccorso alla persona investita",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "istruttori",
+      "english": "instructors",
+      "examples": [
+        {
+          "sentence": "Gli istruttori di guida nello svolgimento della loro professione non sono obbligati ad agganciare la cintura di sicurezza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "lampeggiare",
+      "english": "flash",
+      "examples": [
+        {
+          "sentence": "Quando le persone anziane attraversano la carreggiata bisogna lampeggiare e suonare il clacson per farle attraversare",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "lanterna",
+      "english": "lantern",
+      "examples": [
+        {
+          "sentence": "La barriera raffigurata può essere integrata da lanterna a luce rossa fissa in caso di scarsa visibilità",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "lavorativa",
+      "english": "working",
+      "examples": [
+        {
+          "sentence": "Il postino, durante l’attività lavorativa, non ha l’obbligo di agganciare la cintura di sicurezza",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "lega",
+      "english": "alloy",
+      "examples": [
+        {
+          "sentence": "La pressione di gonfiaggio degli pneumatici va stabilita in base al materiale con cui sono realizzati i cerchioni (acciaio, lega",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "limitatamente",
+      "english": "limitedly",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata limitatamente alle ore di esercizio, in corrispondenza dei distributori di carburante",
+          "label": "falso"
+        },
+        {
+          "sentence": "La sosta è vietata, limitatamente alle ore di esercizio, in corrispondenza dei distributori di carburante, e in loro prossimità sino",
+          "label": "vero"
+        },
+        {
+          "sentence": "Gli pneumatici chiodati possono essere usati limitatamente ad un predeterminato periodo dell’anno",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "limitazioni",
+      "english": "limitations",
+      "examples": [
+        {
+          "sentence": "Il conducente deve regolare la velocità in modo da rispettare le limitazioni imposte",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sospensione della patente è disposta, ad esempio, quando il neopatentato circola senza rispettare le limitazioni sui",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "malattie",
+      "english": "diseases",
+      "examples": [
+        {
+          "sentence": "Le persone che soffrono di particolari malattie certificate non sono tenute ad agganciare la cintura di sicurezza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "mancato",
+      "english": "missed",
+      "examples": [
+        {
+          "sentence": "Il mancato rispetto delle norme prescritte per immettersi nel flusso della circolazione comporta, tra l’altro, la perdita di punti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il mancato rispetto delle norme prescritte per immettersi nel flusso della circolazione non comporta la sottrazione di punti",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il mancato rispetto di alcune norme relative alla manovra di sorpasso comporta una perdita di punti sulla patente",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "manchi",
+      "english": "missing",
+      "examples": [
+        {
+          "sentence": "È consentito l’uso intermittente dei proiettori di profondità (a luce abbagliante), purché l’illuminazione esterna manchi o",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "marca",
+      "english": "brand",
+      "examples": [
+        {
+          "sentence": "Il conducente deve regolare la velocità in relazione alla marca dei pneumatici",
+          "label": "falso"
+        },
+        {
+          "sentence": "Sulla distanza di sicurezza influisce il numero di marce del cambio di velocità",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il conducente del veicolo da sorpassare ha l’obbligo di inserire le marce più basse per facilitare il sorpasso",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "mastice",
+      "english": "putty",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici “tubeless” possono essere riparati solo con apposite bombolette contenenti uno speciale mastice, che chiudo­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "meccanico",
+      "english": "mechanical",
+      "examples": [
+        {
+          "sentence": "I motocicli non sono dotati di serbatoio del liquido freni perché la frenatura è di tipo puramente meccanico",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "misura",
+      "english": "measure",
+      "examples": [
+        {
+          "sentence": "Se si misura la pressione di gonfiaggio degli pneumatici quando la gomma è calda, si ha una corretta lettura dei valori di",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "modalità",
+      "english": "mode",
+      "examples": [
+        {
+          "sentence": "Il simbolo raffigurato è posto sul pulsante che permette di regolare le modalità di azione del pretensionatore delle cinture",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "modificato",
+      "english": "modified",
+      "examples": [
+        {
+          "sentence": "L’arrotolatore delle cinture di sicurezza può essere disattivato o modificato dal conducente, se crea fastidio al passeggero",
+          "label": "falso"
+        },
+        {
+          "sentence": "Guidando un veicolo a cui sono stati modificati il motore e la marmitta, si può incorrere in pesanti sanzioni amministrative",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "montato",
+      "english": "mounted",
+      "examples": [
+        {
+          "sentence": "Gli specchietti esterni montati sulla motrice non devono sporgere oltre 20 centimetri dalla sagoma del veicolo (motrice o",
+          "label": "vero"
+        },
+        {
+          "sentence": "Gli specchietti esterni montati sulla motrice possono sporgere fino a 50 centimetri dalla sagoma del veicolo di maggiore",
+          "label": "falso"
+        },
+        {
+          "sentence": "È consigliabile che gli pneumatici invernali vengano montati su tutte le ruote",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "morali",
+      "english": "morals",
+      "examples": [
+        {
+          "sentence": "La patente di guida di categoria B è confermata dal Prefetto a seguito di visita di accertamento dei requisiti morali",
+          "label": "falso"
+        },
+        {
+          "sentence": "La revisione della patente di guida può essere disposta quando il titolare non è più in possesso dei requisiti morali richiesti",
+          "label": "falso"
+        },
+        {
+          "sentence": "La sospensione della patente è disposta quando il titolare non è più in possesso dei requisiti morali",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "motociclista",
+      "english": "motorcyclist",
+      "examples": [
+        {
+          "sentence": "Il motociclista che parte dal margine della carreggiata e si immette nel flusso della circolazione può indossare il casco",
+          "label": "falso"
+        },
+        {
+          "sentence": "Bisogna controllare frequentemente nello specchietto retrovisore se sopraggiunge un ciclista o un motociclista",
+          "label": "vero"
+        },
+        {
+          "sentence": "I montanti interni degli autoveicoli riducono la possibilità di vedere un ciclista o un motociclista",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "neopatentato",
+      "english": "new driver",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta, ad esempio, quando il neopatentato circola senza rispettare le limitazioni sui",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "nylon",
+      "english": "nylon",
+      "examples": [
+        {
+          "sentence": "L’airbag è un cuscino gonfiabile di nylon o altro materiale sintetico",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "obbligate",
+      "english": "obligatory",
+      "examples": [
+        {
+          "sentence": "Nelle aree di parcheggio a tempo limitato, i veicoli al servizio di persone diversamente abili non sono obbligati a rispetta­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le donne in stato di gravidanza con particolari condizioni di rischio certificate non sono obbligate ad agganciare la cintu­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Gli istruttori di guida nello svolgimento della loro professione non sono obbligati ad agganciare la cintura di sicurezza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "obese",
+      "english": "obese",
+      "examples": [
+        {
+          "sentence": "Le persone obese possono utilizzare appositi strumenti che evitano che la cintura di sicurezza stia aderente al corpo",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "occupano",
+      "english": "occupy",
+      "examples": [
+        {
+          "sentence": "La velocità deve essere particolarmente moderata quando, in mancanza di marciapiedi, i pedoni occupano la carreggiata",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il conducente che intende sorpassare ciclisti o pedoni che occupano la carreggiata deve usare molta prudenza",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il conducente che intende sorpassare ciclisti o pedoni che occupano la carreggiata deve mantenere una distanza latera­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "occupato",
+      "english": "busy",
+      "examples": [
+        {
+          "sentence": "Il semaforo in figura, con luce gialla fissa accesa, impone ai pedoni che hanno già occupato l’attraversamento pedonale",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "omologazione",
+      "english": "approval",
+      "examples": [
+        {
+          "sentence": "I caschi da utilizzare alla guida dei ciclomotori non necessitano di omologazione",
+          "label": "falso"
+        },
+        {
+          "sentence": "Per una maggiore sicurezza, bisogna utilizzare esclusivamente pneumatici delle dimensioni previste dall’omologazione del",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "oppone",
+      "english": "opposes",
+      "examples": [
+        {
+          "sentence": "La forza aderente si oppone allo slittamento verso l’esterno della curva",
+          "label": "vero"
+        },
+        {
+          "sentence": "La forza aderente si oppone allo slittamento dello pneumatico sull’asfalto",
+          "label": "vero"
+        },
+        {
+          "sentence": "La forza aderente non si oppone allo slittamento causato dal vento laterale",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "ostacoli",
+      "english": "obstacles",
+      "examples": [
+        {
+          "sentence": "Il delineatore raffigurato indica gli ostacoli sporgenti sulla carreggiata",
+          "label": "falso"
+        },
+        {
+          "sentence": "Sono previste sanzioni per chi, pur facendo uso della cintura di sicurezza, ne alteri o ostacoli il normale funzionamento",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "pagato",
+      "english": "paid",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando non si è pagato nei termini il bollo dell’auto",
+          "label": "falso"
+        },
+        {
+          "sentence": "L’assicurazione per la responsabilità civile auto (R.C.A.) copre anche la responsabilità penale in base al premio pagato",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "parzialmente",
+      "english": "partially",
+      "examples": [
+        {
+          "sentence": "Su discese molto ripide è bene viaggiare con il freno a mano inserito parzialmente",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "perfetta",
+      "english": "perfect",
+      "examples": [
+        {
+          "sentence": "La visiera del casco deve garantire la perfetta visione con qualunque condizione di luce o illuminazione",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "persistenza",
+      "english": "persistence",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando sorgono dubbi sulla persistenza dei requisiti prescritti",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "possa",
+      "english": "may",
+      "examples": [
+        {
+          "sentence": "La luce gialla fissa obbliga a fermarsi prima del punto di arresto, purché lo si possa fare senza creare pericolo",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il conducente che intende sorpassare deve accertarsi che la manovra possa compiersi senza costituire intralcio",
+          "label": "vero"
+        },
+        {
+          "sentence": "Non è consentito fermarsi per chiedere informazioni agli agenti del traffico, quando ciò possa causare intralcio o rallen­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "possesso",
+      "english": "possession",
+      "examples": [
+        {
+          "sentence": "La patente di categoria A1 può essere conseguita solo da chi è già in possesso della patente AM",
+          "label": "falso"
+        },
+        {
+          "sentence": "La patente di categoria A2 può essere conseguita solo se si è già in possesso della patente di categoria A1",
+          "label": "falso"
+        },
+        {
+          "sentence": "La patente di categoria B con codice armonizzato 96, può essere conseguita solo se si è già in possesso della patente A",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 8
+    },
+    {
+      "italian": "postino",
+      "english": "postman",
+      "examples": [
+        {
+          "sentence": "Il postino, durante l’attività lavorativa, non ha l’obbligo di agganciare la cintura di sicurezza",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "predeterminato",
+      "english": "predetermined",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici chiodati possono essere usati limitatamente ad un predeterminato periodo dell’anno",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "premendo",
+      "english": "pressing",
+      "examples": [
+        {
+          "sentence": "L’airbag si gonfia premendo un pulsante posto sul cruscotto",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "prescritti",
+      "english": "prescribed",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata se il titolare della stessa è ancora in possesso dei requisiti fisici e psichici prescritti",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sospensione della patente è disposta quando sorgono dubbi sulla persistenza dei requisiti prescritti",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "processo",
+      "english": "process",
+      "examples": [
+        {
+          "sentence": "Il casco subisce un processo di invecchiamento dovuto a luce e calore",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "professione",
+      "english": "profession",
+      "examples": [
+        {
+          "sentence": "Gli istruttori di guida nello svolgimento della loro professione non sono obbligati ad agganciare la cintura di sicurezza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "profilo",
+      "english": "profile",
+      "examples": [
+        {
+          "sentence": "Quando il vigile si dispone di profilo con le braccia aperte come in figura è consentito il passaggio delle correnti di traffi­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Quando il vigile si dispone di profilo con le braccia aperte come in figura si può svoltare a destra se si proviene dalla sua",
+          "label": "vero"
+        },
+        {
+          "sentence": "Quando il vigile si dispone di profilo con le braccia aperte come in figura, le correnti di traffico che scorrono parallele alle",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 8
+    },
+    {
+      "italian": "proiettati",
+      "english": "projected",
+      "examples": [
+        {
+          "sentence": "Le cinture di sicurezza hanno lo scopo di evitare che il conducente o i passeggeri siano proiettati all’esterno della auto­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Se non si allaccia la cintura di sicurezza, in caso d’improvvisa frenata si può essere proiettati contro il parabrezza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "pron",
+      "english": "pron",
+      "examples": [
+        {
+          "sentence": "Avvicinandosi ad un semaforo, che già da molto tempo ha la luce verde accesa, occorre proseguire con prudenza, pron­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "provocandone",
+      "english": "provoking",
+      "examples": [
+        {
+          "sentence": "L’uso prolungato e ripetuto dei freni, provocandone il surriscaldamento, comporta la diminuzione dell’efficienza frenante",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "pulsante",
+      "english": "button",
+      "examples": [
+        {
+          "sentence": "Prima di iniziare a guidare un autoveicolo, bisogna individuare i comandi (leve e pulsanti) necessari per la guida e com­",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’airbag si gonfia premendo un pulsante posto sul cruscotto",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il simbolo raffigurato è posto sul pulsante che permette di regolare le modalità di azione del pretensionatore delle cinture",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "puramente",
+      "english": "purely",
+      "examples": [
+        {
+          "sentence": "I motocicli non sono dotati di serbatoio del liquido freni perché la frenatura è di tipo puramente meccanico",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "rafforza",
+      "english": "strengthens",
+      "examples": [
+        {
+          "sentence": "Il fenomeno dell’aquaplaning rafforza il contatto fra pneumatici e asfalto",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "realizzati",
+      "english": "made",
+      "examples": [
+        {
+          "sentence": "Gli stivali ad uso motociclistico devono essere interamente realizzati in gomma ignifuga",
+          "label": "falso"
+        },
+        {
+          "sentence": "La pressione di gonfiaggio degli pneumatici va stabilita in base al materiale con cui sono realizzati i cerchioni (acciaio, lega",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "relativi",
+      "english": "relative",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente può essere disposta nei confronti di chi abbia falsificato o contraffatto i documenti relativi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "requisiti",
+      "english": "requirements",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata se il titolare della stessa è ancora in possesso dei requisiti fisici e psichici prescritti",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida di categoria B è confermata dal Prefetto a seguito di visita di accertamento dei requisiti morali",
+          "label": "falso"
+        },
+        {
+          "sentence": "La revisione della patente di guida può essere disposta quando il titolare non è più in possesso dei requisiti morali richiesti",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 9
+    },
+    {
+      "italian": "richiedono",
+      "english": "require",
+      "examples": [
+        {
+          "sentence": "Le cinture di sicurezza richiedono un periodico controllo del loro stato di usura e di efficienza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "rifiuta",
+      "english": "refuse",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando il conducente rifiuta di sottoporsi agli accertamenti sul suo eventuale",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "riflettono",
+      "english": "reflect",
+      "examples": [
+        {
+          "sentence": "I catadiottri sono dispositivi che riflettono la luce",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "ripide",
+      "english": "steep",
+      "examples": [
+        {
+          "sentence": "Percorrendo lunghe e ripide discese è necessario inserire una marcia bassa per evitare di surriscaldare i freni",
+          "label": "vero"
+        },
+        {
+          "sentence": "Percorrendo lunghe e ripide discese è opportuno marciare con il cambio in folle per risparmiare carburante e freni",
+          "label": "falso"
+        },
+        {
+          "sentence": "Su discese molto ripide è bene viaggiare con il freno a mano inserito parzialmente",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "ritenuta",
+      "english": "restraint",
+      "examples": [
+        {
+          "sentence": "I bambini di età inferiore a 3 anni non possono viaggiare su autovetture sprovviste degli idonei sistemi di ritenuta",
+          "label": "vero"
+        },
+        {
+          "sentence": "I sistemi di ritenuta per bambini sono classificati in gruppi, in funzione del peso del bambino che possono accogliere",
+          "label": "vero"
+        },
+        {
+          "sentence": "I sistemi di ritenuta per bambini devono essere di tipo omologato e mantenuti sempre efficienti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 11
+    },
+    {
+      "italian": "ritirata",
+      "english": "retreat",
+      "examples": [
+        {
+          "sentence": "La patente di guida viene immediatamente ritirata, durante la circolazione, a seguito di violazione che comporti le san­",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida viene immediatamente ritirata, durante la circolazione, quando si accerti che il conducente guida",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida viene immediatamente ritirata, durante la circolazione, quando il conducente sia alla guida in stato di",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 12
+    },
+    {
+      "italian": "roulotte",
+      "english": "caravan",
+      "examples": [
+        {
+          "sentence": "È possibile alloggiare nei caravan (roulotte) durante la circolazione, purché tutti i passeggeri allaccino le cinture di sicu­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "secondi",
+      "english": "seconds",
+      "examples": [
+        {
+          "sentence": "La distrazione del conducente non rappresenta un pericolo se si limita a pochi secondi",
+          "label": "falso"
+        },
+        {
+          "sentence": "L’airbag si gonfia in pochi secondi",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "sedili",
+      "english": "seats",
+      "examples": [
+        {
+          "sentence": "Le cinture di sicurezza devono essere utilizzate anche dai passeggeri dei sedili posteriori delle autovetture",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’uso delle cinture di sicurezza consente il trasporto di bambini sui sedili anteriori in braccio a un adulto, senza pericoli",
+          "label": "falso"
+        },
+        {
+          "sentence": "È consentito il trasporto di bambini senza che siano assicurati a sistemi di ritenuta, purché sui sedili anteriori e a portata di",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "sensore",
+      "english": "sensor",
+      "examples": [
+        {
+          "sentence": "Nei veicoli dotati di sensori di parcheggio non è possibile agganciare un rimorchio",
+          "label": "falso"
+        },
+        {
+          "sentence": "L’airbag si gonfia automaticamente grazie al comando di un sensore",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "sganciata",
+      "english": "released",
+      "examples": [
+        {
+          "sentence": "In caso di nebbia fitta è opportuno tenere la cintura di sicurezza sganciata per essere più pronti ad abbandonare il vei­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sgonfiano",
+      "english": "deflate",
+      "examples": [
+        {
+          "sentence": "Gli pneumatici “tubeless”, in caso di foratura, si sgonfiano lentamente",
+          "label": "vero"
+        },
+        {
+          "sentence": "Gli pneumatici con camera d’aria, in caso di foratura, si sgonfiano lentamente",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "simultaneamente",
+      "english": "simultaneously",
+      "examples": [
+        {
+          "sentence": "La frenatura del rimorchio dotato di freno a inerzia non avviene simultaneamente a quella della motrice, in quanto l’azio­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Nei rimorchi dotati di freno a inerzia la frenatura del rimorchio avviene simultaneamente a quella della motrice",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "sintetico",
+      "english": "synthetic",
+      "examples": [
+        {
+          "sentence": "L’airbag è un cuscino gonfiabile di nylon o altro materiale sintetico",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "soffrono",
+      "english": "suffer",
+      "examples": [
+        {
+          "sentence": "Le persone che soffrono di particolari malattie certificate non sono tenute ad agganciare la cintura di sicurezza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sollevati",
+      "english": "raised",
+      "examples": [
+        {
+          "sentence": "Nel caso in cui il rimorchio rimanga inattivo per lungo tempo è consigliabile, se possibile, mantenere gli pneumatici sollevati da",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sorgono",
+      "english": "arise",
+      "examples": [
+        {
+          "sentence": "La revisione della patente di guida può essere disposta quando sorgono dubbi che il conducente sia ancora in possesso",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sospensione della patente è disposta quando sorgono dubbi sulla persistenza dei requisiti prescritti",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "sospesa",
+      "english": "suspended",
+      "examples": [
+        {
+          "sentence": "La revoca della patente è disposta quando il titolare guida nonostante abbia la patente sospesa",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sospensione della patente è disposta quando il conducente circola con patente sospesa",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "sottoporsi",
+      "english": "undergo",
+      "examples": [
+        {
+          "sentence": "La revisione della patente di guida può essere disposta con l’obbligo di sottoporsi a visita medica e/o ad esame di ido­",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sospensione della patente è disposta quando il conducente rifiuta di sottoporsi agli accertamenti sul suo eventuale",
+          "label": "vero"
+        },
+        {
+          "sentence": "Quando il conducente ha esaurito la sua dotazione di punti sulla patente deve sottoporsi a revisione della stessa",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "stabilita",
+      "english": "established",
+      "examples": [
+        {
+          "sentence": "La sosta è vietata sulle aree destinate al mercato e ai veicoli per il carico e lo scarico di cose, nelle ore stabilite",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è consentita sulle aree destinate ai veicoli per il carico e lo scarico di cose, nelle ore stabilite, soltanto se di",
+          "label": "falso"
+        },
+        {
+          "sentence": "Nel rispetto della larghezza massima stabilita per i rimorchi T.A.T.S., le imbarcazioni trasportate possono sporgere fino a",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "strumenti",
+      "english": "instruments",
+      "examples": [
+        {
+          "sentence": "Le persone obese possono utilizzare appositi strumenti che evitano che la cintura di sicurezza stia aderente al corpo",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "studenti",
+      "english": "students",
+      "examples": [
+        {
+          "sentence": "La luce verde del semaforo in figura è sempre accesa durante l’uscita degli studenti dalla scuola",
+          "label": "falso"
+        },
+        {
+          "sentence": "Sulle autostrade e strade extraurbane principali è vietata la circolazione di autobus per trasporto di studenti",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "subisce",
+      "english": "undergoes",
+      "examples": [
+        {
+          "sentence": "Il conducente che non supera l’esame di revisione della patente, subisce la revoca della patente stessa",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il casco subisce un processo di invecchiamento dovuto a luce e calore",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "successivo",
+      "english": "subsequent",
+      "examples": [
+        {
+          "sentence": "Il semaforo in figura consiglia la velocità da mantenere, per trovare la luce verde al semaforo successivo",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "surri",
+      "english": "surri",
+      "examples": [
+        {
+          "sentence": "La pressione di gonfiaggio degli pneumatici va controllata dopo aver percorso alcuni chilometri, appena la gomma si è surri­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "surriscaldare",
+      "english": "overheat",
+      "examples": [
+        {
+          "sentence": "Percorrendo lunghe e ripide discese è necessario inserire una marcia bassa per evitare di surriscaldare i freni",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "svolgimento",
+      "english": "unfolding",
+      "examples": [
+        {
+          "sentence": "Il semaforo in figura indica lo svolgimento di una gara podistica",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il semaforo in figura indica lo svolgimento di una gara ciclistica",
+          "label": "falso"
+        },
+        {
+          "sentence": "Gli istruttori di guida nello svolgimento della loro professione non sono obbligati ad agganciare la cintura di sicurezza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "sè",
+      "english": "itself",
+      "examples": [
+        {
+          "sentence": "La revoca della patente può essere disposta quando il conducente guida senza averla con sè",
+          "label": "falso"
+        },
+        {
+          "sentence": "La sospensione della patente può essere disposta quando si circola senza avere con sè la patente di guida",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "talvolta",
+      "english": "sometimes",
+      "examples": [
+        {
+          "sentence": "L’airbag può essere talvolta disattivabile",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tarare",
+      "english": "calibrate",
+      "examples": [
+        {
+          "sentence": "Il conducente può tarare, con apposito comando, la velocità minima d’urto al di sopra della quale far attivare l’airbag",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tenute",
+      "english": "held",
+      "examples": [
+        {
+          "sentence": "Si è tenuti a regolare la velocità in funzione del tipo di alimentazione del motore",
+          "label": "falso"
+        },
+        {
+          "sentence": "Si è tenuti a regolare la velocità in funzione della velocità dei veicoli che seguono",
+          "label": "falso"
+        },
+        {
+          "sentence": "Si è tenuti a regolare la velocità in funzione del tipo di cambio di velocità",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "termini",
+      "english": "terms",
+      "examples": [
+        {
+          "sentence": "La sospensione della patente è disposta quando non si è pagato nei termini il bollo dell’auto",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tira",
+      "english": "pull",
+      "examples": [
+        {
+          "sentence": "In caso di foratura di un pneumatico, lo sterzo tira nella direzione della ruota forata",
+          "label": "vero"
+        },
+        {
+          "sentence": "In caso di foratura di un pneumatico, lo sterzo tira nella direzione opposta a quella della ruota forata",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "tragitti",
+      "english": "journeys",
+      "examples": [
+        {
+          "sentence": "Non è obbligatorio utilizzare le cinture di sicurezza su una autovettura quando si effettuano tragitti di lunghezza inferiore",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "trascurabile",
+      "english": "negligible",
+      "examples": [
+        {
+          "sentence": "Le cinture di sicurezza sono di utilità trascurabile nella circolazione urbana",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tubeless",
+      "english": "tubeless",
+      "examples": [
+        {
+          "sentence": "Se in uno pneumatico del tipo “tubeless” si è conficcato un chiodo, è possibile, con le necessarie cautele, continuare a",
+          "label": "vero"
+        },
+        {
+          "sentence": "Gli pneumatici “tubeless”, in caso di foratura, si sgonfiano lentamente",
+          "label": "vero"
+        },
+        {
+          "sentence": "Gli pneumatici “tubeless” possono essere riparati solo con apposite bombolette contenenti uno speciale mastice, che chiudo­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "uguali",
+      "english": "equal",
+      "examples": [
+        {
+          "sentence": "Per una maggiore sicurezza, sulle ruote dello stesso asse bisogna utilizzare pneumatici uguali",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "usano",
+      "english": "use",
+      "examples": [
+        {
+          "sentence": "L’inquinamento acustico aumenta se si usano in modo eccessivo i dispositivi di segnalazione acustica (clacson, trombe)",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "usurati",
+      "english": "utility",
+      "examples": [
+        {
+          "sentence": "Lo spazio totale di arresto aumenta se i pneumatici sono usurati",
+          "label": "vero"
+        },
+        {
+          "sentence": "Lo spazio totale di arresto aumenta se i pneumatici non sono usurati",
+          "label": "falso"
+        },
+        {
+          "sentence": "L’A.B.S. agisce anche quando gli pneumatici sono usurati",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "utilità",
+      "english": "go",
+      "examples": [
+        {
+          "sentence": "Le cinture di sicurezza sono di utilità trascurabile nella circolazione urbana",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "vadano",
+      "english": "go",
+      "examples": [
+        {
+          "sentence": "È sconsigliabile sistemare oggetti sotto il sedile del conducente per evitare che, scivolando durante la marcia, vadano",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le cinture di sicurezza hanno lo scopo di evitare che il conducente o i passeggeri vadano a urtare parti interne del vei­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "vanno",
+      "english": "tray",
+      "examples": [
+        {
+          "sentence": "I catadiottri vanno accesi mezz’ora dopo il tramonto del sole",
+          "label": "falso"
+        },
+        {
+          "sentence": "I catadiottri vanno accesi insieme alle luci di posizione",
+          "label": "falso"
+        },
+        {
+          "sentence": "I passaggi a livello vanno affrontati a velocità molto elevata per evitare di rimanere bloccati sulla linea ferroviaria",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "vaschetta",
+      "english": "vei",
+      "examples": [
+        {
+          "sentence": "Sui motocicli, il livello del liquido freni si verifica controllando l’apposita vaschetta trasparente",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "vei",
+      "english": "vehicular",
+      "examples": [
+        {
+          "sentence": "In caso di nebbia fitta è opportuno tenere la cintura di sicurezza sganciata per essere più pronti ad abbandonare il vei­",
+          "label": "falso"
+        },
+        {
+          "sentence": "Le cinture di sicurezza hanno lo scopo di evitare che il conducente o i passeggeri vadano a urtare parti interne del vei­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "veicolare",
+      "english": "travel",
+      "examples": [
+        {
+          "sentence": "La luce gialla lampeggiante, del tipo B o C in figura, è affiancata al semaforo veicolare",
+          "label": "vero"
+        },
+        {
+          "sentence": "I conducenti di autoveicoli trainanti un rimorchio, quando la massa complessiva a pieno carico del complesso veicolare",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "viaggio",
+      "english": "visor",
+      "examples": [
+        {
+          "sentence": "Prima di iniziare un lungo viaggio, è opportuno aumentare la pressione di gonfiaggio degli pneumatici",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "visiera",
+      "english": "worn",
+      "examples": [
+        {
+          "sentence": "È bene che il casco sia dotato di visiera",
+          "label": "vero"
+        },
+        {
+          "sentence": "La visiera del casco protegge il viso e gli occhi da impatti con insetti",
+          "label": "vero"
+        },
+        {
+          "sentence": "La visiera del casco deve essere sostituita se rigata o danneggiata",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 8
+    }
+  ]
+}

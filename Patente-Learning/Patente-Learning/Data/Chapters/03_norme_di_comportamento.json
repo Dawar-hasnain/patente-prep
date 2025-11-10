@@ -1,0 +1,2796 @@
+{
+  "chapter": "Norme di Comportamento",
+  "words": [
+    {
+      "italian": "abbagliati",
+      "english": "dazzled",
+      "examples": [
+        {
+          "sentence": "È obbligatorio ridurre la velocità e all’occorrenza fermarsi quando si rimane abbagliati",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "abilità",
+      "english": "ability",
+      "examples": [
+        {
+          "sentence": "Il conducente deve regolare la velocità in relazione alla propria abilità alla guida",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il conducente non deve mai sopravvalutare la propria abilità di guida",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "accadere",
+      "english": "happen",
+      "examples": [
+        {
+          "sentence": "Quando vi sono bambini fermi al semaforo bisogna usare prudenza, perché può accadere che si spingano a vicenda,",
+          "label": "vero"
+        },
+        {
+          "sentence": "In vicinanza di una piazzola di fermata di autobus per scolari, può accadere che i bambini scendano dall’autobus senza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "accenni",
+      "english": "hints",
+      "examples": [
+        {
+          "sentence": "In un centro abitato, quando un pedone, fuori delle strisce di attraversamento, non accenni a darci la precedenza, è",
+          "label": "vero"
+        },
+        {
+          "sentence": "In un centro abitato, quando un pedone, fuori delle strisce di attraversamento, non accenni a darci la precedenza, è",
+          "label": "vero"
+        },
+        {
+          "sentence": "In un centro abitato, quando un pedone, fuori delle strisce di attraversamento, non accenni a darci la precedenza, è",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "accertamento",
+      "english": "assessment",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata a seguito di esito favorevole dell’apposito accertamento sanitario eseguito da medico",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida è confermata dal Ministero delle infrastrutture e dei trasporti a seguito di accertamento di idoneità",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida di categoria B è confermata dal Prefetto a seguito di visita di accertamento dei requisiti morali",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "affian",
+      "english": "affian",
+      "examples": [
+        {
+          "sentence": "In una carreggiata a doppio senso di circolazione la linea di mezzo può essere costituita da due strisce continue affian­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "affrontare",
+      "english": "face",
+      "examples": [
+        {
+          "sentence": "Nell’affrontare una curva a velocità moderata il rimorchio compie sempre lo stesso percorso fatto dalla motrice",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "affrontati",
+      "english": "faced",
+      "examples": [
+        {
+          "sentence": "I passaggi a livello vanno affrontati a velocità molto elevata per evitare di rimanere bloccati sulla linea ferroviaria",
+          "label": "falso"
+        },
+        {
+          "sentence": "I passaggi a livello vanno affrontati a velocità molto elevata per essere in grado di sfondare le barriere se non si è in",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "allacciato",
+      "english": "fastened",
+      "examples": [
+        {
+          "sentence": "Prima di iniziare a guidare un’autovettura, bisogna controllare che i passeggeri abbiano regolarmente allacciato  le",
+          "label": "vero"
+        },
+        {
+          "sentence": "Circolare senza casco durante la guida quando previsto, o con casco mal allacciato, comporta una perdita di punti sulla",
+          "label": "vero"
+        },
+        {
+          "sentence": "Durante la marcia, il casco deve essere sempre correttamente allacciato",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "alternatore",
+      "english": "alternator",
+      "examples": [
+        {
+          "sentence": "Una spia di colore rosso contrassegnata dal simbolo di figura, se accesa durante la marcia, indica che l’alternatore non",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "alzata",
+      "english": "rise",
+      "examples": [
+        {
+          "sentence": "Avvicinandosi ad un passaggio a livello con luci rosse lampeggianti alternativamente e semibarriera ancora alzata,",
+          "label": "vero"
+        },
+        {
+          "sentence": "Avvicinandosi ad un passaggio a livello con luci rosse lampeggianti alternativamente e semibarriera ancora alzata, si",
+          "label": "falso"
+        },
+        {
+          "sentence": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, è necessario fermarsi sulla",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 10
+    },
+    {
+      "italian": "ampiezza",
+      "english": "amplitude",
+      "examples": [
+        {
+          "sentence": "Il valore della distanza di sicurezza deve essere stabilito anche in base all’ampiezza della carreggiata",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "applicazione",
+      "english": "application",
+      "examples": [
+        {
+          "sentence": "Per non costituire pericolo o intralcio per la circolazione, è necessario unire all’applicazione delle fondamentali norme",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’applicazione del “ruotino” (ruota di scorta di ridotte dimensioni), consente di raggiungere la velocità di 120 km/h",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "aspettarsi",
+      "english": "expect",
+      "examples": [
+        {
+          "sentence": "In vicinanza di un attraversamento pedonale, il conducente deve aspettarsi dai bambini una reazione rapida e un com­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "assunzione",
+      "english": "assumption",
+      "examples": [
+        {
+          "sentence": "L’assunzione di alcool rende meno sicura la guida, poiché può provocare eccitazione e imprudenza",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’assunzione di alcool rende meno sicura la guida, perché può rallentare i riflessi",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’assunzione di alcool rende meno sicura la guida, perché può provocare sonnolenza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 15
+    },
+    {
+      "italian": "atmosferiche",
+      "english": "atmospheric",
+      "examples": [
+        {
+          "sentence": "Durante la marcia, in caso di scarsa visibilità per condizioni atmosferiche (neve, pioggia, nebbia), è obbligatorio tenere",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il conducente deve regolare la velocità in relazione alle condizioni atmosferiche",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il limite massimo di velocità per un’autovettura in caso di precipitazioni atmosferiche sulle autostrade è di 110 km/h",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "atte",
+      "english": "atte",
+      "examples": [
+        {
+          "sentence": "Durante la fermata il conducente deve sempre adottare le opportune cautele atte ad evitare incidenti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Durante la sosta il conducente deve adottare le opportune cautele atte ad evitare incidenti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Durante la sosta il conducente deve adottare accorgimenti atti a garantire l’immobilità del veicolo, indipendentemente",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "aumentato",
+      "english": "increased",
+      "examples": [
+        {
+          "sentence": "La distanza di sicurezza deve essere uguale allo spazio di frenatura aumentato di 20 metri",
+          "label": "falso"
+        },
+        {
+          "sentence": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) possono essere aumentati, a scelta del",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "autorizzate",
+      "english": "authorized",
+      "examples": [
+        {
+          "sentence": "In una zona a traffico limitato possono circolare solo i veicoli autorizzati",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è vietata nelle zone a traffico limitato per i veicoli non autorizzati",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il conducente che partecipa a gare di velocità non autorizzate su aree pubbliche è punito con la reclusione",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 7
+    },
+    {
+      "italian": "autovelox",
+      "english": "speed cameras",
+      "examples": [
+        {
+          "sentence": "È obbligatorio ridurre la velocità in prossimità degli autovelox",
+          "label": "falso"
+        },
+        {
+          "sentence": "È obbligatorio ridurre la velocità e all’occorrenza fermarsi in prossimità degli autovelox",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "avanzare",
+      "english": "advance",
+      "examples": [
+        {
+          "sentence": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che i bambini potrebbero avanzare sulle",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "avvertono",
+      "english": "warn",
+      "examples": [
+        {
+          "sentence": "I segni gialli e neri in figura dipinti sul bordo del marciapiede avvertono i pedoni di fare attenzione al gradino",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "avvi",
+      "english": "start",
+      "examples": [
+        {
+          "sentence": "Quando stanno per riprendere la marcia dopo un arresto al semaforo, i conducenti di autocarri possono facilmente avvi­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "azionando",
+      "english": "actuate",
+      "examples": [
+        {
+          "sentence": "Per effettuare la svolta a destra bisogna segnalare in anticipo la manovra da compiere, azionando l’indicatore di direzione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta degli autoveicoli in doppia fila è consentita per pochi minuti, azionando le luci di emergenza",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "azzardata",
+      "english": "risky",
+      "examples": [
+        {
+          "sentence": "Attraversare un passaggio a livello con manovra azzardata per guadagnare tempo, può essere un pericolo per molti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Attraversare un passaggio a livello con manovra azzardata per guadagnare tempo, può essere pericoloso solo nelle ore",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "ba",
+      "english": "ba",
+      "examples": [
+        {
+          "sentence": "Il titolare di patente di guida della categoria BE che, successivamente, consegue la patente della categoria C, può gui­",
+          "label": "falso"
+        },
+        {
+          "sentence": "La patente di categoria BE abilita a condurre complessi di veicoli composti da un autoveicolo di massa massima autoriz­",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di categoria BE abilita a condurre autotreni composti da un autoveicolo di massa massima autorizzata fino a",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 11
+    },
+    {
+      "italian": "bian",
+      "english": "bian",
+      "examples": [
+        {
+          "sentence": "Il conducente deve passare per primo, in quanto ha la precedenza, quando un pedone non vedente con il bastone bian­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "brevissimo",
+      "english": "very short",
+      "examples": [
+        {
+          "sentence": "Durante la fermata il conducente può allontanarsi per brevissimo tempo prima di riprendere la marcia",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "cada",
+      "english": "fall",
+      "examples": [
+        {
+          "sentence": "Uscendo da un sentiero fangoso o da un cantiere, bisogna assicurarsi che durante la marcia non cada terriccio che possa",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "cambiamenti",
+      "english": "changes",
+      "examples": [
+        {
+          "sentence": "L’uso degli indicatori di direzione è necessario nella marcia per file parallele, anche se non si effettuano cambiamenti di",
+          "label": "falso"
+        },
+        {
+          "sentence": "I movimenti del liquido che si verificano all’interno di un serbatoio vincolato ad un rimorchio durante i cambiamenti di dire­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "caratte",
+      "english": "character",
+      "examples": [
+        {
+          "sentence": "In presenza di appositi segnali, il limite massimo di velocità consentito nei centri abitati su strade con particolari caratte­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "carrabili",
+      "english": "driveways",
+      "examples": [
+        {
+          "sentence": "È obbligatorio ridurre la velocità e all’occorrenza fermarsi in corrispondenza dei passi carrabili",
+          "label": "falso"
+        },
+        {
+          "sentence": "È vietato il sorpasso in corrispondenza dei passi carrabili",
+          "label": "falso"
+        },
+        {
+          "sentence": "La fermata è vietata allo sbocco dei passi carrabili",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "cassonetti",
+      "english": "bins",
+      "examples": [
+        {
+          "sentence": "La fermata è consentita davanti ai cassonetti dei rifiuti urbani",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è vietata davanti ai cassonetti dei rifiuti urbani",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta così come la fermata sono vietate davanti ai cassonetti dei rifiuti urbani",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "cenno",
+      "english": "nod",
+      "examples": [
+        {
+          "sentence": "In vicinanza di un attraversamento pedonale, i pedoni devono fare un cenno con la mano prima di iniziare l’attraversamento",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "certa",
+      "english": "certain",
+      "examples": [
+        {
+          "sentence": "La distanza di sicurezza si deve rispettare al di sopra di una certa velocità",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "coinvolti",
+      "english": "involved",
+      "examples": [
+        {
+          "sentence": "Un incidente, anche a bassa velocità, potrebbe creare gravi problemi fisici a pedoni, ciclisti e motociclisti, se coinvolti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Un incidente a bassa velocità non crea problemi di incolumità ai conducenti coinvolti",
+          "label": "falso"
+        },
+        {
+          "sentence": "La procedura di risarcimento diretto non è applicabile se vi sono più di due veicoli coinvolti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "coloro",
+      "english": "those",
+      "examples": [
+        {
+          "sentence": "Il limite di velocità sulle autostrade per coloro che hanno conseguito la patente da meno di 3 anni è di 100 km/h",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il limite di velocità sulle strade extraurbane principali per coloro che hanno conseguito la patente da meno di 3 anni è di",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il limite di velocità sulle autostrade per coloro che hanno conseguito la patente da meno di tre anni è di 110 km/h",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "commisurare",
+      "english": "measure",
+      "examples": [
+        {
+          "sentence": "Il conducente deve commisurare la distanza di sicurezza anche in base alla propria prontezza di riflessi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "compie",
+      "english": "complete",
+      "examples": [
+        {
+          "sentence": "Nell’affrontare una curva a velocità moderata il rimorchio compie sempre lo stesso percorso fatto dalla motrice",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "compiono",
+      "english": "complete",
+      "examples": [
+        {
+          "sentence": "L’attenzione alla guida è importante solo quando si compiono manovre pericolose quali, ad esempio, un sorpasso",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "completarla",
+      "english": "complete",
+      "examples": [
+        {
+          "sentence": "La manovra di sorpasso non va effettuata se lo spazio visibile risulta insufficiente per completarla in sicurezza",
+          "label": "vero"
+        },
+        {
+          "sentence": "La manovra di sorpasso si effettua anche se lo spazio visibile risulta insufficiente per completarla in sicurezza",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "composte",
+      "english": "compose",
+      "examples": [
+        {
+          "sentence": "Nelle strade composte da una carreggiata a due corsie a doppio senso di marcia, in figura, si può marciare per file",
+          "label": "falso"
+        },
+        {
+          "sentence": "La patente di categoria BE abilita a condurre complessi di veicoli composti da un autoveicolo di massa massima autoriz­",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di categoria BE abilita a condurre autotreni composti da un autoveicolo di massa massima autorizzata fino a",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "concedere",
+      "english": "grant",
+      "examples": [
+        {
+          "sentence": "Nelle autostrade è consentito concedere passaggi a persone invalide",
+          "label": "falso"
+        },
+        {
+          "sentence": "Sulle aree di servizio delle autostrade o di parcheggio è consentito chiedere e concedere passaggi",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il conducente deve fermarsi per concedere la precedenza al pedone sordocieco che, con il bastone bianco-rosso, attra­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "confermata",
+      "english": "confirm",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata se il titolare della stessa è ancora in possesso dei requisiti fisici e psichici prescritti",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida è confermata a seguito di esito favorevole dell’apposito accertamento sanitario eseguito da medico",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida è confermata dal Ministero delle infrastrutture e dei trasporti a seguito di accertamento di idoneità",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "consen",
+      "english": "consen",
+      "examples": [
+        {
+          "sentence": "La sosta negli spazi riservati allo stazionamento e alla fermata di autobus, filobus e veicoli circolanti su rotaia, è consen­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "corren",
+      "english": "run",
+      "examples": [
+        {
+          "sentence": "In caso di traffico intenso il conducente deve regolare la propria velocità uniformandola il più possibile a quella della corren­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "corri",
+      "english": "run",
+      "examples": [
+        {
+          "sentence": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, bisogna fermarsi in corri­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "costituita",
+      "english": "constitute",
+      "examples": [
+        {
+          "sentence": "L’isola di traffico a raso è costituita da zebrature di colore bianco",
+          "label": "vero"
+        },
+        {
+          "sentence": "In una carreggiata a doppio senso di circolazione la linea di mezzo può essere costituita da due strisce continue affian­",
+          "label": "vero"
+        },
+        {
+          "sentence": "In una carreggiata a doppio senso di circolazione la linea di mezzo se costituita da strisce continue, come in figura,",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "costretti",
+      "english": "forced",
+      "examples": [
+        {
+          "sentence": "Il sorpasso è vietato se si è costretti a superare la linea longitudinale tratteggiata",
+          "label": "falso"
+        },
+        {
+          "sentence": "In caso di nebbia fitta è opportuno se costretti a fermarsi sulla carreggiata, usare la segnalazione luminosa di pericolo",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "darle",
+      "english": "give",
+      "examples": [
+        {
+          "sentence": "Quando una donna in stato di gravidanza attraversa la carreggiata bisogna darle la precedenza solo se attraversa da",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "derivato",
+      "english": "derived",
+      "examples": [
+        {
+          "sentence": "Il mancato rispetto della distanza di sicurezza da cui sia derivato un incidente, comporta una perdita di punti sulla patente",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "diffe",
+      "english": "diffe",
+      "examples": [
+        {
+          "sentence": "Il conducente che intende sorpassare deve valutare lo spazio necessario per la manovra anche in relazione alla diffe­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Nei veicoli dotati di servosterzo, se si percorre una lunga discesa con il cambio in folle e a motore spento, diventa diffi­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "disordine",
+      "english": "disorder",
+      "examples": [
+        {
+          "sentence": "Il conducente deve regolare la velocità in modo da non costituire disordine per la circolazione",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "display",
+      "english": "display",
+      "examples": [
+        {
+          "sentence": "Se un’auto della polizia, con sirena in funzione, vi sorpassa ponendosi davanti e sul tetto ha un display con la scritta",
+          "label": "vero"
+        },
+        {
+          "sentence": "Se un’auto della polizia, con sirena in funzione, vi sorpassa ponendosi davanti e sul tetto ha un display con la scritta",
+          "label": "vero"
+        },
+        {
+          "sentence": "Quando si vede sul tetto dell’auto della polizia un display con la scritta luminosa “INCIDENTE”, bisogna diminuire la",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "dividono",
+      "english": "divide",
+      "examples": [
+        {
+          "sentence": "I delineatori raffigurati dividono la carreggiata in corsie",
+          "label": "falso"
+        },
+        {
+          "sentence": "I delineatori raffigurati dividono la carreggiata in corsie",
+          "label": "falso"
+        },
+        {
+          "sentence": "Nella carreggiata a doppio senso di circolazione le strisce di mezzo in figura dividono i sensi di marcia  (FIG 509)",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "eccessi",
+      "english": "excesses",
+      "examples": [
+        {
+          "sentence": "Una spia di colore rosso contrassegnata dal simbolo di figura, se accesa durante la marcia, può segnalare una eccessi­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "effettuazione",
+      "english": "carry out",
+      "examples": [
+        {
+          "sentence": "Durante l’effettuazione dell’inversione di marcia l’indicatore di direzione deve rimanere in funzione per l’intera durata",
+          "label": "vero"
+        },
+        {
+          "sentence": "Nella fase di sorpasso, il conducente è tenuto a segnalare continuamente con l’avvisatore acustico l’effettuazione della",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "esame",
+      "english": "examine",
+      "examples": [
+        {
+          "sentence": "La patente AM può essere rilasciata senza dover sostenere gli esami teorici e pratici, purché il richiedente sia maggio­",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il titolare della patente di categoria B1 che intende conseguire la patente di categoria B dovrà sostenere solo un esame",
+          "label": "falso"
+        },
+        {
+          "sentence": "La patente di guida è confermata a seguito di esito favorevole della prova tecnica di guida (esame di guida) periodica",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 9
+    },
+    {
+      "italian": "esce",
+      "english": "exit",
+      "examples": [
+        {
+          "sentence": "È obbligatorio dare la precedenza a destra e a sinistra quando si esce da un passo carrabile",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "eseguito",
+      "english": "executed",
+      "examples": [
+        {
+          "sentence": "Dopo aver eseguito una prima manovra di sorpasso, in strade ad almeno due corsie per senso di marcia, è possibile",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida è confermata a seguito di esito favorevole dell’apposito accertamento sanitario eseguito da medico",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "esista",
+      "english": "exists",
+      "examples": [
+        {
+          "sentence": "Il segnale raffigurato preannuncia un tratto di strada ove esiste il pericolo di caduta di massi",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il segnale raffigurato preannuncia un tratto di strada ove esiste il pericolo di presenza di pietre sulla carreggiata",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il segnale raffigurato preannuncia un tratto di strada ove esiste il pericolo di presenza di pietre sulla carreggiata",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 8
+    },
+    {
+      "italian": "esito",
+      "english": "outcome",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata a seguito di esito favorevole dell’apposito accertamento sanitario eseguito da medico",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida è confermata a seguito di esito favorevole della prova tecnica di guida (esame di guida) periodica",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "esse",
+      "english": "they",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata sui binari di linee ferroviarie o tranviarie o così vicino ad essi da intralciare la marcia dei veicoli su rotaia",
+          "label": "vero"
+        },
+        {
+          "sentence": "Nei centri abitati, la fermata e la sosta sono vietate in corrispondenza delle aree di intersezione e in prossimità di esse a",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta e la fermata sono vietate in ogni caso sulle piste ciclabili e agli sbocchi di esse",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 7
+    },
+    {
+      "italian": "facilità",
+      "english": "ease",
+      "examples": [
+        {
+          "sentence": "La rottura del servosterzo si manifesta con un’eccessiva facilità di manovra dello sterzo",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "fanno",
+      "english": "make",
+      "examples": [
+        {
+          "sentence": "Fanno parte della carreggiata le corsie di marcia",
+          "label": "vero"
+        },
+        {
+          "sentence": "Fanno parte della carreggiata gli attraversamenti ciclabili",
+          "label": "vero"
+        },
+        {
+          "sentence": "Fanno parte della carreggiata gli attraversamenti pedonali",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 8
+    },
+    {
+      "italian": "favorevole",
+      "english": "favorable",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata a seguito di esito favorevole dell’apposito accertamento sanitario eseguito da medico",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di guida è confermata a seguito di esito favorevole della prova tecnica di guida (esame di guida) periodica",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "fornici",
+      "english": "fornici",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta, ma non la fermata, è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "foschia",
+      "english": "mist",
+      "examples": [
+        {
+          "sentence": "È obbligatorio regolare la velocità in caso di nebbia o foschia",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "frasi",
+      "english": "phrases",
+      "examples": [
+        {
+          "sentence": "Lo stato di shock può manifestarsi con improvvisa pronuncia di frasi e parole senza senso",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "frequenza",
+      "english": "frequency",
+      "examples": [
+        {
+          "sentence": "La frequenza di apposito corso e il superamento di uno specifico esame consentono al titolare di patente A o B di recu­",
+          "label": "vero"
+        },
+        {
+          "sentence": "La frequenza di apposito corso e il superamento di uno specifico esame consentono al titolare di patente A o B di recupe­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "gareggia",
+      "english": "compete",
+      "examples": [
+        {
+          "sentence": "È punito con la reclusione il conducente che gareggia in velocità su strade pubbliche",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "generatore",
+      "english": "generator",
+      "examples": [
+        {
+          "sentence": "Una spia di colore rosso contrassegnata dal simbolo di figura, se accesa durante la marcia, indica che il generatore di",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "giustificato",
+      "english": "justified",
+      "examples": [
+        {
+          "sentence": "È vietato, in quanto costituisce pericolo o intralcio per la circolazione, circolare a velocità troppo bassa senza giustificato",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "gommata",
+      "english": "gummed",
+      "examples": [
+        {
+          "sentence": "Il segnale raffigurato vale sia per le macchine agricole gommate, sia per quelle cingolate",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il limite massimo di velocità per una macchina agricola gommata è di 40 km/h",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il limite massimo di velocità per una macchina operatrice gommata è di 40 km/h",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "gradi",
+      "english": "degrees",
+      "examples": [
+        {
+          "sentence": "L’uso del casco durante la marcia diventa facoltativo quando la temperatura dell’aria è superiore ai trenta gradi",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "gradino",
+      "english": "step",
+      "examples": [
+        {
+          "sentence": "I segni gialli e neri in figura dipinti sul bordo del marciapiede avvertono i pedoni di fare attenzione al gradino",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "guadagnare",
+      "english": "earn",
+      "examples": [
+        {
+          "sentence": "Attraversare un passaggio a livello con manovra azzardata per guadagnare tempo, può essere un pericolo per molti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Attraversare un passaggio a livello con manovra azzardata per guadagnare tempo, può essere pericoloso solo nelle ore",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "identici",
+      "english": "identical",
+      "examples": [
+        {
+          "sentence": "I limiti massimi di velocità vigenti sulle autostrade e sulle strade extraurbane non sono identici in tutti gli stati d’Europa",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "idoneità",
+      "english": "suitability",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata dal Ministero delle infrastrutture e dei trasporti a seguito di accertamento di idoneità",
+          "label": "vero"
+        },
+        {
+          "sentence": "Un conducente che ha assunto una quantità eccessiva di bevande alcoliche non può recuperare velocemente l’idoneità",
+          "label": "vero"
+        },
+        {
+          "sentence": "Un conducente che ha assunto una quantità eccessiva di bevande alcoliche può recuperare velocemente l’idoneità alla",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 12
+    },
+    {
+      "italian": "imprevisti",
+      "english": "unexpected events",
+      "examples": [
+        {
+          "sentence": "Si deve tenere una velocità che consenta di intervenire con sicurezza in caso di imprevisti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "improvvi",
+      "english": "you improvise",
+      "examples": [
+        {
+          "sentence": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che il pedone potrebbe fermarsi improvvi­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "incer",
+      "english": "uncertain",
+      "examples": [
+        {
+          "sentence": "È obbligatorio ridurre la velocità e all’occorrenza fermarsi quando i pedoni, che sono sul percorso, danno segni d’incer­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "incolumità",
+      "english": "safety",
+      "examples": [
+        {
+          "sentence": "Un incidente a bassa velocità non crea problemi di incolumità ai conducenti coinvolti",
+          "label": "falso"
+        },
+        {
+          "sentence": "Attraversare un passaggio a livello senza rispettare tutte le norme previste, può mettere in pericolo l’incolumità di molte",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "incontrano",
+      "english": "they meet",
+      "examples": [
+        {
+          "sentence": "Quando si incontrano le strisce di figura dipinte sulla pavimentazione occorre moderare la velocità (FIG 534)",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "ingombrati",
+      "english": "cluttered",
+      "examples": [
+        {
+          "sentence": "È obbligatorio regolare la velocità nei passaggi ingombrati",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "iniziato",
+      "english": "started",
+      "examples": [
+        {
+          "sentence": "In una carreggiata del tipo rappresentato possiamo iniziare un sorpasso anche se il conducente che sta dietro ha già iniziato la",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "innestata",
+      "english": "grafted",
+      "examples": [
+        {
+          "sentence": "Il valore della distanza di sicurezza deve essere stabilito anche in base alla marcia innestata",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "intervenire",
+      "english": "intervene",
+      "examples": [
+        {
+          "sentence": "Si deve tenere una velocità che consenta di intervenire con sicurezza in caso di imprevisti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Se si guida un motociclo senza guanti si può intervenire più rapidamente sui comandi",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "inva",
+      "english": "come",
+      "examples": [
+        {
+          "sentence": "Quando vi sono bambini fermi al semaforo bisogna usare prudenza, perché potrebbero scendere dal marciapiede, inva­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "invitano",
+      "english": "they invite",
+      "examples": [
+        {
+          "sentence": "Le luci in figura quando lampeggiano alternativamente invitano a occupare rapidamente il passaggio a livello",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "lampeggi",
+      "english": "flashes",
+      "examples": [
+        {
+          "sentence": "Il sorpasso è consentito in caso di scarsa visibilità purché si lampeggi durante la manovra",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "lampeggiano",
+      "english": "flash",
+      "examples": [
+        {
+          "sentence": "Le luci in figura quando lampeggiano alternativamente invitano a occupare rapidamente il passaggio a livello",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "latera",
+      "english": "latera",
+      "examples": [
+        {
+          "sentence": "Il conducente che intende sorpassare ciclisti o pedoni che occupano la carreggiata deve mantenere una distanza latera­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "manifestarsi",
+      "english": "manifest",
+      "examples": [
+        {
+          "sentence": "Lo stato di shock può manifestarsi con improvvisa pronuncia di frasi e parole senza senso",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "marciarvi",
+      "english": "march there",
+      "examples": [
+        {
+          "sentence": "La striscia bianca continua di mezzo in figura consente di marciarvi a cavallo",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "messi",
+      "english": "messi",
+      "examples": [
+        {
+          "sentence": "La striscia discontinua in figura può essere sostituita con alcuni “chiodi” o catadiottri, messi a distanza di 50 centimetri",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "mezz",
+      "english": "medium",
+      "examples": [
+        {
+          "sentence": "I catadiottri vanno accesi mezz’ora dopo il tramonto del sole",
+          "label": "falso"
+        },
+        {
+          "sentence": "Durante la marcia nei centri abitati, è obbligatorio tenere accese le luci anabbaglianti da mezz’ora dopo il tramonto del",
+          "label": "vero"
+        },
+        {
+          "sentence": "È obbligatorio ridurre la velocità e all’occorrenza fermarsi da mezz’ora prima del tramonto a mezz’ora dopo il sorgere del",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "mezzeria",
+      "english": "centreline",
+      "examples": [
+        {
+          "sentence": "Il sorpasso è vietato quando sulla carreggiata è tracciata la linea tratteggiata di mezzeria",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "ministero",
+      "english": "ministry",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata dal Ministero delle infrastrutture e dei trasporti a seguito di accertamento di idoneità",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "moderando",
+      "english": "moderating",
+      "examples": [
+        {
+          "sentence": "La svolta a destra si effettua moderando la velocità man mano che ci si avvicina al punto di svolta",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "molti",
+      "english": "many",
+      "examples": [
+        {
+          "sentence": "Attraversare un passaggio a livello con manovra azzardata per guadagnare tempo, può essere un pericolo per molti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "nostre",
+      "english": "our",
+      "examples": [
+        {
+          "sentence": "Si deve tenere una velocità adeguata solo alle nostre condizioni di salute",
+          "label": "falso"
+        },
+        {
+          "sentence": "I nostri sensi non riescono a cogliere tutti gli stimoli presenti nell’ambiente",
+          "label": "vero"
+        },
+        {
+          "sentence": "I nostri sensi riescono a cogliere tutti gli stimoli presenti nell’ambiente",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "occupando",
+      "english": "occupying",
+      "examples": [
+        {
+          "sentence": "In una carreggiata a doppio senso di circolazione per svoltare a sinistra bisogna effettuare la svolta occupando sempre",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "operatrice",
+      "english": "operator",
+      "examples": [
+        {
+          "sentence": "Le macchine agricole operatrici possono essere dotate di speciali attrezzature per l’esecuzione di operazioni agricole",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le macchine operatrici possono essere semoventi o trainate",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le macchine operatrici possono essere veicoli sgombraneve",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 20
+    },
+    {
+      "italian": "opportune",
+      "english": "appropriate",
+      "examples": [
+        {
+          "sentence": "Durante la fermata il conducente deve sempre adottare le opportune cautele atte ad evitare incidenti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Durante la sosta il conducente deve adottare le opportune cautele atte ad evitare incidenti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "orizzontali",
+      "english": "horizontal",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata in corrispondenza dei segnali orizzontali di preselezione e lungo le corsie di canalizzazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta e la fermata sono vietate in corrispondenza dei segnali orizzontali di preselezione e lungo le corsie di canalizzazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è vietata in corrispondenza dei segnali orizzontali di preselezione ma non lungo le corsie di canalizzazione",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "ospedali",
+      "english": "hospitals",
+      "examples": [
+        {
+          "sentence": "È vietato il sorpasso in prossimità degli ospedali",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "ostacolarne",
+      "english": "hinder",
+      "examples": [
+        {
+          "sentence": "È vietato sorpassare un’auto della Polizia, non in servizio di emergenza, per non ostacolarne la marcia",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "parole",
+      "english": "words",
+      "examples": [
+        {
+          "sentence": "Lo stato di shock può manifestarsi con improvvisa pronuncia di frasi e parole senza senso",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "partecipa",
+      "english": "participate",
+      "examples": [
+        {
+          "sentence": "Il conducente che partecipa a gare di velocità non autorizzate su aree pubbliche è punito con la reclusione",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "partecipano",
+      "english": "participate",
+      "examples": [
+        {
+          "sentence": "È punito con la reclusione chi scommette su veicoli che partecipano a gare di velocità non autorizzate su strade pubbliche",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "partecipino",
+      "english": "participate",
+      "examples": [
+        {
+          "sentence": "Sono consentite le gare di velocità, anche se non autorizzate, purché partecipino solo due autovetture",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "passi",
+      "english": "steps",
+      "examples": [
+        {
+          "sentence": "È obbligatorio ridurre la velocità e all’occorrenza fermarsi in corrispondenza dei passi carrabili",
+          "label": "falso"
+        },
+        {
+          "sentence": "È vietato il sorpasso in corrispondenza dei passi carrabili",
+          "label": "falso"
+        },
+        {
+          "sentence": "La fermata è vietata allo sbocco dei passi carrabili",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "pavimenta",
+      "english": "pave",
+      "examples": [
+        {
+          "sentence": "È regolamentare, nelle zone destinate alla fermata degli autobus in servizio pubblico di linea, trovare sulla pavimenta­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "pivottante",
+      "english": "pivoting",
+      "examples": [
+        {
+          "sentence": "Durante la marcia, il rimorchio deve avere il ruotino pivottante di manovra abbassato (poggiato al suolo)",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "portici",
+      "english": "porticoes",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta, ma non la fermata, è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "preceduti",
+      "english": "preceded",
+      "examples": [
+        {
+          "sentence": "Il sorpasso è vietato quando sulle strade di montagna si è preceduti da un autobus di linea",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "precipitazioni",
+      "english": "precipitation",
+      "examples": [
+        {
+          "sentence": "Il limite massimo di velocità per un’autovettura in caso di precipitazioni atmosferiche sulle autostrade è di 110 km/h",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il limite massimo di velocità per un’autovettura in caso di precipitazioni atmosferiche su strade extraurbane principali è di",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "prefetto",
+      "english": "prefect",
+      "examples": [
+        {
+          "sentence": "La patente di guida di categoria B è confermata dal Prefetto a seguito di visita di accertamento dei requisiti morali",
+          "label": "falso"
+        },
+        {
+          "sentence": "La revisione della patente di guida può essere disposta dall’Ufficio Motorizzazione civile o dal Prefetto",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "progressivamente",
+      "english": "progressively",
+      "examples": [
+        {
+          "sentence": "In un centro abitato, se si vede un pallone rotolare sulla carreggiata, bisogna rallentare progressivamente, per evitare di",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "prontezza",
+      "english": "readiness",
+      "examples": [
+        {
+          "sentence": "Il conducente deve commisurare la distanza di sicurezza anche in base alla propria prontezza di riflessi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "pronuncia",
+      "english": "pronunciation",
+      "examples": [
+        {
+          "sentence": "Lo stato di shock può manifestarsi con improvvisa pronuncia di frasi e parole senza senso",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "provinciali",
+      "english": "provincial",
+      "examples": [
+        {
+          "sentence": "È obbligatorio ridurre la velocità nelle strade provinciali",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "provvedere",
+      "english": "provide",
+      "examples": [
+        {
+          "sentence": "Nel caso di ingombro della carreggiata per caduta accidentale del carico il conducente deve provvedere a rimuovere il",
+          "label": "vero"
+        },
+        {
+          "sentence": "Una spia di colore rosso contrassegnata dal simbolo di figura, se accesa durante la marcia, comporta di provvedere",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "provvisoria",
+      "english": "provisional",
+      "examples": [
+        {
+          "sentence": "Il cono raffigurato si può usare per segnalare deviazioni provvisorie",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il cono raffigurato può indicare separazione provvisoria dei sensi di marcia",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il delineatore raffigurato, se di colore bianco e rosso, indica una curva provvisoria a sinistra",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "prudente",
+      "english": "prudent",
+      "examples": [
+        {
+          "sentence": "Giungendo ad un incrocio, bisogna essere prudenti e tolleranti nei confronti di chi, pur non avendo la precedenza, passa",
+          "label": "vero"
+        },
+        {
+          "sentence": "In un centro abitato bisogna essere più attenti, prudenti e tolleranti, a causa del maggior numero di utenti che interagi­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Alla guida di un veicolo, in vicinanza di una piazzola di fermata di autobus per scolari, occorre essere prudenti e tenere",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "psichici",
+      "english": "psychic",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata se il titolare della stessa è ancora in possesso dei requisiti fisici e psichici prescritti",
+          "label": "vero"
+        },
+        {
+          "sentence": "La revoca della patente è disposta quando il titolare perde permanentemente (per sempre) i requisiti psichici richiesti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "psicofisiche",
+      "english": "psychophysical",
+      "examples": [
+        {
+          "sentence": "Si deve tenere una velocità adeguata alle proprie condizioni psicofisiche",
+          "label": "vero"
+        },
+        {
+          "sentence": "La distanza di sicurezza è commisurata anche alle condizioni psicofisiche del conducente",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "punito",
+      "english": "punished",
+      "examples": [
+        {
+          "sentence": "Il conducente che partecipa a gare di velocità non autorizzate su aree pubbliche è punito con la reclusione",
+          "label": "vero"
+        },
+        {
+          "sentence": "È punito con la reclusione il conducente che gareggia in velocità su strade pubbliche",
+          "label": "vero"
+        },
+        {
+          "sentence": "È punito con la reclusione chi scommette su veicoli che partecipano a gare di velocità non autorizzate su strade pubbliche",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "quadruplica",
+      "english": "quadruples",
+      "examples": [
+        {
+          "sentence": "Lo spazio di frenatura si quadruplica se la velocità si raddoppia",
+          "label": "vero"
+        },
+        {
+          "sentence": "Lo spazio di frenatura diventa sedici volte maggiore se la velocità si quadruplica",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "raddoppia",
+      "english": "doubles",
+      "examples": [
+        {
+          "sentence": "Lo spazio di frenatura si quadruplica se la velocità si raddoppia",
+          "label": "vero"
+        },
+        {
+          "sentence": "Lo spazio di frenatura si raddoppia se la velocità si raddoppia",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "reazioni",
+      "english": "reactions",
+      "examples": [
+        {
+          "sentence": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che le reazioni dei bambini che attraversa­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "reclusione",
+      "english": "imprisonment",
+      "examples": [
+        {
+          "sentence": "Il conducente che partecipa a gare di velocità non autorizzate su aree pubbliche è punito con la reclusione",
+          "label": "vero"
+        },
+        {
+          "sentence": "È punito con la reclusione il conducente che gareggia in velocità su strade pubbliche",
+          "label": "vero"
+        },
+        {
+          "sentence": "È punito con la reclusione chi scommette su veicoli che partecipano a gare di velocità non autorizzate su strade pubbliche",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "recu",
+      "english": "recu",
+      "examples": [
+        {
+          "sentence": "La frequenza di apposito corso e il superamento di uno specifico esame consentono al titolare di patente A o B di recu­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "recupe",
+      "english": "recupe",
+      "examples": [
+        {
+          "sentence": "La frequenza di apposito corso e il superamento di uno specifico esame consentono al titolare di patente A o B di recupe­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "rego",
+      "english": "rego",
+      "examples": [
+        {
+          "sentence": "È consentito il sorpasso in prossimità o in corrispondenza di passaggi a livello senza barriere se la circolazione è rego­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "regolano",
+      "english": "regulate",
+      "examples": [
+        {
+          "sentence": "I semafori in figura regolano l’ingresso sul pontile d’imbarco di navi traghetto",
+          "label": "falso"
+        },
+        {
+          "sentence": "I semafori in figura regolano l’attraversamento di un passaggio a livello",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "rettilinei",
+      "english": "straights",
+      "examples": [
+        {
+          "sentence": "È obbligatorio regolare la velocità nei rettilinei e non in curva",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "ribaltante",
+      "english": "overturning",
+      "examples": [
+        {
+          "sentence": "Trainando un rimorchio leggero, bisogna considerare che è maggiore la forza ribaltante esercitata dal vento",
+          "label": "vero"
+        },
+        {
+          "sentence": "La forza ribaltante in curva aumenta all’aumentare della velocità",
+          "label": "vero"
+        },
+        {
+          "sentence": "La forza ribaltante in curva diminuisce all’aumentare della velocità",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "riflessi",
+      "english": "reflexes",
+      "examples": [
+        {
+          "sentence": "Lo spazio di frenatura diminuisce se il conducente ha i riflessi pronti",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il conducente deve commisurare la distanza di sicurezza anche in base alla propria prontezza di riflessi",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’assunzione di alcool rende meno sicura la guida, perché può rallentare i riflessi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "rimangono",
+      "english": "remain",
+      "examples": [
+        {
+          "sentence": "Le luci in figura entrano in funzione poco prima dell’arrivo del treno e rimangono accese fino alla fine del suo passaggio",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "riportati",
+      "english": "reported",
+      "examples": [
+        {
+          "sentence": "È vietato effettuare un secondo sorpasso senza prima essersi riportati a destra",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "rischia",
+      "english": "risks",
+      "examples": [
+        {
+          "sentence": "Chi guida in stato di ebbrezza alcolica rischia l’arresto",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "ruvido",
+      "english": "rough",
+      "examples": [
+        {
+          "sentence": "Lo spazio totale di arresto aumenta se l’asfalto è ruvido",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sale",
+      "english": "salt",
+      "examples": [
+        {
+          "sentence": "Il valore della distanza di sicurezza da mantenere da una macchina spanditrice di sale in azione è di 20 metri",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il valore della distanza di sicurezza da mantenere da una macchina spanditrice di sale in azione è di 15 metri",
+          "label": "falso"
+        },
+        {
+          "sentence": "L’idoneità alla guida può essere compromessa se si fa uso di integratori di sali minerali",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "salvaguardare",
+      "english": "safeguard",
+      "examples": [
+        {
+          "sentence": "Per risparmiare carburante e salvaguardare l’ambiente dall’inquinamento atmosferico, è consigliabile azionare il clima­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Per salvaguardare l’ambiente dall’inquinamento atmosferico, bisogna premere più volte il pedale dell’acceleratore quando",
+          "label": "falso"
+        },
+        {
+          "sentence": "Per salvaguardare l’ambiente dall’inquinamento atmosferico, bisogna premere diverse volte e a fondo il pedale dell’accele­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "sanzio",
+      "english": "sanzio",
+      "examples": [
+        {
+          "sentence": "Attraversare un passaggio a livello senza rispettare tutte le norme previste, comporta esclusivamente una lieve sanzio­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sbocchi",
+      "english": "outlets",
+      "examples": [
+        {
+          "sentence": "La sosta e la fermata sono vietate in ogni caso sulle piste ciclabili e agli sbocchi di esse",
+          "label": "vero"
+        },
+        {
+          "sentence": "La fermata per esigenze di brevissima durata è vietata sulle piste ciclabili ma non agli sbocchi di esse",
+          "label": "falso"
+        },
+        {
+          "sentence": "La sosta è vietata sulle piste ciclabili, ma non agli sbocchi di esse nel caso sia di breve durata",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "scansarsi",
+      "english": "avoid",
+      "examples": [
+        {
+          "sentence": "È obbligatorio ridurre la velocità e all’occorrenza fermarsi quando i pedoni, che sono sul percorso, tardano a scansarsi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "scarica",
+      "english": "discharge",
+      "examples": [
+        {
+          "sentence": "È obbligatorio ridurre la velocità solo se l’autovettura è scarica",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "scarso",
+      "english": "poor",
+      "examples": [
+        {
+          "sentence": "Una spia di colore rosso contrassegnata dal simbolo di figura, se accesa durante la marcia, può segnalare lo scarso",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "scendano",
+      "english": "go down",
+      "examples": [
+        {
+          "sentence": "In vicinanza di una piazzola di fermata di autobus per scolari, può accadere che i bambini scendano dall’autobus senza",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "scivolando",
+      "english": "slip",
+      "examples": [
+        {
+          "sentence": "È sconsigliabile sistemare oggetti sotto il sedile del conducente per evitare che, scivolando durante la marcia, vadano",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "scommette",
+      "english": "bet",
+      "examples": [
+        {
+          "sentence": "È punito con la reclusione chi scommette su veicoli che partecipano a gare di velocità non autorizzate su strade pubbliche",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sconsigliabile",
+      "english": "inadvisable",
+      "examples": [
+        {
+          "sentence": "È sconsigliabile guidare quando si ha uno stato emotivo alterato",
+          "label": "vero"
+        },
+        {
+          "sentence": "È sconsigliabile sistemare oggetti sotto il sedile del conducente per evitare che, scivolando durante la marcia, vadano",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "scontro",
+      "english": "clash",
+      "examples": [
+        {
+          "sentence": "La distanza di sicurezza deve essere mantenuta per evitare lo scontro frontale",
+          "label": "falso"
+        },
+        {
+          "sentence": "La distanza di sicurezza deve essere mantenuta per evitare lo scontro laterale",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "scuole",
+      "english": "schools",
+      "examples": [
+        {
+          "sentence": "È obbligatorio regolare la velocità in prossimità delle scuole",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sedici",
+      "english": "sixteen",
+      "examples": [
+        {
+          "sentence": "Lo spazio di frenatura diventa sedici volte maggiore se la velocità si quadruplica",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "seguiti",
+      "english": "followed",
+      "examples": [
+        {
+          "sentence": "Si deve diminuire la velocità quando si è seguiti da un autobus di linea",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "semaforici",
+      "english": "traffic lights",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata in prossimità e in corrispondenza di segnali semaforici in modo da occultarne la vista",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta e la fermata sono vietate in prossimità e in corrispondenza di segnali semaforici in modo da occultarne la vista",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta, ma non la fermata, è vietata in prossimità e in corrispondenza di segnali semaforici in modo da occultarne la",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "semibarriera",
+      "english": "semi-barrier",
+      "examples": [
+        {
+          "sentence": "L’intersezione (incrocio) a raso è un passaggio a livello  dotato di barriere o semibarriere",
+          "label": "falso"
+        },
+        {
+          "sentence": "In un passaggio a livello si possono trovare le semibarriere",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il segnale raffigurato preannuncia un passaggio a livello con barriere o con semibarriere",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 27
+    },
+    {
+      "italian": "semplice",
+      "english": "simple",
+      "examples": [
+        {
+          "sentence": "È vietato il sorpasso se si deve valicare la striscia longitudinale bianca continua semplice o doppia",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il fine del primo soccorso è quello di cercare di mantenere in vita il ferito con semplici e immediati interventi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "separazione",
+      "english": "separation",
+      "examples": [
+        {
+          "sentence": "Il cono raffigurato può indicare separazione provvisoria dei sensi di marcia",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sfondare",
+      "english": "break through",
+      "examples": [
+        {
+          "sentence": "I passaggi a livello vanno affrontati a velocità molto elevata per essere in grado di sfondare le barriere se non si è in",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "shock",
+      "english": "shock",
+      "examples": [
+        {
+          "sentence": "Lo stato di shock si manifesta con pelle molto pallida e fredda",
+          "label": "vero"
+        },
+        {
+          "sentence": "Lo stato di shock si manifesta con presenza di sudore freddo alla fronte",
+          "label": "vero"
+        },
+        {
+          "sentence": "Lo stato di shock si manifesta con presenza di brividi, pelle molto pallida e sudorazione fredda alla fronte",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 23
+    },
+    {
+      "italian": "solitamente",
+      "english": "usually",
+      "examples": [
+        {
+          "sentence": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che le persone anziane solitamente attra­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sopraggiunga",
+      "english": "arrives",
+      "examples": [
+        {
+          "sentence": "Se si viene sorpassati mentre sopraggiunge un veicolo dal senso opposto, è consigliabile ridurre la velocità",
+          "label": "vero"
+        },
+        {
+          "sentence": "Se si viene sorpassati mentre sopraggiunge un veicolo dal senso opposto, occorre spostarsi il più vicino possibile al",
+          "label": "vero"
+        },
+        {
+          "sentence": "Se si viene sorpassati mentre sopraggiunge un veicolo dal senso opposto, occorre tenere accesi i proiettori abbaglianti,",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 8
+    },
+    {
+      "italian": "sordocieco",
+      "english": "deafblind",
+      "examples": [
+        {
+          "sentence": "Il conducente deve fermarsi per concedere la precedenza al pedone sordocieco che, con il bastone bianco-rosso, attra­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sorgere",
+      "english": "arise",
+      "examples": [
+        {
+          "sentence": "Durante la marcia, è obbligatorio tenere accese le luci abbaglianti, a partire dal tramonto del sole fino al suo sorgere",
+          "label": "falso"
+        },
+        {
+          "sentence": "È obbligatorio ridurre la velocità e all’occorrenza fermarsi da mezz’ora prima del tramonto a mezz’ora dopo il sorgere del",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "sottovia",
+      "english": "underpass",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta, ma non la fermata, è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "sovrapassaggi",
+      "english": "overpasses",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici, salvo diversa segnalazione",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta, ma non la fermata, è vietata nei sottovia, sotto i sovrapassaggi, sotto i fornici e i portici",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "spanditrice",
+      "english": "spreader",
+      "examples": [
+        {
+          "sentence": "Il valore della distanza di sicurezza da mantenere da una macchina spanditrice di sale in azione è di 20 metri",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il valore della distanza di sicurezza da mantenere da una macchina spanditrice di sale in azione è di 15 metri",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "special",
+      "english": "special",
+      "examples": [
+        {
+          "sentence": "In vicinanza di un attraversamento pedonale, il conducente deve considerare che i pedoni, in special modo i bambini,",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "spenta",
+      "english": "off",
+      "examples": [
+        {
+          "sentence": "Il segnale raffigurato obbliga ad arrestarsi se le luci rosse poste in prossimità delle barriere o delle semibarriere sono spente",
+          "label": "falso"
+        },
+        {
+          "sentence": "È possibile trovare la luce gialla lampeggiante quando le altre sono spente  (FIG 154)",
+          "label": "vero"
+        },
+        {
+          "sentence": "Delle tre luci del semaforo in figura se ne accende soltanto una, mentre le altre sono spente",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "spinge",
+      "english": "pushes",
+      "examples": [
+        {
+          "sentence": "Quando un pedone che spinge una carrozzina per bambini attraversa la carreggiata bisogna tenere presente che, di",
+          "label": "falso"
+        },
+        {
+          "sentence": "Quando un pedone che spinge la carrozzina per bambini attraversa la carreggiata bisogna dargli la precedenza solo se",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "spostamenti",
+      "english": "movements",
+      "examples": [
+        {
+          "sentence": "Il casco deve essere indossato anche per spostamenti brevi e a bassa velocità",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "strettamente",
+      "english": "strictly",
+      "examples": [
+        {
+          "sentence": "Nell’eseguire la manovra di sorpasso bisogna mantenere strettamente la destra",
+          "label": "falso"
+        },
+        {
+          "sentence": "Sulle carreggiate, sulle rampe e sugli svincoli delle autostrade la sosta di emergenza non deve superare il tempo strettamente",
+          "label": "vero"
+        },
+        {
+          "sentence": "Per evitare rumori fastidiosi durante la guida non si deve frenare bruscamente, se non è strettamente necessario",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "stretti",
+      "english": "narrow",
+      "examples": [
+        {
+          "sentence": "È obbligatorio regolare la velocità nei passaggi stretti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "superamento",
+      "english": "overcoming",
+      "examples": [
+        {
+          "sentence": "La frequenza di apposito corso e il superamento di uno specifico esame consentono al titolare di patente A o B di recu­",
+          "label": "vero"
+        },
+        {
+          "sentence": "La frequenza di apposito corso e il superamento di uno specifico esame consentono al titolare di patente A o B di recupe­",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il superamento dei limiti di velocità di oltre 10 km/h durante la guida comporta una perdita di punti sulla patente",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "superandola",
+      "english": "overcoming it",
+      "examples": [
+        {
+          "sentence": "La striscia bianca continua di mezzo in figura consente il sorpasso anche superandola, purché con le sole ruote di",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "superarla",
+      "english": "overcome it",
+      "examples": [
+        {
+          "sentence": "La striscia di mezzo in figura consente il sorpasso senza superarla, purché non vi siano motivi che lo vietino  (FIG 501)",
+          "label": "vero"
+        },
+        {
+          "sentence": "La striscia bianca continua di mezzo in figura permette la manovra di sorpasso senza superarla",
+          "label": "vero"
+        },
+        {
+          "sentence": "La doppia striscia continua in figura permette il sorpasso, se consentito, senza superarla",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "superata",
+      "english": "surpassed it",
+      "examples": [
+        {
+          "sentence": "Le strisce lungo il centro della carreggiata possono essere superate se discontinue (tratteggiate)",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le strisce lungo il centro della carreggiata non possono essere superate se continue",
+          "label": "vero"
+        },
+        {
+          "sentence": "La doppia striscia in figura non può essere superata, ma si può circolare stando a cavallo di essa  (FIG 509)",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 12
+    },
+    {
+      "italian": "tampo",
+      "english": "tampo",
+      "examples": [
+        {
+          "sentence": "In un centro abitato, se si vede un pallone rotolare sulla carreggiata, non occorre rallentare, per evitare di essere tampo­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tante",
+      "english": "many",
+      "examples": [
+        {
+          "sentence": "I pannelli raffigurati hanno tante barre diagonali quanti sono i binari del passaggio a livello",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tardano",
+      "english": "late",
+      "examples": [
+        {
+          "sentence": "È obbligatorio ridurre la velocità e all’occorrenza fermarsi quando i pedoni, che sono sul percorso, tardano a scansarsi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tecnica",
+      "english": "technique",
+      "examples": [
+        {
+          "sentence": "La patente di guida è confermata a seguito di esito favorevole della prova tecnica di guida (esame di guida) periodica",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "terriccio",
+      "english": "soil",
+      "examples": [
+        {
+          "sentence": "Uscendo da un sentiero fangoso o da un cantiere, bisogna assicurarsi che durante la marcia non cada terriccio che possa",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tracciata",
+      "english": "traced",
+      "examples": [
+        {
+          "sentence": "Il sorpasso è vietato quando sulla carreggiata è tracciata la linea tratteggiata di mezzeria",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "traffi",
+      "english": "traffi",
+      "examples": [
+        {
+          "sentence": "Quando il vigile si dispone di profilo con le braccia aperte come in figura è consentito il passaggio delle correnti di traffi­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tramonto",
+      "english": "sunset",
+      "examples": [
+        {
+          "sentence": "I catadiottri vanno accesi mezz’ora dopo il tramonto del sole",
+          "label": "falso"
+        },
+        {
+          "sentence": "Durante la marcia nei centri abitati, è obbligatorio tenere accese le luci anabbaglianti da mezz’ora dopo il tramonto del",
+          "label": "vero"
+        },
+        {
+          "sentence": "Durante la marcia, è obbligatorio tenere accese le luci abbaglianti, a partire dal tramonto del sole fino al suo sorgere",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "trenta",
+      "english": "thirty",
+      "examples": [
+        {
+          "sentence": "L’uso del casco durante la marcia diventa facoltativo quando la temperatura dell’aria è superiore ai trenta gradi",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "triplica",
+      "english": "triple",
+      "examples": [
+        {
+          "sentence": "Lo spazio di frenatura diventa nove volte maggiore se la velocità si triplica",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "udito",
+      "english": "hearing",
+      "examples": [
+        {
+          "sentence": "L’udito non è un senso importante quando si guida",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "uniformandola",
+      "english": "standardizing it",
+      "examples": [
+        {
+          "sentence": "In caso di traffico intenso il conducente deve regolare la propria velocità uniformandola il più possibile a quella della corren­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "usufruire",
+      "english": "taking advantage of it",
+      "examples": [
+        {
+          "sentence": "Il semaforo in figura segnala la velocità consigliata per poter usufruire dell’onda verde",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "valicare",
+      "english": "crossing it",
+      "examples": [
+        {
+          "sentence": "È vietato il sorpasso se si deve valicare la striscia longitudinale bianca continua semplice o doppia",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "valutabile",
+      "english": "evaluating it",
+      "examples": [
+        {
+          "sentence": "La velocità di avvicinamento di un’autovettura, soprattutto su strade extraurbane, è facilmente valutabile a distanza da",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "varia",
+      "english": "varying",
+      "examples": [
+        {
+          "sentence": "L’isola di traffico serve a facilitare l’incanalamento dei veicoli verso varie direzioni",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il salvagente serve a incanalare i veicoli in varie direzioni",
+          "label": "falso"
+        },
+        {
+          "sentence": "La distanza percorsa durante il tempo di reazione non varia con la velocità",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "velocemen",
+      "english": "speeding it up",
+      "examples": [
+        {
+          "sentence": "Avvicinandosi ad un passaggio a livello con luci rosse accese e semibarriera ancora alzata, si può passare velocemen­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "vietino",
+      "english": "banning it",
+      "examples": [
+        {
+          "sentence": "La striscia di mezzo in figura consente il sorpasso senza superarla, purché non vi siano motivi che lo vietino  (FIG 501)",
+          "label": "vero"
+        },
+        {
+          "sentence": "È obbligatorio accertarsi prima di effettuare il sorpasso che non vi siano segnali che lo vietino",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "visita",
+      "english": "visit",
+      "examples": [
+        {
+          "sentence": "La patente di guida di categoria B è confermata dal Prefetto a seguito di visita di accertamento dei requisiti morali",
+          "label": "falso"
+        },
+        {
+          "sentence": "La revisione della patente di guida può essere disposta con l’obbligo di sottoporsi a visita medica e/o ad esame di ido­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    }
+  ]
+}

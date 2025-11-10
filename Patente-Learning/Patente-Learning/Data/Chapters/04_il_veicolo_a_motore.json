@@ -1,0 +1,584 @@
+{
+  "chapter": "Il Veicolo a Motore",
+  "words": [
+    {
+      "italian": "alte",
+      "english": "high",
+      "examples": [
+        {
+          "sentence": "Il conducente di motociclo o di autovettura deve saper valutare nella guida gli alti rischi derivanti da autocarri, autotreni o",
+          "label": "vero"
+        },
+        {
+          "sentence": "Per limitare i consumi di carburante, conviene chiudere i finestrini se si viaggia a velocità medio alte, perché le turbolen­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le parti dell’impianto frenante maggiormente sollecitate dalle alte temperature sono le guarnizioni di attrito",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "armonizzato",
+      "english": "harmonized",
+      "examples": [
+        {
+          "sentence": "La patente di categoria B con codice armonizzato 96, consente di guidare le autovetture trainanti un rimorchio non leggero",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di categoria B con codice armonizzato 96, può essere conseguita anche successivamente al conseguimento",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di categoria B con codice armonizzato 96 può essere conseguita anche contestualmente alla patente di catego­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 9
+    },
+    {
+      "italian": "autocertifichi",
+      "english": "self-certify",
+      "examples": [
+        {
+          "sentence": "È possibile modificare l’impianto di scarico, purché si autocertifichi che ciò non comporta aumenti del consumo di carburante",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "chiudere",
+      "english": "close",
+      "examples": [
+        {
+          "sentence": "Per limitare i consumi di carburante, conviene chiudere i finestrini se si viaggia a velocità medio alte, perché le turbolen­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Per evitare rumori fastidiosi, occorre chiudere con forza le portiere dell’autovettura, in modo da non doverle richiudere",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "chiusi",
+      "english": "closed",
+      "examples": [
+        {
+          "sentence": "Per consumare meno carburante è opportuno tenere i finestrini chiusi, specie quando si viaggia ad alta velocità",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "comportano",
+      "english": "entail",
+      "examples": [
+        {
+          "sentence": "Brusche variazioni di velocità comportano maggior consumo di carburante",
+          "label": "vero"
+        },
+        {
+          "sentence": "Le violazioni che comportano decurtazione di punti, commesse entro i primi tre anni dal rilascio della patente della cate­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Se si commettono contemporaneamente più violazioni che comportano perdita di punti sulla patente, possono essere",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 7
+    },
+    {
+      "italian": "conseguita",
+      "english": "achieved",
+      "examples": [
+        {
+          "sentence": "La patente AM conseguita da almeno 3 anni abilita alla guida dei motocicli di potenza fino a 11 kW",
+          "label": "falso"
+        },
+        {
+          "sentence": "La patente di categoria A1 può essere conseguita da chi ha almeno 16 anni di età",
+          "label": "vero"
+        },
+        {
+          "sentence": "La patente di categoria A1 può essere conseguita solo da chi è già in possesso della patente AM",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 16
+    },
+    {
+      "italian": "contemporanea",
+      "english": "contemporary",
+      "examples": [
+        {
+          "sentence": "Il simbolo raffigurato è posto sul comando che provoca l’accensione contemporanea di tutti gli indicatori di direzione",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "definiti",
+      "english": "defined",
+      "examples": [
+        {
+          "sentence": "I ciclomotori, per essere definiti tali, devono essere muniti di cambio manuale",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "diminuendo",
+      "english": "decreasing",
+      "examples": [
+        {
+          "sentence": "Diminuendo opportunamente la velocità diminuisce il consumo di carburante",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "dischi",
+      "english": "discs",
+      "examples": [
+        {
+          "sentence": "Una frenatura poco efficiente o squilibrata può essere causata dal consumo irregolare dei tamburi o dei dischi",
+          "label": "vero"
+        },
+        {
+          "sentence": "Una frenatura poco efficiente o squilibrata può essere causata dall’insufficiente lubrificazione dei tamburi o dei dischi",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "distribu",
+      "english": "distribu",
+      "examples": [
+        {
+          "sentence": "La sosta è vietata in corrispondenza dei distributori di carburante, sino a 5 metri prima e dopo, anche quando i distribu­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "distributori",
+      "english": "distributors",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata limitatamente alle ore di esercizio, in corrispondenza dei distributori di carburante",
+          "label": "falso"
+        },
+        {
+          "sentence": "La sosta è vietata, limitatamente alle ore di esercizio, in corrispondenza dei distributori di carburante, e in loro prossimità sino",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è vietata in corrispondenza dei distributori di carburante, sino a 5 metri prima e dopo, anche quando i distribu­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "esercizio",
+      "english": "exercise",
+      "examples": [
+        {
+          "sentence": "La fermata è vietata limitatamente alle ore di esercizio, in corrispondenza dei distributori di carburante",
+          "label": "falso"
+        },
+        {
+          "sentence": "La sosta è vietata, limitatamente alle ore di esercizio, in corrispondenza dei distributori di carburante, e in loro prossimità sino",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "frenanti",
+      "english": "braking",
+      "examples": [
+        {
+          "sentence": "Una frenatura poco efficiente o squilibrata può essere causata dal consumo eccessivo delle guarnizioni frenanti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Una frenatura poco efficiente può essere causata dall’eccessivo riscaldamento delle guarnizioni frenanti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "guarnizioni",
+      "english": "seals",
+      "examples": [
+        {
+          "sentence": "Le parti dell’impianto frenante maggiormente sollecitate dalle alte temperature sono le guarnizioni di attrito",
+          "label": "vero"
+        },
+        {
+          "sentence": "Una frenatura poco efficiente o squilibrata può essere causata dal consumo eccessivo delle guarnizioni frenanti",
+          "label": "vero"
+        },
+        {
+          "sentence": "Una frenatura poco efficiente può essere causata dall’eccessivo riscaldamento delle guarnizioni frenanti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "influenzata",
+      "english": "influenced",
+      "examples": [
+        {
+          "sentence": "Durante la guida, la percezione di un pericolo e la conseguente reazione del conducente sono influenzate dalle condi­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Quando si è alla guida, la capacità di attenzione può essere influenzata anche dall’ascolto di musica a volume molto alto",
+          "label": "vero"
+        },
+        {
+          "sentence": "Durante la guida, la percezione di un pericolo e la conseguente reazione del conducente non sono influenzate dalle condi­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 6
+    },
+    {
+      "italian": "integra",
+      "english": "integrates",
+      "examples": [
+        {
+          "sentence": "Il simbolo raffigurato è posto sulla spia che integra l’indicatore della temperatura del liquido di raffreddamento che circo­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "integralmente",
+      "english": "integrally",
+      "examples": [
+        {
+          "sentence": "L’impianto di scarico deve essere integralmente sostituito a ogni cambio di lubrificante",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "lubrifica",
+      "english": "lubricates",
+      "examples": [
+        {
+          "sentence": "Una spia di colore rosso contrassegnata dal simbolo di figura, se accesa durante la marcia, indica che l’olio di lubrifica­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "mantenendo",
+      "english": "maintaining",
+      "examples": [
+        {
+          "sentence": "Mantenendo il più possibile costante la velocità, si riduce il consumo di carburante",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "meccanismi",
+      "english": "mechanisms",
+      "examples": [
+        {
+          "sentence": "Una frenatura poco efficiente o squilibrata può essere causata dal consumo eccessivo dei meccanismi del freno di",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "medio",
+      "english": "medium",
+      "examples": [
+        {
+          "sentence": "Per limitare i consumi di carburante, conviene chiudere i finestrini se si viaggia a velocità medio alte, perché le turbolen­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "operazione",
+      "english": "operation",
+      "examples": [
+        {
+          "sentence": "Le macchine agricole operatrici possono essere dotate di speciali attrezzature per l’esecuzione di operazioni agricole",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il segnale raffigurato consente, di norma, di entrare nella strada per effettuare la sosta e le operazioni di carico e scarico",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il segnale raffigurato è posto nei tratti di strada ove vengono effettuate operazioni di pulizia meccanica delle strade",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 17
+    },
+    {
+      "italian": "pastiglie",
+      "english": "tablets",
+      "examples": [
+        {
+          "sentence": "Il cambio delle pastiglie dei freni è un’operazione di manutenzione ordinaria che può essere svolta da qualunque conducente",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "pianeggianti",
+      "english": "flat",
+      "examples": [
+        {
+          "sentence": "Per consumare meno carburante conviene scegliere, per quanto possibile, strade pianeggianti e più scorrevoli",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "posizionare",
+      "english": "place",
+      "examples": [
+        {
+          "sentence": "Durante la sosta il conducente deve posizionare il cambio di velocità dell’autovettura in folle",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "precisione",
+      "english": "precision",
+      "examples": [
+        {
+          "sentence": "La convergenza delle ruote ha influenza sulla precisione della sterzata",
+          "label": "vero"
+        },
+        {
+          "sentence": "La precisione della sterzata non è influenzata dalle cattive condizioni delle sospensioni e degli ammortizzatori",
+          "label": "falso"
+        },
+        {
+          "sentence": "La precisione della sterzata è influenzata dalla scarsa pressione dell’olio di lubrificazione",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "provoca",
+      "english": "provokes",
+      "examples": [
+        {
+          "sentence": "La pressione di gonfiaggio troppo bassa degli pneumatici ne provoca l’anomalo consumo ai bordi",
+          "label": "vero"
+        },
+        {
+          "sentence": "La pressione di gonfiaggio troppo bassa degli pneumatici ne provoca l’anomalo consumo della parte centrale e dei bordi",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il simbolo raffigurato è posto sul comando che provoca l’accensione contemporanea di tutti gli indicatori di direzione",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "pubblicitaria",
+      "english": "advertising",
+      "examples": [
+        {
+          "sentence": "È regolamentare trovare sulla pavimentazione una scritta pubblicitaria che indica un distributore di carburante",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "radiatore",
+      "english": "radiator",
+      "examples": [
+        {
+          "sentence": "In caso di pioggia occorre coprire il radiatore con l’apposita mascherina",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il simbolo raffigurato è posto su una spia che segnala il livello del liquido di raffreddamento nel radiatore",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "raffreddati",
+      "english": "cool down",
+      "examples": [
+        {
+          "sentence": "Sui motocicli raffreddati ad aria, il livello del liquido di raffreddamento può essere controllato da un’apposita finestrella posta",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "rap",
+      "english": "rap",
+      "examples": [
+        {
+          "sentence": "Con la patente di categoria A2 si possono condurre i motocicli (con o senza carrozzetta) di potenza fino a 25 kW, rap­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "scorrevoli",
+      "english": "sliding",
+      "examples": [
+        {
+          "sentence": "Per consumare meno carburante conviene scegliere, per quanto possibile, strade pianeggianti e più scorrevoli",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "sigaretta",
+      "english": "cigarette",
+      "examples": [
+        {
+          "sentence": "In presenza del segnale se il conducente o gli eventuali passeggeri non rispettano il divieto di gettare sigarette accese",
+          "label": "vero"
+        },
+        {
+          "sentence": "La distrazione del conducente può essere causata dall’accensione di una sigaretta",
+          "label": "vero"
+        },
+        {
+          "sentence": "È vietato lanciare dal finestrino mozziconi di sigaretta accesi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "sino",
+      "english": "until",
+      "examples": [
+        {
+          "sentence": "In una strada a doppio senso di circolazione con la segnaletica indicata in figura, fuori dei centri abitati la corsia di sini­",
+          "label": "falso"
+        },
+        {
+          "sentence": "La sosta è vietata, limitatamente alle ore di esercizio, in corrispondenza dei distributori di carburante, e in loro prossimità sino",
+          "label": "vero"
+        },
+        {
+          "sentence": "La sosta è vietata in corrispondenza dei distributori di carburante, sino a 5 metri prima e dopo, anche quando i distribu­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "sterzata",
+      "english": "swerved",
+      "examples": [
+        {
+          "sentence": "In presenza del segnale raffigurato è necessario moderare la velocità ed evitare brusche sterzate in caso di pioggia",
+          "label": "vero"
+        },
+        {
+          "sentence": "La convergenza delle ruote ha influenza sulla precisione della sterzata",
+          "label": "vero"
+        },
+        {
+          "sentence": "La precisione della sterzata non è influenzata dalle cattive condizioni delle sospensioni e degli ammortizzatori",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "tali",
+      "english": "such",
+      "examples": [
+        {
+          "sentence": "I ciclomotori, per essere definiti tali, devono essere muniti di cambio manuale",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tamburi",
+      "english": "drums",
+      "examples": [
+        {
+          "sentence": "Una frenatura poco efficiente o squilibrata può essere causata dal consumo irregolare dei tamburi o dei dischi",
+          "label": "vero"
+        },
+        {
+          "sentence": "Una frenatura poco efficiente o squilibrata può essere causata dall’insufficiente lubrificazione dei tamburi o dei dischi",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "turbolen",
+      "english": "turbulent",
+      "examples": [
+        {
+          "sentence": "Per limitare i consumi di carburante, conviene chiudere i finestrini se si viaggia a velocità medio alte, perché le turbolen­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "variazioni",
+      "english": "variations",
+      "examples": [
+        {
+          "sentence": "Brusche variazioni di velocità comportano maggior consumo di carburante",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    }
+  ]
+}

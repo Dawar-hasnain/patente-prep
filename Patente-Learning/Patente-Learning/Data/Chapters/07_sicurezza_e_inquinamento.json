@@ -1,0 +1,146 @@
+{
+  "chapter": "Sicurezza e Inquinamento",
+  "words": [
+    {
+      "italian": "adottando",
+      "english": "adopting",
+      "examples": [
+        {
+          "sentence": "Adottando uno stile di guida che limiti i consumi di carburante, è possibile ridurre l’inquinamento dell’aria",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "ambientale",
+      "english": "environmental",
+      "examples": [
+        {
+          "sentence": "Viaggiare ad alta velocità incide sul consumo di carburante e sull’inquinamento ambientale",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "averne",
+      "english": "have",
+      "examples": [
+        {
+          "sentence": "L’impianto di scarico ha lo scopo di convogliare i gas di scarico verso l’esterno dopo averne abbassato la tossicità",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’impianto di scarico ha lo scopo di convogliare i gas di scarico verso l’esterno dopo averne abbassato la pressione",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’impianto di scarico ha lo scopo di convogliare i gas di scarico verso l’esterno dopo averne abbassato la temperatura",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "clima",
+      "english": "climate",
+      "examples": [
+        {
+          "sentence": "Per risparmiare carburante e salvaguardare l’ambiente dall’inquinamento atmosferico, è consigliabile azionare il clima­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "convogliare",
+      "english": "convey",
+      "examples": [
+        {
+          "sentence": "L’impianto di scarico ha lo scopo di convogliare i gas di scarico verso l’esterno dopo averne abbassato la tossicità",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’impianto di scarico ha lo scopo di convogliare i gas di scarico verso l’esterno dopo averne abbassato la pressione",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’impianto di scarico ha lo scopo di convogliare i gas di scarico verso l’esterno dopo averne abbassato la temperatura",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "eccessivamente",
+      "english": "excessively",
+      "examples": [
+        {
+          "sentence": "I rimorchi vuoti, che sobbalzano eccessivamente, possono essere causa di rumore",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "gassate",
+      "english": "carbonated",
+      "examples": [
+        {
+          "sentence": "L’idoneità alla guida può essere compromessa se si fa uso di bevande gassate",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "risparmiare",
+      "english": "save",
+      "examples": [
+        {
+          "sentence": "Per risparmiare carburante e salvaguardare l’ambiente dall’inquinamento atmosferico, è consigliabile azionare il clima­",
+          "label": "vero"
+        },
+        {
+          "sentence": "Percorrendo lunghe e ripide discese è opportuno marciare con il cambio in folle per risparmiare carburante e freni",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "sobbalzano",
+      "english": "they jump",
+      "examples": [
+        {
+          "sentence": "I rimorchi vuoti, che sobbalzano eccessivamente, possono essere causa di rumore",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "tossicità",
+      "english": "toxicity",
+      "examples": [
+        {
+          "sentence": "L’impianto di scarico ha lo scopo di convogliare i gas di scarico verso l’esterno dopo averne abbassato la tossicità",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "vuoti",
+      "english": "empty",
+      "examples": [
+        {
+          "sentence": "I rimorchi vuoti, che sobbalzano eccessivamente, possono essere causa di rumore",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "chapter": "Incidenti e Assicurazione",
+  "words": [
+    {
+      "italian": "assi",
+      "english": "aces",
+      "examples": [
+        {
+          "sentence": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) sono gli importi massimi che l’impresa assi­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "aumentati",
+      "english": "increased",
+      "examples": [
+        {
+          "sentence": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) possono essere aumentati, a scelta del",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "automatica",
+      "english": "automatic",
+      "examples": [
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” viene automatica­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "avvenuti",
+      "english": "occurred",
+      "examples": [
+        {
+          "sentence": "L’assicurazione per la responsabilità civile auto (R.C.A.) è valida anche per gli incidenti avvenuti nei Paesi dell’Unione",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "bonus",
+      "english": "bonus",
+      "examples": [
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” comporta una",
+          "label": "vero"
+        },
+        {
+          "sentence": "La formula assicurativa “bonus malus” non si applica per i motocicli",
+          "label": "falso"
+        },
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” viene automatica­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "cieco",
+      "english": "blind",
+      "examples": [
+        {
+          "sentence": "Lo specchio retrovisore laterale sinistro ha un angolo cieco molto ampio",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "cifra",
+      "english": "figure",
+      "examples": [
+        {
+          "sentence": "La cifra minima dei massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) viene stabilita dalla legge",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "cliente",
+      "english": "customer",
+      "examples": [
+        {
+          "sentence": "Il segnale raffigurato indica che a 150 metri vi è un albergo con personale interprete per clienti stranieri",
+          "label": "falso"
+        },
+        {
+          "sentence": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) vengono restituiti al cliente alla fine dell’an­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "contratto",
+      "english": "contract",
+      "examples": [
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” comporta una",
+          "label": "vero"
+        },
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” viene automatica­",
+          "label": "falso"
+        },
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” viene stabilito dal",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 7
+    },
+    {
+      "italian": "denaro",
+      "english": "money",
+      "examples": [
+        {
+          "sentence": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) sono le somme di denaro che l’impresa",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "derivate",
+      "english": "derivatives",
+      "examples": [
+        {
+          "sentence": "La patente di guida viene immediatamente ritirata, durante la circolazione, se a seguito di incidente, sono derivate lesio­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "escluso",
+      "english": "excluded",
+      "examples": [
+        {
+          "sentence": "Gli autoveicoli sono veicoli a motore con almeno quattro ruote, esclusi i quadricicli",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il segnale raffigurato indica che possono transitare tutti i veicoli esclusi quelli delle categorie rappresentate in figura",
+          "label": "vero"
+        },
+        {
+          "sentence": "Il segnale raffigurato indica un’area di parcheggio e può essere integrato con pannello che indica le categorie di veicoli esclusi",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 5
+    },
+    {
+      "italian": "firma",
+      "english": "signature",
+      "examples": [
+        {
+          "sentence": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l’impresa assicuratrice deve rilasciare al",
+          "label": "vero"
+        },
+        {
+          "sentence": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l’impresa assicuratrice deve rilasciare al",
+          "label": "falso"
+        },
+        {
+          "sentence": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l’impresa assicuratrice deve rilasciare al",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "formula",
+      "english": "formula",
+      "examples": [
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” comporta una",
+          "label": "vero"
+        },
+        {
+          "sentence": "La formula assicurativa “bonus malus” non si applica per i motocicli",
+          "label": "falso"
+        },
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” viene automatica­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "importi",
+      "english": "amounts",
+      "examples": [
+        {
+          "sentence": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) sono gli importi massimi che l’impresa assi­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "lesio",
+      "english": "injury",
+      "examples": [
+        {
+          "sentence": "La patente di guida viene immediatamente ritirata, durante la circolazione, se a seguito di incidente, sono derivate lesio­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "malus",
+      "english": "malus",
+      "examples": [
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” comporta una",
+          "label": "vero"
+        },
+        {
+          "sentence": "La formula assicurativa “bonus malus” non si applica per i motocicli",
+          "label": "falso"
+        },
+        {
+          "sentence": "Nell’assicurazione per la responsabilità civile auto (R.C.A.), il contratto con la formula “bonus malus” viene automatica­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "massimale",
+      "english": "ceiling",
+      "examples": [
+        {
+          "sentence": "La responsabilità civile connessa al sinistro stradale grava sull’impresa assicuratrice anche per danni superiori ai massimali",
+          "label": "falso"
+        },
+        {
+          "sentence": "L’assicurazione per la responsabilità civile auto (R.C.A.) copre ogni danno causato, anche se superiore al massimale",
+          "label": "falso"
+        },
+        {
+          "sentence": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) sono gli importi massimi che l’impresa assi­",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 8
+    },
+    {
+      "italian": "paesi",
+      "english": "countries",
+      "examples": [
+        {
+          "sentence": "La patente AM consente, a chi ha compiuto 14 anni, di condurre i ciclomotori in tutti i paesi dell’Unione Europea",
+          "label": "falso"
+        },
+        {
+          "sentence": "L’assicurazione per la responsabilità civile auto (R.C.A.) è valida anche per gli incidenti avvenuti nei Paesi dell’Unione",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "pecuniarie",
+      "english": "pecuniary",
+      "examples": [
+        {
+          "sentence": "L’assicurazione per la responsabilità civile auto (R.C.A.) copre anche le sanzioni amministrative pecuniarie, previste dal",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "porzione",
+      "english": "portion",
+      "examples": [
+        {
+          "sentence": "Lo specchio retrovisore laterale sinistro deve essere regolato in modo da poter osservare, prevalentemente, la porzione di",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "protegge",
+      "english": "protects",
+      "examples": [
+        {
+          "sentence": "Il giubbotto retroriflettente ad alta visibilità protegge il conducente anche da rischi chimici, calore, fuoco ed elettricità",
+          "label": "falso"
+        },
+        {
+          "sentence": "Il casco integrale protegge anche il viso da traumi e lesioni in caso di incidente",
+          "label": "vero"
+        },
+        {
+          "sentence": "La visiera del casco protegge il viso e gli occhi da impatti con insetti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 3
+    },
+    {
+      "italian": "rapido",
+      "english": "quick",
+      "examples": [
+        {
+          "sentence": "Il controllo dello specchio retrovisore laterale sinistro deve essere integrato con un rapido controllo visivo laterale diretto,",
+          "label": "vero"
+        },
+        {
+          "sentence": "Chi guida in stato di ebbrezza alcoolica ha tempi di reazione più rapidi",
+          "label": "falso"
+        },
+        {
+          "sentence": "Quando le persone anziane attraversano la carreggiata bisogna tenere presente che hanno i riflessi più rapidi e quindi",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "restituiti",
+      "english": "returned",
+      "examples": [
+        {
+          "sentence": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) vengono restituiti al cliente alla fine dell’an­",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "rilasciare",
+      "english": "release",
+      "examples": [
+        {
+          "sentence": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l’impresa assicuratrice deve rilasciare al",
+          "label": "vero"
+        },
+        {
+          "sentence": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l’impresa assicuratrice deve rilasciare al",
+          "label": "falso"
+        },
+        {
+          "sentence": "Dopo la firma del contratto di assicurazione R.C.A. (responsabilità civile auto), l’impresa assicuratrice deve rilasciare al",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 4
+    },
+    {
+      "italian": "somme",
+      "english": "sums",
+      "examples": [
+        {
+          "sentence": "I massimali della polizza di assicurazione R.C.A. (responsabilità civile auto) sono le somme di denaro che l’impresa",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "valida",
+      "english": "valid",
+      "examples": [
+        {
+          "sentence": "Il segnale raffigurato indica il punto dal quale le prescrizioni precedentemente indicate non sono più valide",
+          "label": "vero"
+        },
+        {
+          "sentence": "L’assicurazione per la responsabilità civile auto (R.C.A.) è valida anche per gli incidenti avvenuti nei Paesi dell’Unione",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    },
+    {
+      "italian": "vedete",
+      "english": "see",
+      "examples": [
+        {
+          "sentence": "Quando vedete sul tetto di un’auto della polizia un display con la scritta luminosa “INCIDENTE”, significa che quella zona è",
+          "label": "falso"
+        }
+      ],
+      "usage_count": 1
+    },
+    {
+      "italian": "viso",
+      "english": "face",
+      "examples": [
+        {
+          "sentence": "Il casco integrale protegge anche il viso da traumi e lesioni in caso di incidente",
+          "label": "vero"
+        },
+        {
+          "sentence": "La visiera del casco protegge il viso e gli occhi da impatti con insetti",
+          "label": "vero"
+        }
+      ],
+      "usage_count": 2
+    }
+  ]
+}
