@@ -35,6 +35,7 @@ final class ProgressManager {
     static let shared = ProgressManager()
     private let defaults = UserDefaults.standard
     private let reviewKeyPrefix = "reviewCheckpoints_"
+    private let memoryKey = "wordMemoryStates"
 
     private init() {}
 
@@ -198,6 +199,90 @@ final class ProgressManager {
         UserDefaults.standard.removeObject(forKey: learningActivityKey)
     }
 
+    func loadMemoryStates() -> [WordMemoryState] {
+        if let data = UserDefaults.standard.data(forKey: memoryKey),
+           let decoded = try? JSONDecoder().decode([WordMemoryState].self, from: data) {
+            return decoded
+        }
+        return []
+    }
+
+    func saveMemoryStates(_ states: [WordMemoryState]) {
+        if let encoded = try? JSONEncoder().encode(states) {
+            UserDefaults.standard.set(encoded, forKey: memoryKey)
+        }
+    }
+
+    func updateMemoryState(for word: String, correct: Bool) {
+        var states = loadMemoryStates()
+        if let index = states.firstIndex(where: { $0.word == word }) {
+            states[index].updatePerformance(correct: correct)
+        } else {
+            var new = WordMemoryState(word: word, lastReviewed: Date(), confidence: correct ? 0.5 : 0.3, correctCount: 0, incorrectCount: 0)
+            new.updatePerformance(correct: correct)
+            states.append(new)
+        }
+        saveMemoryStates(states)
+    }
+    
+    // MARK: - Adaptive Scheduling Engine
+    func nextReviewDate(for word: String) -> Date {
+        let states = loadMemoryStates()
+        guard let state = states.first(where: { $0.word == word }) else {
+            return Date().addingTimeInterval(60 * 60 * 6) // 6h fallback
+        }
+        
+        let baseInterval: TimeInterval
+        switch state.confidence {
+        case 0.0..<0.3: baseInterval = 6 * 3600        // 6 hours
+        case 0.3..<0.6: baseInterval = 12 * 3600       // 12 hours
+        case 0.6..<0.8: baseInterval = 24 * 3600       // 1 day
+        default:        baseInterval = 48 * 3600       // 2 days
+        }
+        
+        // Slight randomness to avoid mechanical recall
+        let jitter = Double.random(in: -0.1...0.1) * baseInterval
+        return state.lastReviewed.addingTimeInterval(baseInterval + jitter)
+    }
+    
+    func weakWords(threshold: Double = 0.5, limit: Int = 10) -> [WordMemoryState] {
+        var states = loadMemoryStates()
+        // Apply memory decay before filtering weak words
+        for i in 0..<states.count {
+            states[i].applyDecay() // Apply the decay to memory
+        }
+        saveMemoryStates(states)
+
+        return states
+            .filter { $0.confidence < threshold }
+            .sorted(by: { $0.confidence < $1.confidence })
+            .prefix(limit)
+            .map { $0 } // return the full `WordMemoryState` object, not just the word
+    }
+
+
+    // 🔍 Return weakest words for recall practice
+    func weakMemoryWords(threshold: Double = 0.5, limit: Int = 10) -> [WordMemoryState] {
+        var states = loadMemoryStates()
+        for i in 0..<states.count { states[i].applyDecay() } // apply forgetting
+        saveMemoryStates(states)
+        return states
+            .filter { $0.confidence < threshold }
+            .sorted(by: { $0.confidence < $1.confidence })
+            .prefix(limit)
+            .map { $0 }
+    }
+
+    // 📊 Helper for translation lookup
+    func translation(for word: String) -> String? {
+        for chapter in ChapterList.allCases {
+            let words = loadChapter(chapter.filename).words
+            if let entry = words.first(where: { $0.italian == word }) {
+                return entry.english
+            }
+        }
+        return nil
+    }
 
 
 }

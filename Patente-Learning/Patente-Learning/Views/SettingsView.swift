@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     @AppStorage("isDarkMode") private var isDarkMode: Bool = false
     @AppStorage("notificationsEnabled") private var notificationsEnabled: Bool = true
+    @AppStorage("accentColor") private var accentColorName: String = ThemeColor.Blue.rawValue
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -46,11 +47,11 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("Settings")
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
-                }
-            }
+//            .toolbar {
+//                ToolbarItem(placement: .topBarTrailing) {
+//                    Button("Done") { dismiss() }
+//                }
+//            }
         }
     }
     

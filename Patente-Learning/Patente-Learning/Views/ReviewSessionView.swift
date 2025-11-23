@@ -18,6 +18,8 @@ struct ReviewSessionView: View {
     @State private var answered = false
     @State private var selectedOption: String? = nil
     @State private var showResults = false
+    @State private var reviewDelayedUntil: Date? = nil
+    @State private var passed = false
 
     private let progressManager = ProgressManager.shared
 
@@ -59,6 +61,16 @@ struct ReviewSessionView: View {
                         }
                         .transition(.opacity)
                     }
+                    
+                    if !passed {
+                        Button("Not Now") {
+                            delayReview() // Delay the review by 15 minutes
+                        }
+                        .padding()
+                        .foregroundColor(.red)
+                        .background(RoundedRectangle(cornerRadius: 12).stroke(Color.red))
+                    }
+
 
                     Spacer()
                 }
@@ -128,12 +140,51 @@ struct ReviewSessionView: View {
             showResults = true
         }
     }
+    
+    private func handleAnswer(isCorrect: Bool) {
+        let currentQuestion = questions[currentIndex]
+        
+        // Update the word memory state for recall (log the performance)
+        ProgressManager.shared.updateMemoryState(for: currentQuestion.italian, correct: isCorrect)
+        
+        // Provide haptic feedback
+        if isCorrect {
+            HapticsManager.success()
+        } else {
+            HapticsManager.error()
+        }
+        
+        nextQuestion()
+    }
 
     private func handleCompletion() {
         let score = Double(correctCount) / Double(questions.count)
         let passed = score >= progressManager.passingThreshold(for: currentProgress)
+
+        // Delay review if score is below threshold
+        if !passed {
+            delayReview()
+        }
+
+        // Proceed with passing/failing logic
         onCompletion(passed, score)
     }
+    
+    private func delayReview() {
+        let delayTime = Date().addingTimeInterval(15 * 60) // 15 minutes
+        reviewDelayedUntil = delayTime
+        UserDefaults.standard.set(delayTime, forKey: "nextReviewDue")
+        print("Review delayed until: \(delayTime)")
+        showResults = false // Don't show results immediately after delay
+    }
+    
+    private func shouldShowReviewSession() -> Bool {
+        if let nextReviewDate = UserDefaults.standard.object(forKey: "nextReviewDue") as? Date {
+            return Date() >= nextReviewDate
+        }
+        return true // No delay; show review immediately
+    }
+
 }
 
 // MARK: – Subviews
@@ -192,6 +243,7 @@ struct ReviewQuestionView: View {
             return Color.gray.opacity(0.4)
         }
     }
+
 }
 
 // MARK: – Result View

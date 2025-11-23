@@ -164,6 +164,9 @@ struct WordLearningView: View {
         // 🔹 Evaluate progress & trigger review checkpoints
         evaluateProgressAndTriggerReview()
         
+        // ✅ Log learning event for adaptive recall
+        ProgressManager.shared.updateMemoryState(for: viewModel.currentWord.italian, correct: true)
+        
         // 🔸 Check if last word in chapter
         if viewModel.currentIndex == viewModel.words.count - 1 {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {

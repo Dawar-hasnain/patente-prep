@@ -103,40 +103,11 @@ struct ChapterPathView: View {
                     }
                     .padding(.top, 8)
                 }
-                
-                // 🔁 Floating Reset Button
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        Button(action: resetProgress) {
-                            Image(systemName: "arrow.counterclockwise.circle.fill")
-                                .font(.system(size: 40, weight: .semibold))
-                                .foregroundColor(.red.opacity(0.9))
-                                .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
-                                .padding()
-                        }
-                        .accessibilityLabel("Reset progress")
-                        
-                        // Unlock All
-                            Button(action: unlockAllChapters) {
-                                Image(systemName: "lock.open.fill")
-                                    .font(.system(size: 38, weight: .bold))
-                                    .foregroundColor(.green.opacity(0.9))
-                                    .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 2)
-                            }
-                            .accessibilityLabel("Unlock all chapters")
-                    }
-                }
-                .padding(.trailing, 20)
-                .padding(.bottom, 40)
             }
             .navigationTitle("📘 Patente Chapters")
             .navigationBarTitleDisplayMode(.inline)
         }
         .onAppear(perform: updateAllProgress)
-        
-
     }
     
     // MARK: - Helpers
@@ -147,7 +118,6 @@ struct ChapterPathView: View {
         }
     }
 
-    
     private func isChapterUnlocked(_ chapter: ChapterList) -> Bool {
         let allChapters = ChapterList.allCases
         guard let index = allChapters.firstIndex(of: chapter) else { return false }
@@ -212,7 +182,7 @@ struct ChapterPathView: View {
 
     }
     
-    private func unlockAllChapters() {
+    func unlockAllChapters() {
         ProgressManager.shared.unlockAllChaptersForTesting()
         withAnimation(.spring()) {
             updateAllProgress()

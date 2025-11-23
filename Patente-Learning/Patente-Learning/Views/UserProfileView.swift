@@ -12,6 +12,7 @@ struct UserProfileView: View {
     @State private var recallAccuracy = 0.0
     @State private var currentStreak = 0
     @State private var bestStreak = 0
+    @State private var showUnlockAlert = false
     
     var body: some View {
         ZStack {
@@ -107,31 +108,40 @@ struct UserProfileView: View {
                     .cornerRadius(16)
                     .shadow(color: .black.opacity(0.1), radius: 4, y: 2)
                     .padding(.horizontal)
-                    
-                    // MARK: - Actions
-                    VStack(spacing: 12) {
-                        Button(role: .destructive) {
-                            ProgressManager.shared.resetAllProgress()
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                reloadData()
+
+                        // MARK: - Actions
+                        VStack(spacing: 12) {
+                            Button(role: .destructive) {
+                                ProgressManager.shared.resetAllProgress()
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                    reloadData()
+                                }
+                            } label: {
+                                Label("Reset All Progress", systemImage: "arrow.counterclockwise.circle")
                             }
-                        } label: {
-                            Label("Reset All Progress", systemImage: "arrow.counterclockwise.circle")
+
+                            Button {
+                                showUnlockAlert = true
+                            } label: {
+                                Label("Unlock All Chapters", systemImage: "lock.open.fill")
+                            }
+                            .tint(.green)
+                            .alert("Unlock All Chapters?", isPresented: $showUnlockAlert) {
+                                Button("Unlock", role: .none) {
+                                    ProgressManager.shared.unlockAllChaptersForTesting()
+                                    withAnimation(.spring()) {
+                                        reloadData()
+                                    }
+                                    HapticsManager.success()
+                                }
+                                Button("Cancel", role: .cancel) { }
+                            } message: {
+                                Text("This will mark all chapters and words as learned for testing purposes.")
+                            }
                         }
-                        
-//                        Button {
-//                            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-//                               let window = windowScene.windows.first {
-//                                window.rootViewController = UIHostingController(rootView: MainTabView())
-//                                window.makeKeyAndVisible()
-//                            }
-//                        } label: {
-//                            Label("Back to Home", systemImage: "house.fill")
-//                        }
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.accentColor)
-                    .padding(.bottom, 30)
+                        .buttonStyle(.borderedProminent)
+                        .tint(.accentColor)
+                        .padding(.bottom, 30)
                 }
                 .padding(.horizontal)
             }

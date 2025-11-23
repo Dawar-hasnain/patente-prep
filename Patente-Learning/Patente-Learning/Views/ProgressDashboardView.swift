@@ -100,6 +100,30 @@ struct ProgressDashboardView: View {
                         .cornerRadius(14)
                 }
                 .buttonStyle(.plain)
+                
+                Button {
+                    let weak = ProgressManager.shared.weakWords()
+                    
+                    // Check if there are any weak words to recall
+                    if !weak.isEmpty {
+                        let view = TargetedRecallView(weakStates: weak)
+                        let host = UIHostingController(rootView: view)
+                        
+                        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                           let window = scene.windows.first {
+                            window.rootViewController = host
+                            window.makeKeyAndVisible()
+                        }
+                    } else {
+                        // Optionally show an alert or message indicating no weak words
+                        print("No weak words to review.")
+                    }
+                } label: {
+                    Label("Review Weak Words", systemImage: "exclamationmark.circle")
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.orange)
+
 
                 // MARK: - Weekly Activity Chart
                 VStack(alignment: .leading, spacing: 12) {
