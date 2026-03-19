@@ -10,82 +10,79 @@ import SwiftUI
 struct ChapterMasteryView: View {
     let chapter: ChapterList
     let score: Double
+    var onRetake: (() -> Void)? = nil   // supplied by FinalChapterReviewView
+
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
-        VStack(spacing: 25) {
-            Spacer()
+        ZStack {
+            Color.appBackground.ignoresSafeArea()
 
-            Image(systemName: "star.circle.fill")
-                .resizable()
-                .frame(width: 120, height: 120)
-                .foregroundColor(.yellow)
-                .shadow(radius: 6)
-                .padding(.bottom, 10)
+            VStack(spacing: 25) {
+                Spacer()
 
-            Text("Chapter Mastered!")
-                .font(.largeTitle.bold())
+                Image(systemName: "star.circle.fill")
+                    .resizable()
+                    .frame(width: 120, height: 120)
+                    .foregroundColor(.yellow)
+                    .shadow(radius: 6)
+                    .padding(.bottom, 10)
 
-            Text("You scored \(Int(score * 100))% on \(chapter.title).")
-                .font(.title3)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal)
+                Text("Chapter Mastered!")
+                    .font(.largeTitle.bold())
 
-            Spacer()
+                Text("You scored \(Int(score * 100))% on \(chapter.title).")
+                    .font(.title3)
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
 
-            Button(action: returnHome) {
-                HStack {
-                    Image(systemName: "house.fill")
-                    Text("Return to Home")
-                }
-                .font(.headline)
-                .padding(.horizontal, 40)
-                .padding(.vertical, 14)
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .cornerRadius(14)
-            }
-            
-            if score < 0.8 {
-                Button(action: retakeReview) {
-                    HStack {
-                        Image(systemName: "arrow.triangle.2.circlepath")
-                        Text("Retake Final Review")
+                Spacer()
+
+                VStack(spacing: 14) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        HStack {
+                            Image(systemName: "house.fill")
+                            Text("Return to Home")
+                        }
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 14)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(14)
                     }
-                    .font(.headline)
-                    .padding(.horizontal, 40)
-                    .padding(.vertical, 14)
-                    .background(Color.orange)
-                    .foregroundColor(.white)
-                    .cornerRadius(14)
+
+                    if score < 0.8, let retake = onRetake {
+                        Button {
+                            retake()
+                        } label: {
+                            HStack {
+                                Image(systemName: "arrow.triangle.2.circlepath")
+                                Text("Retake Final Review")
+                            }
+                            .font(.headline)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                            .background(Color.orange)
+                            .foregroundColor(.white)
+                            .cornerRadius(14)
+                        }
+                    }
                 }
+                .padding(.horizontal, 32)
+
+                Spacer()
             }
-
-
-            Spacer()
-        }
-        .padding()
-        .background(Color.appBackground.ignoresSafeArea())
-    }
-
-    private func returnHome() {
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           let window = windowScene.windows.first {
-            let root = UIHostingController(rootView: ChapterPathView())
-            window.rootViewController = root
-            window.makeKeyAndVisible()
+            .padding()
         }
     }
-    
-    private func retakeReview() {
-        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           let window = scene.windows.first {
-            let root = UIHostingController(
-                rootView: FinalChapterReviewView(chapter: chapter)
-            )
-            window.rootViewController = root
-            window.makeKeyAndVisible()
-        }
-    }
+}
 
+// MARK: - Preview
+
+#Preview {
+    ChapterMasteryView(chapter: .la_strada, score: 0.75)
 }

@@ -13,6 +13,9 @@ class LearningViewModel: ObservableObject {
     @Published var currentIndex: Int = 0
     @Published var learnedWords: Set<String> = []
     
+    //New Buffer
+    @Published var recentlyLearned: [Words] = []
+    
     init(words: [Words]) {
         self.words = words
         loadProgress()
@@ -36,10 +39,25 @@ class LearningViewModel: ObservableObject {
     }
     
     func markAsLearned() {
-        learnedWords.insert(currentWord.italian)
+        let word = currentWord
+
+        // Add to learned list
+        learnedWords.insert(word.italian)
+
+        // Add to recently learned buffer
+        recentlyLearned.append(word)
+
+        // Keep buffer manageable (max 8–10 words)
+        if recentlyLearned.count > 10 {
+            recentlyLearned.removeFirst()
+        }
+
         saveProgress()
+
+        // Move forward to next word
         nextWord()
     }
+
     
     private func saveProgress() {
         UserDefaults.standard.set(Array(learnedWords), forKey: "learnedWords")

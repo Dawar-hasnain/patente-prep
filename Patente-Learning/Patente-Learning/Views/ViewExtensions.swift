@@ -8,8 +8,10 @@
 import Foundation
 import SwiftUI
 
+// MARK: - View Modifiers
+
 extension View {
-    /// Soft “glass” background effect for cards and sections
+    /// Soft "glass" background effect for cards and sections
     func glassCard(cornerRadius: CGFloat = 16) -> some View {
         self
             .background(
@@ -22,7 +24,7 @@ extension View {
             )
             .shadow(color: .black.opacity(0.1), radius: 6, y: 3)
     }
-    
+
     /// Rounded card with consistent padding and subtle shadow
     func appCardStyle() -> some View {
         self
@@ -45,7 +47,7 @@ extension View {
             )
             .shadow(color: .black.opacity(0.2), radius: 8, y: 4)
     }
-    
+
     /// Gentle fade+scale transition for modal or state changes
     func smoothTransition(active: Bool) -> some View {
         self
@@ -54,7 +56,38 @@ extension View {
     }
 }
 
+// MARK: - Color
+
 extension Color {
-    static let appBackgroundColor = Color("AppBackground") // from Assets
-    static let cardBackground = Color("CardBackground")
+    static let appBackgroundColor = Color("AppBackground")
+    static let cardBackground     = Color("CardBackground")
+
+    /// Initialise a Color from a hex string e.g. "FF9F0A" or "#FF9F0A"
+    init(hex: String) {
+        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+        var int: UInt64 = 0
+        Scanner(string: hex).scanHexInt64(&int)
+        let r = Double((int >> 16) & 0xFF) / 255
+        let g = Double((int >> 8)  & 0xFF) / 255
+        let b = Double(int         & 0xFF) / 255
+        self.init(red: r, green: g, blue: b)
+    }
+}
+
+// MARK: - Comparable
+
+extension Comparable {
+    func clamped(to range: ClosedRange<Self>) -> Self {
+        min(max(self, range.lowerBound), range.upperBound)
+    }
+}
+
+// MARK: - Array
+
+extension Array {
+    func chunked(into size: Int) -> [[Element]] {
+        stride(from: 0, to: count, by: size).map {
+            Array(self[$0 ..< Swift.min($0 + size, count)])
+        }
+    }
 }

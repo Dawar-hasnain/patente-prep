@@ -3,21 +3,21 @@
 //  Patente-Learning
 //
 //  Created by Dawar Hasnain on 09/11/25.
+//  Restructured 17/03/26 — Dashboard replaced with Practice tab.
+//  Updated 17/03/26 — Streak at Risk interstitial added.
 //
+
 import SwiftUI
 
 struct MainTabView: View {
-    // MARK: - State
-    @State private var showResetAlert = false
-    @State private var showAboutSheet = false
-    @State private var showEditProfile = false
-    @State private var showShareSheet = false
-    @State private var exportFileURL: URL?
-    
+    @State private var showResetAlert     = false
+    @State private var showAboutSheet     = false
+    @State private var showStreakAtRisk   = false
+
     var body: some View {
         TabView {
-            
-            // 🏠 Home
+
+            // ── 1. Home ───────────────────────────────────────────────────
             NavigationStack {
                 ChapterPathView()
                     .navigationTitle("Home")
@@ -32,9 +32,7 @@ struct MainTabView: View {
                             .accessibilityLabel("Reset Progress")
                         }
                     }
-                    // Confirmation Alert for Reset
-                    .alert("Reset All Progress?",
-                           isPresented: $showResetAlert) {
+                    .alert("Reset All Progress?", isPresented: $showResetAlert) {
                         Button("Reset", role: .destructive) {
                             ProgressManager.shared.resetAllProgress()
                         }
@@ -46,57 +44,38 @@ struct MainTabView: View {
             .tabItem {
                 Label("Home", systemImage: "house.fill")
             }
-            
-            // 📊 Dashboard
+
+            // ── 2. Practice ───────────────────────────────────────────────
             NavigationStack {
-                ProgressDashboardView()
-                    .navigationTitle("Dashboard")
+                PracticeView()
+                    .navigationTitle("Practice")
                     .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .topBarTrailing) {
-                            Button {
-                                exportUserSummary()
-                            } label: {
-                                Image(systemName: "square.and.arrow.up")
-                            }
-                            .accessibilityLabel("Export Summary")
-                        }
-                    }
-                    // Share Sheet
-                    .sheet(isPresented: $showShareSheet) {
-                        if let exportFileURL = exportFileURL {
-                            ActivityView(activityItems: [exportFileURL])
-                        }
-                    }
             }
             .tabItem {
-                Label("Dashboard", systemImage: "chart.bar.fill")
+                Label("Practice", systemImage: "dumbbell.fill")
             }
-            
-            // 👤 Profile
+
+            // ── 3. League ────────────────────────────────────────────────
+            NavigationStack {
+                LeagueView()
+                    .navigationTitle("League")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            .tabItem {
+                Label("League", systemImage: "chart.bar.fill")
+            }
+
+            // ── 4. Profile ────────────────────────────────────────────────
             NavigationStack {
                 UserProfileView()
                     .navigationTitle("Profile")
                     .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .topBarTrailing) {
-                            Button {
-                                showEditProfile = true
-                            } label: {
-                                Image(systemName: "pencil")
-                            }
-                            .accessibilityLabel("Edit Profile")
-                        }
-                    }
-                    .sheet(isPresented: $showEditProfile) {
-                        EditProfileView()
-                    }
             }
             .tabItem {
                 Label("Profile", systemImage: "person.crop.circle.fill")
             }
-            
-            // ⚙️ Settings
+
+            // ── 5. Settings ───────────────────────────────────────────────
             NavigationStack {
                 SettingsView()
                     .navigationTitle("Settings")
@@ -120,24 +99,47 @@ struct MainTabView: View {
             }
         }
         .tint(.accentColor)
+        .onAppear(perform: checkStreakAtRisk)
+        .fullScreenCover(isPresented: $showStreakAtRisk) {
+            StreakAtRiskView(
+                onKeepAlive: { showStreakAtRisk = false },
+                onDismiss:   { showStreakAtRisk = false }
+            )
+        }
     }
-    
-    // MARK: - Export Functionality
-    private func exportUserSummary() {
-        let manager = ProgressManager.shared
-        let summary = """
-        📊 Patente Learning Summary
-        ---------------------------
-        Total Words Learned: \(manager.totalLearnedWords())
-        Average Recall Accuracy: \(Int(manager.averageRecallAccuracy() * 100))%
-        Current Streak: \(manager.currentStreak()) days
-        Best Streak: \(manager.bestStreak()) days
-        Chapters Completed: \(ChapterList.allCases.filter { manager.progress(for: $0) >= 1.0 }.count)
-        """
-        
-        let fileURL = FileManager.default.temporaryDirectory.appendingPathComponent("PatenteSummary.txt")
-        try? summary.write(to: fileURL, atomically: true, encoding: .utf8)
-        exportFileURL = fileURL
-        showShareSheet = true
+
+    // MARK: - Streak at Risk Logic
+
+    private func checkStreakAtRisk() {
+        let manager  = ProgressManager.shared
+        let streak   = manager.currentStreak()
+        let defaults = UserDefaults.standard
+        let calendar = Calendar.current
+        let today    = calendar.startOfDay(for: Date())
+
+        // Must have a streak worth protecting
+        guard streak >= 2 else { return }
+
+        // Must not have practiced today
+        if let lastActive = manager.lastActiveDate() {
+            if calendar.isDateInToday(lastActive) { return }
+        }
+
+        // Must not have already shown this screen today
+        if let lastShown = defaults.object(forKey: "lastStreakRiskShown") as? Date {
+            if calendar.startOfDay(for: lastShown) == today { return }
+        }
+
+        // All conditions met — show after UI settles
+        defaults.set(Date(), forKey: "lastStreakRiskShown")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            showStreakAtRisk = true
+        }
     }
+}
+
+// MARK: - Preview
+
+#Preview {
+    MainTabView()
 }

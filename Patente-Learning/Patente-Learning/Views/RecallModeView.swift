@@ -4,10 +4,13 @@
 //
 //  Created by Dawar Hasnain on 09/11/25.
 //
+
 import SwiftUI
 
 struct RecallModeView: View {
     let chapter: ChapterList
+    @Environment(\.dismiss) private var dismiss
+
     @State private var questions: [RecallQuestion]
     @State private var currentIndex = 0
     @State private var userAnswer = ""
@@ -17,7 +20,7 @@ struct RecallModeView: View {
     @State private var isCorrect = false
     @State private var shake = false
     @State private var scoreChange = false
-    
+
     init(chapter: ChapterList) {
         self.chapter = chapter
         let words = loadChapter(chapter.filename).words
@@ -27,11 +30,12 @@ struct RecallModeView: View {
     var body: some View {
         ZStack {
             Color.appBackground.ignoresSafeArea()
-            
+
             VStack(spacing: 25) {
-                // 🔹 Top bar
+
+                // ── Top Bar ───────────────────────────────────────────────
                 HStack {
-                    Button(action: exitRecallMode) {
+                    Button { dismiss() } label: {
                         Image(systemName: "xmark.circle.fill")
                             .font(.title2)
                             .foregroundColor(.secondary)
@@ -42,14 +46,11 @@ struct RecallModeView: View {
                     VStack(spacing: 2) {
                         Text("Recall Practice")
                             .font(.headline.weight(.semibold))
-
-                        // 🔸 Live score display
                         Text("Score: \(score)/\(questions.count)")
                             .font(.caption.weight(.medium))
                             .foregroundColor(.secondary)
                             .scaleEffect(scoreChange ? 1.15 : 1.0)
                             .animation(.spring(response: 0.4, dampingFraction: 0.6), value: scoreChange)
-
                     }
 
                     Spacer()
@@ -61,26 +62,21 @@ struct RecallModeView: View {
                 .padding(.horizontal)
                 .padding(.top, 8)
 
-                
                 Spacer()
-                
+
                 if !finished {
+                    // ── Question ──────────────────────────────────────────
                     VStack(spacing: 20) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(Color(.systemBackground))
                                 .shadow(color: .black.opacity(0.1), radius: 5, x: 0, y: 3)
+                                .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.gray.opacity(0.2), lineWidth: 1))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 20)
-                                        .stroke(Color.gray.opacity(0.2), lineWidth: 1)
-                                )
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .fill(
-                                            showFeedback ?
-                                            (isCorrect ? Color.green.opacity(0.2) : Color.red.opacity(0.2)) :
-                                            Color.clear
-                                        )
+                                        .fill(showFeedback
+                                              ? (isCorrect ? Color.green.opacity(0.2) : Color.red.opacity(0.2))
+                                              : Color.clear)
                                         .animation(.easeInOut(duration: 0.3), value: showFeedback)
                                 )
 
@@ -91,8 +87,7 @@ struct RecallModeView: View {
                                     .padding(.horizontal)
 
                                 if showFeedback {
-                                    Text(isCorrect ? "✅ Correct!" :
-                                         "❌ Incorrect — \(questions[currentIndex].answer)")
+                                    Text(isCorrect ? "✅ Correct!" : "❌ Incorrect — \(questions[currentIndex].answer)")
                                         .font(.headline.weight(.medium))
                                         .foregroundColor(isCorrect ? .green : .red)
                                         .transition(.opacity)
@@ -101,7 +96,7 @@ struct RecallModeView: View {
                             .padding()
                         }
                         .padding(.horizontal)
-                        
+
                         TextField("Your answer...", text: $userAnswer)
                             .textFieldStyle(.roundedBorder)
                             .padding(.horizontal, 40)
@@ -121,23 +116,23 @@ struct RecallModeView: View {
                         .buttonStyle(.plain)
                     }
                 } else {
+                    // ── Result ────────────────────────────────────────────
                     VStack(spacing: 16) {
                         Text("Final Score: \(score)/\(questions.count)")
                             .font(.title.bold())
                         Text(resultMessage())
                             .font(.headline)
                             .foregroundColor(.secondary)
-                        
-                        Button("Return to Home") {
-                            exitRecallMode()
-                        }
-                        .padding()
-                        .background(Color.green)
-                        .foregroundColor(.white)
-                        .cornerRadius(12)
+
+                        Button("Done") { dismiss() }
+                            .font(.headline)
+                            .padding()
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(12)
                     }
                 }
-                
+
                 Spacer()
             }
             .padding()
@@ -145,6 +140,7 @@ struct RecallModeView: View {
     }
 
     // MARK: - Logic
+
     private func checkAnswer() {
         let trimmed = userAnswer.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else {
@@ -156,16 +152,13 @@ struct RecallModeView: View {
         let correct = trimmed.lowercased() == questions[currentIndex].answer.lowercased()
         isCorrect = correct
         showFeedback = true
-        //if correct { score += 1 }
-        
+
         if correct {
             score += 1
             scoreChange.toggle()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { scoreChange = false }
         }
 
-
-        // Wait before advancing
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             showFeedback = false
             userAnswer = ""
@@ -174,14 +167,6 @@ struct RecallModeView: View {
             } else {
                 finished = true
             }
-        }
-    }
-
-    private func exitRecallMode() {
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           let window = windowScene.windows.first {
-            window.rootViewController = UIHostingController(rootView: ChapterPathView())
-            window.makeKeyAndVisible()
         }
     }
 
@@ -194,12 +179,22 @@ struct RecallModeView: View {
     }
 }
 
-// MARK: - Shake Animation Modifier
+// MARK: - Shake Effect
+// Note: ShakeEffect is also defined in RecallModeView (original location).
+// If you get a redeclaration error, keep only this one and delete the other.
 struct ShakeEffect: GeometryEffect {
+    var amount: CGFloat = 10
+    var shakesPerUnit: CGFloat = 3
     var animatableData: CGFloat
 
     func effectValue(size: CGSize) -> ProjectionTransform {
-        let translation = 10 * sin(animatableData * .pi * 4)
+        let translation = amount * sin(animatableData * .pi * shakesPerUnit)
         return ProjectionTransform(CGAffineTransform(translationX: translation, y: 0))
     }
+}
+
+// MARK: - Preview
+
+#Preview {
+    RecallModeView(chapter: .la_strada)
 }
