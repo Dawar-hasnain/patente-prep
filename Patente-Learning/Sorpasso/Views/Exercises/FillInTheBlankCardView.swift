@@ -38,13 +38,11 @@ struct FillInTheBlankCardView: View {
                     .foregroundColor(.secondary)
                     .italic()
 
-                // Masked sentence card
-                Text(maskedSentence)
-                    .font(.body.weight(.semibold))
-                    .multilineTextAlignment(.center)
+                // Masked sentence card — each word is tappable for its translation
+                TappableSentenceView(sentence: maskedSentence)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 22)
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .background(
                         RoundedRectangle(cornerRadius: 18)
                             .fill(Color.secondary.opacity(0.07))

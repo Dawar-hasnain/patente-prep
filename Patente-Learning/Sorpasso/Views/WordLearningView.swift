@@ -105,6 +105,7 @@ struct WordLearningView: View {
             LessonSessionView(
                 sessionWords: wordsToReview.isEmpty ? viewModel.words : wordsToReview,
                 allWords: viewModel.words,
+                showsCompletion: false,
                 onFinish: { handleReviewCompletion() }
             )
         }
@@ -181,11 +182,7 @@ struct WordLearningView: View {
                 .font(.caption.weight(.semibold))
                 .foregroundColor(.secondary)
 
-            Text(""\(example.sentence)"")
-                .font(.subheadline)
-                .foregroundColor(.primary)
-                .multilineTextAlignment(.leading)
-                .fixedSize(horizontal: false, vertical: true)
+            TappableSentenceView(sentence: example.sentence)
         }
         .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)

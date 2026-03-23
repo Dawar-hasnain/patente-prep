@@ -26,16 +26,24 @@ struct LessonSessionView: View {
     let sessionWords: [Words]
     /// Full chapter word list — needed for building distractors.
     let allWords: [Words]
+    /// When false the session calls onFinish directly without showing
+    /// the LessonCompleteScreen. Use false for short in-lesson drills;
+    /// true (default) for full chapter review and practice sessions.
+    var showsCompletion: Bool = true
     let onFinish: () -> Void
 
     // ── Session state ─────────────────────────────────────────────────────
     @State private var queue: [ExerciseCard] = []
     @State private var currentIndex = 0
-    @State private var hearts = 5
+    @State private var hearts = HeartsManager.shared.currentHearts
     @State private var correctCount = 0
     @State private var totalAnswered = 0
     @State private var showFailed = false
+    @State private var showErrorReview = false
     @State private var showComplete = false
+
+    // Wrong-answer log for the error review screen
+    @State private var wrongAnswers: [Words] = []
 
     // Used to animate card transitions
     @State private var cardID = UUID()
@@ -47,8 +55,19 @@ struct LessonSessionView: View {
             if showFailed {
                 SessionFailedView(
                     onRetry: resetSession,
-                    onDismiss: onFinish
+                    onDismiss: onFinish,
+                    onRefillWithXP: HeartsManager.shared.canRefillWithXP ? {
+                        HeartsManager.shared.refillWithXP()
+                        hearts = HeartsManager.maxHearts
+                        showFailed = false
+                    } : nil
                 )
+                .transition(.opacity)
+
+            } else if showErrorReview {
+                ErrorReviewScreen(wrongAnswers: wrongAnswers) {
+                    withAnimation { showErrorReview = false; showComplete = true }
+                }
                 .transition(.opacity)
 
             } else if showComplete {
@@ -84,6 +103,7 @@ struct LessonSessionView: View {
             }
         }
         .animation(.easeInOut(duration: 0.25), value: showFailed)
+        .animation(.easeInOut(duration: 0.25), value: showErrorReview)
         .animation(.easeInOut(duration: 0.25), value: showComplete)
         .animation(.easeInOut(duration: 0.22), value: cardID)
     }
@@ -181,8 +201,12 @@ struct LessonSessionView: View {
         }
 
         if !correct && !isTapThePairs {
+            // Track for error review
+            if let w = word { wrongAnswers.append(w) }
+
             hearts = max(0, hearts - 1)
             if hearts == 0 {
+                HeartsManager.shared.depleteAll()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     withAnimation { showFailed = true }
                 }
@@ -209,7 +233,18 @@ struct LessonSessionView: View {
                     XPManager.shared.award(.reviewPassed)
                 }
             }
-            withAnimation { showComplete = true }
+            // Persist remaining hearts
+            HeartsManager.shared.save(hearts: hearts)
+
+            if showsCompletion {
+                if !wrongAnswers.isEmpty {
+                    withAnimation { showErrorReview = true }
+                } else {
+                    withAnimation { showComplete = true }
+                }
+            } else {
+                onFinish()
+            }
         }
     }
 
@@ -229,11 +264,13 @@ struct LessonSessionView: View {
     }
 
     private func resetSession() {
-        hearts = 5
+        hearts = HeartsManager.shared.currentHearts
         currentIndex = 0
         correctCount = 0
         totalAnswered = 0
+        wrongAnswers  = []
         showFailed = false
+        showErrorReview = false
         showComplete = false
         cardID = UUID()
         queue = []
@@ -326,6 +363,101 @@ private struct LessonCompleteScreen: View {
             }
             HapticsManager.success()
         }
+    }
+}
+
+// MARK: - Error Review Screen
+
+private struct ErrorReviewScreen: View {
+
+    let wrongAnswers: [Words]
+    let onContinue:  () -> Void
+
+    var body: some View {
+        VStack(spacing: 0) {
+            // ── Header ────────────────────────────────────────────────────
+            VStack(spacing: 6) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.system(size: 44))
+                    .foregroundColor(.orange)
+                    .padding(.top, 52)
+
+                Text("Review Your Mistakes")
+                    .font(.system(.title2, design: .rounded).weight(.bold))
+                    .padding(.top, 8)
+
+                Text("\(wrongAnswers.count) word\(wrongAnswers.count == 1 ? "" : "s") to brush up on")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+            .padding(.bottom, 28)
+
+            // ── Mistake cards ─────────────────────────────────────────────
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 10) {
+                    // Deduplicate (same word can be wrong more than once per session)
+                    ForEach(uniqueWords, id: \.italian) { word in
+                        HStack(spacing: 14) {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(word.italian)
+                                    .font(.subheadline.weight(.bold))
+                                Text(word.english)
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+
+                            Spacer()
+
+                            Button {
+                                SpeechManager.shared.speak(word.italian)
+                                HapticsManager.lightTap()
+                            } label: {
+                                Image(systemName: "speaker.wave.2.fill")
+                                    .font(.callout)
+                                    .foregroundColor(.accentColor)
+                                    .padding(8)
+                                    .background(Circle().fill(Color.accentColor.opacity(0.1)))
+                            }
+                        }
+                        .padding(14)
+                        .background(
+                            RoundedRectangle(cornerRadius: 14)
+                                .fill(Color.orange.opacity(0.07))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14)
+                                        .strokeBorder(Color.orange.opacity(0.2), lineWidth: 1)
+                                )
+                        )
+                    }
+                }
+                .padding(.horizontal, 24)
+            }
+
+            Spacer(minLength: 24)
+
+            Button(action: onContinue) {
+                Text("Got It — Continue")
+                    .font(.headline)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 16)
+                    .background(RoundedRectangle(cornerRadius: 14).fill(Color.orange))
+                    .foregroundColor(.white)
+            }
+            .padding(.horizontal, 28)
+            .padding(.bottom, 48)
+        }
+        .background(Color.appBackground.ignoresSafeArea())
+        .onAppear { HapticsManager.lightTap() }
+    }
+
+    private var uniqueWords: [Words] {
+        var seen  = Set<String>()
+        var result = [Words]()
+        for w in wrongAnswers where !seen.contains(w.italian) {
+            seen.insert(w.italian)
+            result.append(w)
+        }
+        return result
     }
 }
 

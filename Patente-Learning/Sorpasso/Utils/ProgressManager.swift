@@ -444,6 +444,7 @@ final class ProgressManager {
 
         d.removeObject(forKey: "averageRecallAccuracy")
         XPManager.shared.resetXP()
+        HeartsManager.shared.reset()
         d.synchronize()
 
         print("🔁 ALL progress reset.")

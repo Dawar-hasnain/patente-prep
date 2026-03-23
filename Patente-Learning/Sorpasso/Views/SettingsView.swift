@@ -17,10 +17,11 @@ struct SettingsView: View {
     @AppStorage("reminderHour")         private var reminderHour          = 19   // 7 PM
 
     // ── UI state ──────────────────────────────────────────────────────────
-    @State private var showTimePicker   = false
-    @State private var showEditProfile  = false
-    @State private var showAbout        = false
-    @State private var showResetAlert   = false
+    @State private var showTimePicker     = false
+    @State private var showEditProfile    = false
+    @State private var showAbout          = false
+    @State private var showResetAlert     = false
+    @State private var showDailyGoalSheet = false
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -79,7 +80,19 @@ struct SettingsView: View {
                     }
                 }
 
-                // ── 2. Account ────────────────────────────────────────────
+                // ── 2. Learning ───────────────────────────────────────────
+                settingsGroup(title: "LEARNING") {
+                    chevronRow(
+                        icon: "target",
+                        iconColor: .mint,
+                        title: "Daily Goal",
+                        subtitle: XPManager.shared.dailyGoal.description
+                    ) {
+                        showDailyGoalSheet = true
+                    }
+                }
+
+                // ── 3. Account ────────────────────────────────────────────
                 settingsGroup(title: "ACCOUNT") {
                     chevronRow(
                         icon: "person.fill",
@@ -138,6 +151,11 @@ struct SettingsView: View {
         }
         .background(Color.appBackground.ignoresSafeArea())
         // ── Sheets & Alerts ───────────────────────────────────────────────
+        .sheet(isPresented: $showDailyGoalSheet) {
+            DailyGoalSheet(isPresented: $showDailyGoalSheet)
+                .presentationDetents([.height(380)])
+                .presentationDragIndicator(.visible)
+        }
         .sheet(isPresented: $showTimePicker) {
             reminderTimePicker
                 .presentationDetents([.height(320)])
@@ -358,6 +376,102 @@ struct SettingsView: View {
     private func removePendingNotifications() {
         UNUserNotificationCenter.current()
             .removePendingNotificationRequests(withIdentifiers: ["dailyReminder"])
+    }
+}
+
+// MARK: - Daily Goal Sheet
+
+private struct DailyGoalSheet: View {
+    @Binding var isPresented: Bool
+    @State private var selected = XPManager.shared.dailyGoal
+
+    // Icon colour per goal (view-layer only — XPManager stays Foundation-only)
+    private func color(for goal: DailyGoal) -> Color {
+        switch goal {
+        case .casual:  return .green
+        case .regular: return .orange
+        case .intense: return .red
+        }
+    }
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Daily Goal")
+                .font(.headline)
+                .padding(.top, 20)
+
+            Text("How much do you want to learn each day?")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
+
+            VStack(spacing: 12) {
+                ForEach(DailyGoal.allCases) { goal in
+                    Button {
+                        selected = goal
+                    } label: {
+                        HStack(spacing: 14) {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 8)
+                                    .fill(color(for: goal).opacity(selected == goal ? 1.0 : 0.12))
+                                    .frame(width: 36, height: 36)
+                                Image(systemName: goal.iconName)
+                                    .font(.callout.weight(.semibold))
+                                    .foregroundColor(selected == goal ? .white : color(for: goal))
+                            }
+
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(goal.label)
+                                    .font(.subheadline.weight(.semibold))
+                                    .foregroundColor(.primary)
+                                Text(goal.description)
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+
+                            Spacer()
+
+                            if selected == goal {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .foregroundColor(color(for: goal))
+                                    .font(.title3)
+                            }
+                        }
+                        .padding(14)
+                        .background(
+                            RoundedRectangle(cornerRadius: 14)
+                                .fill(selected == goal
+                                      ? color(for: goal).opacity(0.08)
+                                      : Color(UIColor.secondarySystemBackground))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 14)
+                                        .strokeBorder(
+                                            selected == goal ? color(for: goal).opacity(0.4) : Color.clear,
+                                            lineWidth: 1.5
+                                        )
+                                )
+                        )
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(.horizontal, 20)
+
+            Button {
+                XPManager.shared.dailyGoal = selected
+                isPresented = false
+            } label: {
+                Text("Save Goal")
+                    .font(.headline)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 14)
+                    .background(RoundedRectangle(cornerRadius: 12).fill(Color.accentColor))
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 20)
+            }
+            .padding(.bottom, 8)
+        }
     }
 }
 

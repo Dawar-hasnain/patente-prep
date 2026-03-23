@@ -52,8 +52,11 @@ struct HeartsView: View {
 // Shown inline when hearts reach 0.
 
 struct SessionFailedView: View {
-    let onRetry: () -> Void
-    let onDismiss: () -> Void
+    let onRetry:        () -> Void
+    let onDismiss:      () -> Void
+    /// When non-nil, an "Instant Refill — 20 XP" button is shown.
+    /// Tapping it continues the current session without resetting progress.
+    let onRefillWithXP: (() -> Void)?
 
     @ScaledMetric(relativeTo: .largeTitle) private var failedIconSize: CGFloat = 64
     @State private var scaleIn = false
@@ -85,18 +88,45 @@ struct SessionFailedView: View {
                     Text("Out of Hearts!")
                         .font(.system(.title2, design: .rounded).weight(.bold))
 
-                    Text("Don't worry — keep practicing\nand try again.")
+                    Text("Refill to keep going, or start fresh.")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 32)
                 }
-                .padding(.bottom, 40)
+                .padding(.bottom, 24)
+
+                // ── Heart regen timer ─────────────────────────────────────
+                heartTimerBadge
+                    .padding(.bottom, 32)
 
                 Spacer()
 
                 // ── Buttons ───────────────────────────────────────────────
                 VStack(spacing: 14) {
+
+                    // Instant refill with XP (premium — continues the session)
+                    if let refill = onRefillWithXP {
+                        Button(action: refill) {
+                            HStack(spacing: 8) {
+                                Image(systemName: "heart.fill")
+                                Text("Instant Refill — \(HeartsManager.xpRefillCost) XP")
+                                    .font(.headline)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 16)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14)
+                                    .fill(LinearGradient(
+                                        colors: [Color.pink, Color.red],
+                                        startPoint: .leading, endPoint: .trailing
+                                    ))
+                            )
+                            .foregroundColor(.white)
+                        }
+                    }
+
+                    // Free retry — resets session progress
                     Button(action: onRetry) {
                         HStack(spacing: 8) {
                             Image(systemName: "arrow.triangle.2.circlepath")
@@ -105,18 +135,19 @@ struct SessionFailedView: View {
                         }
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
-                        .background(RoundedRectangle(cornerRadius: 14).fill(Color.red))
-                        .foregroundColor(.white)
+                        .background(
+                            RoundedRectangle(cornerRadius: 14)
+                                .fill(onRefillWithXP != nil
+                                      ? Color.secondary.opacity(0.1)
+                                      : Color.red)
+                        )
+                        .foregroundColor(onRefillWithXP != nil ? .primary : .white)
                     }
 
                     Button(action: onDismiss) {
                         Text("Back to Map")
-                            .font(.headline)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 16)
-                            .background(RoundedRectangle(cornerRadius: 14)
-                                .fill(Color.secondary.opacity(0.1)))
-                            .foregroundColor(.primary)
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundColor(.secondary)
                     }
                 }
                 .padding(.horizontal, 28)
@@ -129,6 +160,40 @@ struct SessionFailedView: View {
             }
             HapticsManager.heavyTap()
         }
+    }
+
+    // MARK: - Heart Regen Timer
+
+    /// Shows a live countdown to the next free heart, updated every second.
+    @ViewBuilder
+    private var heartTimerBadge: some View {
+        TimelineView(.periodic(from: .now, by: 1.0)) { _ in
+            let seconds = HeartsManager.shared.timeUntilNextHeart
+            if seconds > 0 {
+                HStack(spacing: 8) {
+                    Image(systemName: "clock.fill")
+                        .font(.caption)
+                        .foregroundColor(.orange)
+                    Text("Next heart in \(formatSeconds(seconds))")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundColor(.orange)
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 9)
+                .background(
+                    Capsule()
+                        .fill(Color.orange.opacity(0.1))
+                        .overlay(Capsule().strokeBorder(Color.orange.opacity(0.25), lineWidth: 1))
+                )
+            }
+        }
+    }
+
+    private func formatSeconds(_ t: TimeInterval) -> String {
+        let total   = max(0, Int(t))
+        let minutes = total / 60
+        let seconds = total % 60
+        return String(format: "%d:%02d", minutes, seconds)
     }
 }
 
@@ -144,6 +209,10 @@ struct SessionFailedView: View {
         .padding()
 }
 
-#Preview("Session Failed") {
-    SessionFailedView(onRetry: {}, onDismiss: {})
+#Preview("Session Failed – no XP refill") {
+    SessionFailedView(onRetry: {}, onDismiss: {}, onRefillWithXP: nil)
+}
+
+#Preview("Session Failed – XP refill available") {
+    SessionFailedView(onRetry: {}, onDismiss: {}, onRefillWithXP: {})
 }
