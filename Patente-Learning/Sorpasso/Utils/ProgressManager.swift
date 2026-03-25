@@ -426,6 +426,51 @@ final class ProgressManager {
         print("🔓 All chapters unlocked for testing.")
     }
 
+    // MARK: - Streak Freeze
+
+    private let streakFreezeKey      = "streakFreezeCount"
+    private let streakFrozenDatesKey = "streakFrozenDates"
+
+    var streakFreezeCount: Int {
+        get { defaults.integer(forKey: streakFreezeKey) }
+        set { defaults.set(max(0, newValue), forKey: streakFreezeKey) }
+    }
+
+    /// Increment freeze inventory (called after purchase).
+    func addStreakFreeze() {
+        streakFreezeCount += 1
+    }
+
+    /// Consume one freeze: records today as an active day so the streak is preserved.
+    /// Returns false if no freezes are available.
+    @discardableResult
+    func useStreakFreeze() -> Bool {
+        guard streakFreezeCount > 0 else { return false }
+        streakFreezeCount -= 1
+
+        // Record today in the activity log (same mechanism as logDailyLearningActivity)
+        // so that currentStreak() counts today as practiced.
+        let key = formattedDateKey(for: Date())
+        var activity = defaults.dictionary(forKey: learningActivityKey) as? [String: Int] ?? [:]
+        if activity[key] == nil { activity[key] = 0 }   // mark day as active without inflating word count
+        defaults.set(activity, forKey: learningActivityKey)
+
+        // Remember this date was frozen (for UI — shows 🧊 instead of 🔥 in the dot tracker)
+        var frozen = defaults.stringArray(forKey: streakFrozenDatesKey) ?? []
+        if !frozen.contains(key) { frozen.append(key) }
+        defaults.set(frozen, forKey: streakFrozenDatesKey)
+
+        // Also advance the streak so it doesn't break
+        updateStreak()
+        return true
+    }
+
+    /// Returns true if the given date string (yyyy-MM-dd) was protected by a freeze.
+    func isDateFrozen(_ dateKey: String) -> Bool {
+        let frozen = defaults.stringArray(forKey: streakFrozenDatesKey) ?? []
+        return frozen.contains(dateKey)
+    }
+
     // MARK: - Full Reset
     func resetAllProgress() {
         let d = defaults
@@ -443,6 +488,8 @@ final class ProgressManager {
         }
 
         d.removeObject(forKey: "averageRecallAccuracy")
+        d.removeObject(forKey: streakFreezeKey)
+        d.removeObject(forKey: streakFrozenDatesKey)
         XPManager.shared.resetXP()
         HeartsManager.shared.reset()
         d.synchronize()

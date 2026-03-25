@@ -35,6 +35,11 @@ private struct ExamMistake: Identifiable {
     let userSaidTrue: Bool   // what the user tapped
 }
 
+private enum ExamFailReason {
+    case tooManyMistakes
+    case timeUp
+}
+
 // MARK: - MockExamView
 
 struct MockExamView: View {
@@ -48,8 +53,15 @@ struct MockExamView: View {
     @State private var mistakeLog:   [ExamMistake] = []
 
     @State private var showFailed    = false
+    @State private var failReason:   ExamFailReason = .tooManyMistakes
     @State private var showResult    = false
     @State private var cardID        = UUID()
+
+    // ── 30-minute countdown ───────────────────────────────────────────────
+    private static let examDuration: TimeInterval = 30 * 60   // 1800 s
+    @State private var timeRemaining: TimeInterval = MockExamView.examDuration
+    @State private var timerRunning  = false
+    private let examClock = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     // ── Leave-exam confirmation ───────────────────────────────────────────
     @State private var showLeaveAlert = false
@@ -62,9 +74,10 @@ struct MockExamView: View {
 
             if showFailed {
                 ExamFailedScreen(
+                    failReason: failReason,
                     mistakeLog: mistakeLog,
-                    onRetry: restartExam,
-                    onExit:  onFinish
+                    onRetry:    restartExam,
+                    onExit:     onFinish
                 )
                 .transition(.opacity)
 
@@ -79,7 +92,10 @@ struct MockExamView: View {
 
             } else if questions.isEmpty {
                 ProgressView("Loading exam…")
-                    .onAppear(perform: buildQuestions)
+                    .onAppear {
+                        buildQuestions()
+                        timerRunning = true
+                    }
 
             } else {
                 VStack(spacing: 0) {
@@ -107,6 +123,17 @@ struct MockExamView: View {
         .animation(.easeInOut(duration: 0.25), value: showFailed)
         .animation(.easeInOut(duration: 0.25), value: showResult)
         .animation(.easeInOut(duration: 0.22), value: cardID)
+        .onReceive(examClock) { _ in
+            guard timerRunning, !showFailed, !showResult else { return }
+            if timeRemaining > 0 {
+                timeRemaining -= 1
+            } else {
+                failReason = .timeUp
+                timerRunning = false
+                withAnimation { showFailed = true }
+                HapticsManager.error()
+            }
+        }
         .alert("Leave Exam?", isPresented: $showLeaveAlert) {
             Button("Leave", role: .destructive) { onFinish() }
             Button("Stay",  role: .cancel) { }
@@ -118,38 +145,64 @@ struct MockExamView: View {
     // MARK: - Header
 
     private var examHeader: some View {
-        HStack(spacing: 0) {
-            // Exit button
-            Button {
-                showLeaveAlert = true
-            } label: {
-                Image(systemName: "xmark")
-                    .font(.body.weight(.semibold))
-                    .foregroundColor(.secondary)
-                    .padding(8)
-            }
-
-            Spacer()
-
-            // Question counter
-            Text("\(currentIndex + 1) / \(questions.count)")
-                .font(.subheadline.weight(.semibold).monospacedDigit())
-                .foregroundColor(.primary)
-
-            Spacer()
-
-            // 3 mistake indicators
-            HStack(spacing: 6) {
-                ForEach(0..<3, id: \.self) { i in
-                    Image(systemName: i < mistakes ? "xmark.circle.fill" : "circle")
-                        .font(.body)
-                        .foregroundColor(i < mistakes ? .red : Color.secondary.opacity(0.3))
-                        .animation(.spring(response: 0.3, dampingFraction: 0.55), value: mistakes)
+        VStack(spacing: 6) {
+            HStack(spacing: 0) {
+                // Exit button
+                Button {
+                    showLeaveAlert = true
+                } label: {
+                    Image(systemName: "xmark")
+                        .font(.body.weight(.semibold))
+                        .foregroundColor(.secondary)
+                        .padding(8)
                 }
+
+                Spacer()
+
+                // Question counter
+                Text("\(currentIndex + 1) / \(questions.count)")
+                    .font(.subheadline.weight(.semibold).monospacedDigit())
+                    .foregroundColor(.primary)
+
+                Spacer()
+
+                // 3 mistake indicators
+                HStack(spacing: 6) {
+                    ForEach(0..<3, id: \.self) { i in
+                        Image(systemName: i < mistakes ? "xmark.circle.fill" : "circle")
+                            .font(.body)
+                            .foregroundColor(i < mistakes ? .red : Color.secondary.opacity(0.3))
+                            .animation(.spring(response: 0.3, dampingFraction: 0.55), value: mistakes)
+                    }
+                }
+                .frame(width: 80, alignment: .trailing)
             }
-            .frame(width: 80, alignment: .trailing)  // match exit button width for centering
+            .frame(height: 36)
+
+            // ── Countdown timer ────────────────────────────────────────────
+            let isWarning = timeRemaining < 5 * 60   // < 5 minutes → red
+            HStack(spacing: 5) {
+                Image(systemName: isWarning ? "timer" : "clock")
+                    .font(.caption.weight(.semibold))
+                Text(formattedTime(timeRemaining))
+                    .font(.subheadline.weight(.bold).monospacedDigit())
+            }
+            .foregroundColor(isWarning ? .red : .secondary)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 5)
+            .background(
+                Capsule()
+                    .fill(isWarning ? Color.red.opacity(0.1) : Color.secondary.opacity(0.08))
+            )
+            .animation(.easeInOut(duration: 0.3), value: isWarning)
         }
-        .frame(height: 36)
+    }
+
+    private func formattedTime(_ interval: TimeInterval) -> String {
+        let total = max(0, Int(interval))
+        let m = total / 60
+        let s = total % 60
+        return String(format: "%02d:%02d", m, s)
     }
 
     // MARK: - Logic
@@ -169,6 +222,8 @@ struct MockExamView: View {
             HapticsManager.error()
 
             if mistakes >= 3 {
+                timerRunning = false
+                failReason   = .tooManyMistakes
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
                     withAnimation { showFailed = true }
                 }
@@ -177,6 +232,9 @@ struct MockExamView: View {
         } else {
             HapticsManager.success()
         }
+
+        // Stop timer on last question before showing result
+        if currentIndex + 1 >= questions.count { timerRunning = false }
 
         // Advance
         if currentIndex + 1 < questions.count {
@@ -221,14 +279,17 @@ struct MockExamView: View {
     }
 
     private func restartExam() {
-        currentIndex = 0
-        mistakes     = 0
-        mistakeLog   = []
-        showFailed   = false
-        showResult   = false
-        cardID       = UUID()
-        questions    = []
+        currentIndex  = 0
+        mistakes      = 0
+        mistakeLog    = []
+        showFailed    = false
+        showResult    = false
+        cardID        = UUID()
+        timeRemaining = MockExamView.examDuration
+        timerRunning  = false
+        questions     = []
         buildQuestions()
+        timerRunning  = true
     }
 }
 
@@ -447,11 +508,21 @@ private struct ExamResultScreen: View {
 
 private struct ExamFailedScreen: View {
 
+    let failReason: ExamFailReason
     let mistakeLog: [ExamMistake]
     let onRetry:    () -> Void
     let onExit:     () -> Void
 
     @State private var scaleIn = false
+
+    private var icon:     String { failReason == .timeUp ? "timer"         : "xmark.seal.fill" }
+    private var title:    String { failReason == .timeUp ? "Time's Up!"    : "Exam Failed" }
+    private var subtitle: String {
+        switch failReason {
+        case .timeUp:           return "The 30-minute limit was reached.\nStudy the words below and try again."
+        case .tooManyMistakes:  return "3 mistakes reached — the exam ended early.\nStudy the words below and try again."
+        }
+    }
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -460,7 +531,7 @@ private struct ExamFailedScreen: View {
                 // ── Icon ──────────────────────────────────────────────────
                 ZStack {
                     Circle().fill(Color.red.opacity(0.1)).frame(width: 130, height: 130)
-                    Image(systemName: "xmark.seal.fill")
+                    Image(systemName: icon)
                         .font(.system(size: 64))
                         .foregroundColor(.red)
                         .scaleEffect(scaleIn ? 1 : 0.3)
@@ -470,11 +541,11 @@ private struct ExamFailedScreen: View {
                 .padding(.top, 48)
                 .padding(.bottom, 20)
 
-                Text("Exam Failed")
+                Text(title)
                     .font(.system(.largeTitle, design: .rounded).weight(.bold))
                     .padding(.bottom, 8)
 
-                Text("3 mistakes reached — the exam ended early.\nStudy the words below and try again.")
+                Text(subtitle)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)

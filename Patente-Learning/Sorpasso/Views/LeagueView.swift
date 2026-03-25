@@ -23,8 +23,10 @@ struct LeaderboardEntry: Identifiable {
 // MARK: - LeagueView
 
 struct LeagueView: View {
-    @State private var entries: [LeaderboardEntry] = []
-    @State private var animateBadge = false
+    @State private var entries:      [LeaderboardEntry] = []
+    @State private var animateBadge  = false
+    @State private var isLive        = false   // true when data came from Supabase
+    @State private var isLoading     = false
 
     @ScaledMetric(relativeTo: .largeTitle) private var tierEmojiSize: CGFloat = 56
     private let xp = XPManager.shared
@@ -50,10 +52,14 @@ struct LeagueView: View {
         }
         .background(Color.appBackground.ignoresSafeArea())
         .onAppear {
-            entries = generateLeaderboard()
+            // Show bots immediately so the screen is never blank
+            if entries.isEmpty { entries = generateLeaderboard() }
             withAnimation(.spring(response: 0.6, dampingFraction: 0.65).delay(0.2)) {
                 animateBadge = true
             }
+        }
+        .task {
+            await loadLeaderboard()
         }
     }
 
@@ -159,9 +165,17 @@ struct LeagueView: View {
                 Text("Leaderboard")
                     .font(.headline)
                 Spacer()
-                Text("Top 25 · \(xp.currentTier.rawValue)")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                HStack(spacing: 5) {
+                    Circle()
+                        .fill(isLive ? Color.green : Color.secondary.opacity(0.5))
+                        .frame(width: 7, height: 7)
+                    Text(isLive ? "Live" : "Simulated")
+                        .font(.caption.weight(.semibold))
+                        .foregroundColor(isLive ? .green : .secondary)
+                    Text("· \(xp.currentTier.rawValue)")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
             }
 
             // Find user rank
@@ -269,7 +283,54 @@ struct LeagueView: View {
         .background(color.opacity(0.05))
     }
 
-    // MARK: - Leaderboard Generation
+    // MARK: - Live Leaderboard Loader
+
+    @MainActor
+    private func loadLeaderboard() async {
+        // Upsert own row first so the user always appears in the table
+        LeaderboardManager.shared.upsertCurrentUser()
+
+        do {
+            let rows = try await LeaderboardManager.shared.fetchLeaderboard(
+                tier: xp.currentTier.rawValue
+            )
+            guard !rows.isEmpty else { return }   // keep bots if table is empty
+
+            let currentUserId = supabaseClient.auth.currentUser?.id.uuidString
+            var mapped: [LeaderboardEntry] = rows.enumerated().map { idx, row in
+                LeaderboardEntry(
+                    id: idx + 1,
+                    name: row.username,
+                    emoji: row.emoji,
+                    xp: row.xp,
+                    isCurrentUser: row.user_id == currentUserId
+                )
+            }
+
+            // If the current user isn't in the top 25, append them at the bottom
+            if !mapped.contains(where: { $0.isCurrentUser }) {
+                let userName  = UserDefaults.standard.string(forKey: "userName") ?? "You"
+                let userEmoji = UserDefaults.standard.string(forKey: "userEmoji") ?? "🚗"
+                mapped.append(LeaderboardEntry(
+                    id: mapped.count + 1,
+                    name: userName,
+                    emoji: userEmoji,
+                    xp: xp.totalXP,
+                    isCurrentUser: true
+                ))
+            }
+
+            withAnimation(.easeInOut(duration: 0.3)) {
+                entries = mapped
+                isLive  = true
+            }
+        } catch {
+            // Network unavailable or table not yet created — keep simulated data
+            isLive = false
+        }
+    }
+
+    // MARK: - Leaderboard Generation (fallback)
     //
     // ── Supabase migration point ──────────────────────────────────────────
     // Replace this entire function with:

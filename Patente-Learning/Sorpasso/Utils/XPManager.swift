@@ -236,6 +236,18 @@ final class XPManager {
         return true
     }
 
+    // MARK: - Streak Freeze Purchase
+
+    static let streakFreezeCost = 10   // XP
+
+    /// Spends 10 XP and adds one streak freeze. Returns false if insufficient XP.
+    @discardableResult
+    func purchaseStreakFreeze() -> Bool {
+        guard spendXP(Self.streakFreezeCost) else { return false }
+        ProgressManager.shared.addStreakFreeze()
+        return true
+    }
+
     // MARK: - Reset (called by ProgressManager.resetAllProgress)
 
     func resetXP() {

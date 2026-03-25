@@ -25,6 +25,10 @@ struct MainTabView: View {
     @State private var showShareSheet        = false
     @State private var exportFileURL: URL?
     @State private var showSavePrompt        = false
+    @State private var showStreakAtRisk      = false
+
+    // Prevent showing the streak alert more than once per calendar day
+    @AppStorage("lastStreakAlertDate") private var lastStreakAlertDate = ""
 
     // MilestoneTracker decides when to surface the save-progress sheet
     @StateObject private var milestoneTracker = MilestoneTracker()
@@ -136,6 +140,14 @@ struct MainTabView: View {
             .tabItem { Label("Settings", systemImage: "gearshape.fill") }
         }
         .tint(.accentColor)
+        // ── Streak-at-risk full-screen overlay ───────────────────────────────
+        .fullScreenCover(isPresented: $showStreakAtRisk) {
+            StreakAtRiskView(
+                onKeepAlive: { showStreakAtRisk = false },
+                onDismiss:   { showStreakAtRisk = false },
+                onFreezeUsed: { showStreakAtRisk = false }
+            )
+        }
         // ── Save-Progress prompt (bottom sheet for guests) ───────────────────
         .sheet(isPresented: $showSavePrompt) {
             SaveProgressPromptView(isPresented: $showSavePrompt)
@@ -144,12 +156,40 @@ struct MainTabView: View {
                 .presentationDragIndicator(.hidden)   // we draw our own handle
         }
         // ── Milestone check on appear and after any learning event ───────────
-        .onAppear(perform: checkMilestone)
+        .onAppear {
+            checkMilestone()
+            checkStreakAtRisk()
+        }
         // Re-check whenever authState changes (e.g. after coming back from background)
         .onChange(of: auth.authState) { _ in checkMilestone() }
         // Notification posted by WordLearningView after markAsLearned()
         .onReceive(NotificationCenter.default.publisher(for: .didLearnWord)) { _ in
             checkMilestone()
+        }
+    }
+
+    // MARK: - Streak-at-risk check
+
+    private func checkStreakAtRisk() {
+        let streak = ProgressManager.shared.currentStreak()
+        guard streak >= 2 else { return }
+
+        // Has the user already practiced today?
+        let calendar  = Calendar.current
+        let lastActive = ProgressManager.shared.lastActiveDate()
+        let practicedToday = lastActive.map { calendar.isDateInToday($0) } ?? false
+        guard !practicedToday else { return }
+
+        // Only show once per calendar day
+        let today = {
+            let f = DateFormatter(); f.dateFormat = "yyyy-MM-dd"
+            return f.string(from: Date())
+        }()
+        guard lastStreakAlertDate != today else { return }
+
+        lastStreakAlertDate = today
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            showStreakAtRisk = true
         }
     }
 
