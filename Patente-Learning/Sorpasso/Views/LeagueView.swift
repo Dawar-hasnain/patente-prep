@@ -9,6 +9,7 @@
 //
 
 import SwiftUI
+import Supabase
 
 // MARK: - Leaderboard Entry
 
