@@ -5,7 +5,7 @@
 //  Translates individual Italian tokens used in TappableSentenceView.
 //
 //  Two sources, merged at startup:
-//    1. All chapter word lists (ChapterList + JSONLoader) — takes priority
+//    1. The curated patente glossary (PatenteLexicon) — domain terms, takes priority
 //    2. Hardcoded grammar dictionary: articles, prepositions, common verbs,
 //       adverbs, conjunctions, pronouns, and common driving-context words
 //
@@ -23,13 +23,11 @@ final class ItalianLookup {
     private var table: [String: String] = [:]
 
     private init() {
-        // Source 1 — all chapter vocabulary
-        for chapter in ChapterList.allCases {
-            for word in loadChapter(chapter.filename).words {
-                table[word.italian.lowercased()] = word.english
-            }
+        // Source 1 — curated patente glossary (domain-correct IT→EN terms)
+        for (term, en) in PatenteLexicon.shared.terms {
+            table[term.lowercased()] = en
         }
-        // Source 2 — grammar dictionary (only fills gaps not covered by vocab)
+        // Source 2 — grammar dictionary (only fills gaps not covered by the glossary)
         for (key, value) in Self.grammar where table[key] == nil {
             table[key] = value
         }
@@ -172,7 +170,7 @@ final class ItalianLookup {
         "troppo": "too much",   "abbastanza": "enough",
         "più": "more",          "meno": "less",
         "prima": "before",      "dopo": "after",
-        "allora": "then / so",  "ora": "now",
+        "allora": "then / so",  "ora": "now / hour",
         "qui": "here",          "qua": "here",
         "lì": "there",          "là": "there",
         "sopra": "above",       "sotto": "below",
@@ -212,7 +210,7 @@ final class ItalianLookup {
         "bordo": "edge",             "zona": "zone",
         "area": "area",              "centro": "centre",
         "distanza": "distance",      "spazio": "space",
-        "tempo": "time",             "ora": "hour",
+        "tempo": "time",
         "caso": "case",              "modo": "way",
         "tipo": "type",              "parte": "part",
         "uso": "use",                "presenza": "presence",
