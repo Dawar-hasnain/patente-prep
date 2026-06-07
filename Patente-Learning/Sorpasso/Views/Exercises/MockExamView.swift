@@ -2,17 +2,18 @@
 //  MockExamView.swift
 //  Patente-Learning
 //
-//  Simulates the Italian driving theory exam.
+//  Simulates the Italian driving theory exam using REAL ministry questions.
 //
-//  Rules (matching real patente format, scaled to 30 Qs):
-//    • 30 True / False questions drawn from ALL 10 chapter word lists
-//    • Maximum 3 incorrect answers — the exam fails immediately on the 3rd mistake
-//    • Pass: ≤ 2 mistakes after all 30 questions → awards 100 XP
-//    • Fail: 3 mistakes at any point → ExamFailedScreen
+//  Rules (matching the real patente B format):
+//    • 30 True / False questions sampled from the official bank (all chapters)
+//    • Up to 3 incorrect answers are allowed; the exam fails on the 4th mistake
+//    • Pass: ≤ 3 mistakes after all 30 questions
+//    • Fail: 4 mistakes at any point → ExamFailedScreen
 //
 //  UX:
-//    • Quick-feedback card: coloured overlay appears on answer, auto-advances after 0.8 s
-//    • Header: question counter (X / 30) + 3 mistake-dot indicators
+//    • Each question is the real Italian statement (tappable for per-word glosses)
+//      with a "Show English" toggle revealing the full translation.
+//    • Header: question counter (X / 30) + mistake-dot indicators + 30-min timer
 //    • Error review shown on both pass and fail result screens
 //
 
@@ -21,18 +22,9 @@ import Combine
 
 // MARK: - Question Model
 
-private struct ExamQuestion: Identifiable {
-    let id = UUID()
-    let word: Words
-    let displayedTranslation: String
-    let isCorrect: Bool     // ground truth
-}
-
 private struct ExamMistake: Identifiable {
     let id = UUID()
-    let word: Words
-    let displayedTranslation: String
-    let wasCorrect: Bool     // the ground truth
+    let question: Question
     let userSaidTrue: Bool   // what the user tapped
 }
 
@@ -48,7 +40,7 @@ struct MockExamView: View {
     let onFinish: () -> Void
 
     // ── Session state ─────────────────────────────────────────────────────
-    @State private var questions:    [ExamQuestion] = []
+    @State private var questions:    [Question] = []
     @State private var currentIndex  = 0
     @State private var mistakes      = 0
     @State private var mistakeLog:   [ExamMistake] = []
@@ -60,6 +52,7 @@ struct MockExamView: View {
 
     // ── 30-minute countdown ───────────────────────────────────────────────
     private static let examDuration: TimeInterval = 30 * 60   // 1800 s
+    private static let questionCount = 30
     @State private var timeRemaining: TimeInterval = MockExamView.examDuration
     @State private var timerRunning  = false
     private let examClock = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -167,9 +160,9 @@ struct MockExamView: View {
 
                 Spacer()
 
-                // 3 mistake indicators
+                // Mistake indicators — up to 3 errors are allowed; the 4th fails.
                 HStack(spacing: 6) {
-                    ForEach(0..<3, id: \.self) { i in
+                    ForEach(0..<4, id: \.self) { i in
                         Image(systemName: i < mistakes ? "xmark.circle.fill" : "circle")
                             .font(.body)
                             .foregroundColor(i < mistakes ? .red : Color.secondary.opacity(0.3))
@@ -210,19 +203,19 @@ struct MockExamView: View {
 
     private func handleAnswer(userSaidTrue: Bool) {
         let question = questions[currentIndex]
-        let correct  = (userSaidTrue == question.isCorrect)
+        let correct  = (userSaidTrue == question.answer)
+
+        ExamProgressManager.shared.record(question, correct: correct)
 
         if !correct {
             mistakes += 1
             mistakeLog.append(ExamMistake(
-                word:                 question.word,
-                displayedTranslation: question.displayedTranslation,
-                wasCorrect:           question.isCorrect,
-                userSaidTrue:         userSaidTrue
+                question:     question,
+                userSaidTrue: userSaidTrue
             ))
             HapticsManager.error()
 
-            if mistakes >= 3 {
+            if mistakes >= 4 {
                 timerRunning = false
                 failReason   = .tooManyMistakes
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
@@ -247,7 +240,6 @@ struct MockExamView: View {
             }
         } else {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                XPManager.shared.award(.mockExamPassed)
                 withAnimation { showResult = true }
             }
         }
@@ -256,27 +248,8 @@ struct MockExamView: View {
     // MARK: - Question Builder
 
     private func buildQuestions() {
-        let allWords = ChapterList.allCases.flatMap { loadChapter($0.filename).words }
-        let pool     = allWords.shuffled()
-        let selected = Array(pool.prefix(30))
-
-        questions = selected.map { word in
-            let showWrong = Bool.random()
-            if showWrong,
-               let impostor = pool.filter({ $0.italian != word.italian }).randomElement() {
-                return ExamQuestion(
-                    word:                 word,
-                    displayedTranslation: impostor.english,
-                    isCorrect:            false
-                )
-            } else {
-                return ExamQuestion(
-                    word:                 word,
-                    displayedTranslation: word.english,
-                    isCorrect:            true
-                )
-            }
-        }
+        let pool = BloccoStore.shared.allQuestions
+        questions = Array(pool.shuffled().prefix(Self.questionCount))
     }
 
     private func restartExam() {
@@ -296,16 +269,17 @@ struct MockExamView: View {
 
 // MARK: - ExamQuestionCard
 
-/// Minimal True/False card for the mock exam.
-/// Shows brief feedback overlay, then auto-advances — no tap required.
+/// True/False card for the mock exam, showing a real ministry statement.
+/// Shows brief feedback overlay, then auto-advances — no extra tap required.
 private struct ExamQuestionCard: View {
 
-    let question: ExamQuestion
+    let question: Question
     let onAnswer: (Bool) -> Void
 
     @State private var answered       = false
     @State private var userWasCorrect = false
     @State private var showOverlay    = false
+    @State private var showEnglish    = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -313,66 +287,66 @@ private struct ExamQuestionCard: View {
             Text("True or False?")
                 .font(.subheadline.weight(.medium))
                 .foregroundColor(.secondary)
-                .padding(.top, 40)
-                .padding(.bottom, 24)
+                .padding(.top, 28)
+                .padding(.bottom, 18)
 
-            // ── Word card ─────────────────────────────────────────────────
-            VStack(spacing: 10) {
-                HStack(spacing: 10) {
-                    Text(question.word.italian)
-                        .font(.system(.title, design: .rounded).weight(.bold))
-                    Button {
-                        SpeechManager.shared.speak(question.word.italian)
-                        HapticsManager.lightTap()
-                    } label: {
-                        Image(systemName: "speaker.wave.2.fill")
-                            .font(.callout)
-                            .foregroundColor(.accentColor)
-                            .padding(8)
-                            .background(Circle().fill(Color.accentColor.opacity(0.1)))
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 16) {
+
+                    // ── Statement card ────────────────────────────────────
+                    VStack(alignment: .leading, spacing: 12) {
+                        TappableSentenceView(sentence: question.text)
+
+                        Button {
+                            withAnimation { showEnglish.toggle() }
+                        } label: {
+                            Label(showEnglish ? "Hide English" : "Show English",
+                                  systemImage: "character.bubble")
+                                .font(.caption.weight(.semibold))
+                                .foregroundColor(.accentColor)
+                        }
+                        .buttonStyle(.plain)
+
+                        if showEnglish {
+                            Text(question.text_en)
+                                .font(.callout)
+                                .foregroundColor(.secondary)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .transition(.opacity)
+                        }
                     }
-                }
-
-                HStack(spacing: 10) {
-                    Rectangle().fill(Color.secondary.opacity(0.2)).frame(height: 1)
-                    Text("means").font(.caption.weight(.semibold)).foregroundColor(.secondary)
-                    Rectangle().fill(Color.secondary.opacity(0.2)).frame(height: 1)
-                }
-                .padding(.horizontal, 40)
-
-                Text(question.displayedTranslation)
-                    .font(.system(.title2, design: .rounded).weight(.semibold))
-            }
-            .padding(.vertical, 28)
-            .padding(.horizontal, 24)
-            .frame(maxWidth: .infinity)
-            .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.secondary.opacity(0.07))
-                    .overlay(
+                    .padding(.vertical, 22)
+                    .padding(.horizontal, 20)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(
                         RoundedRectangle(cornerRadius: 20)
-                            .strokeBorder(Color.secondary.opacity(0.15), lineWidth: 1)
+                            .fill(Color.secondary.opacity(0.07))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .strokeBorder(Color.secondary.opacity(0.15), lineWidth: 1)
+                            )
                     )
-            )
-            .overlay(
-                // Feedback flash overlay
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(userWasCorrect ? Color.green.opacity(0.18) : Color.red.opacity(0.18))
-                    .opacity(showOverlay ? 1 : 0)
-                    .animation(.easeOut(duration: 0.15), value: showOverlay)
-            )
-            .padding(.horizontal)
+                    .overlay(
+                        // Feedback flash overlay
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(userWasCorrect ? Color.green.opacity(0.18) : Color.red.opacity(0.18))
+                            .opacity(showOverlay ? 1 : 0)
+                            .animation(.easeOut(duration: 0.15), value: showOverlay)
+                    )
+                    .padding(.horizontal)
+                }
+            }
 
-            Spacer(minLength: 48)
+            Spacer(minLength: 24)
 
             // ── Buttons ───────────────────────────────────────────────────
             if !answered {
                 HStack(spacing: 14) {
-                    examButton(label: "TRUE",  icon: "checkmark", color: .green, userSaidTrue: true)
-                    examButton(label: "FALSE", icon: "xmark",     color: .red,   userSaidTrue: false)
+                    examButton(label: "VERO",  icon: "checkmark", color: .green, userSaidTrue: true)
+                    examButton(label: "FALSO", icon: "xmark",     color: .red,   userSaidTrue: false)
                 }
                 .padding(.horizontal)
-                .padding(.bottom, 48)
+                .padding(.bottom, 40)
                 .transition(.opacity)
             }
         }
@@ -383,7 +357,7 @@ private struct ExamQuestionCard: View {
     private func examButton(label: String, icon: String, color: Color, userSaidTrue: Bool) -> some View {
         Button {
             guard !answered else { return }
-            let correct = (userSaidTrue == question.isCorrect)
+            let correct = (userSaidTrue == question.answer)
             answered       = true
             userWasCorrect = correct
             showOverlay    = true
@@ -442,18 +416,6 @@ private struct ExamResultScreen: View {
                     .font(.title3)
                     .foregroundColor(.secondary)
                     .padding(.bottom, 8)
-
-                // XP badge
-                HStack(spacing: 6) {
-                    Image(systemName: "star.fill").foregroundColor(.yellow)
-                    Text(XPAward.mockExamPassed.label)
-                        .font(.subheadline.weight(.bold))
-                        .foregroundColor(.primary)
-                }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 8)
-                .background(Capsule().fill(Color.yellow.opacity(0.15)))
-                .padding(.bottom, 36)
 
                 // ── Accuracy bar ──────────────────────────────────────────
                 VStack(spacing: 8) {
@@ -520,8 +482,8 @@ private struct ExamFailedScreen: View {
     private var title:    String { failReason == .timeUp ? "Time's Up!"    : "Exam Failed" }
     private var subtitle: String {
         switch failReason {
-        case .timeUp:           return "The 30-minute limit was reached.\nStudy the words below and try again."
-        case .tooManyMistakes:  return "3 mistakes reached — the exam ended early.\nStudy the words below and try again."
+        case .timeUp:           return "The 30-minute limit was reached.\nReview the questions below and try again."
+        case .tooManyMistakes:  return "4 mistakes reached — the exam ended early.\nReview the questions below and try again."
         }
     }
 
@@ -606,38 +568,29 @@ private struct MistakeReviewSection: View {
 
             VStack(spacing: 8) {
                 ForEach(mistakes) { m in
-                    HStack(spacing: 14) {
+                    HStack(alignment: .top, spacing: 14) {
                         // Red X icon
                         Image(systemName: "xmark.circle.fill")
                             .foregroundColor(.red)
                             .font(.title3)
 
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text(m.word.italian)
-                                .font(.subheadline.weight(.bold))
-                            Text("Correct: \(m.word.english)")
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(m.question.text)
+                                .font(.subheadline.weight(.semibold))
+                                .fixedSize(horizontal: false, vertical: true)
+                            Text(m.question.text_en)
                                 .font(.caption)
                                 .foregroundColor(.secondary)
-                            if m.displayedTranslation != m.word.english {
-                                Text("Shown: \"\(m.displayedTranslation)\" — this was FALSE")
-                                    .font(.caption)
-                                    .foregroundColor(.red.opacity(0.8))
-                            }
+                                .fixedSize(horizontal: false, vertical: true)
+                            Text("Correct answer: \(m.question.answer ? "VERO (True)" : "FALSO (False)")  ·  You said \(m.userSaidTrue ? "VERO" : "FALSO")")
+                                .font(.caption.weight(.semibold))
+                                .foregroundColor(.red.opacity(0.85))
                         }
 
-                        Spacer()
-
-                        // Speak button
-                        Button {
-                            SpeechManager.shared.speak(m.word.italian)
-                            HapticsManager.lightTap()
-                        } label: {
-                            Image(systemName: "speaker.wave.2.fill")
-                                .font(.callout)
-                                .foregroundColor(.accentColor)
-                        }
+                        Spacer(minLength: 0)
                     }
                     .padding(14)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .background(
                         RoundedRectangle(cornerRadius: 14)
                             .fill(Color.red.opacity(0.06))

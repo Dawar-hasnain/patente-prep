@@ -57,19 +57,8 @@ final class MilestoneTracker: ObservableObject {
     // MARK: - Milestones
 
     private func isMilestoneMet() -> Bool {
-        let manager = ProgressManager.shared
-
-        // Milestone 1: first chapter fully completed
-        let completedChapters = ChapterList.allCases.filter { manager.progress(for: $0) >= 1.0 }.count
-        if completedChapters >= 1 { return true }
-
-        // Milestone 2: streak of 3 or more days
-        if manager.currentStreak() >= 3 { return true }
-
-        // Milestone 3: 20+ words learned
-        if manager.totalLearnedWords() >= 20 { return true }
-
-        return false
+        // Milestone: the learner has practised a meaningful number of questions.
+        return ExamProgressManager.shared.seenQuestionCount >= 20
     }
 }
 
@@ -90,9 +79,9 @@ struct SaveProgressPromptView: View {
     @State private var animateContent  = false
 
     // Snapshot of progress to display inside the card
-    private let learnedWords   = ProgressManager.shared.totalLearnedWords()
-    private let currentStreak  = ProgressManager.shared.currentStreak()
-    private let masteredCount  = ProgressManager.shared.totalChaptersMastered()
+    private let seenQuestions   = ExamProgressManager.shared.seenQuestionCount
+    private let totalQuestions  = BloccoStore.shared.totalQuestionCount
+    private let readinessPct    = Int((ReadinessEngine.evaluate().probabilityOfPassing * 100).rounded())
 
     var body: some View {
         VStack(spacing: 0) {
@@ -124,7 +113,7 @@ struct SaveProgressPromptView: View {
                             .font(.title2.bold())
                             .multilineTextAlignment(.center)
 
-                        Text("You're making real progress. Sign in to sync it across devices and unlock the League.")
+                        Text("You're making real progress. Sign in to sync it across all your devices.")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)
@@ -135,8 +124,8 @@ struct SaveProgressPromptView: View {
                     // ── Progress snapshot card ────────────────────────────────
                     HStack(spacing: 0) {
                         progressStat(
-                            value: "\(learnedWords)",
-                            label: "Words\nLearned",
+                            value: "\(seenQuestions)",
+                            label: "Questions\nPractised",
                             icon: "book.fill",
                             color: .blue
                         )
@@ -144,19 +133,19 @@ struct SaveProgressPromptView: View {
                         Divider().frame(height: 44)
 
                         progressStat(
-                            value: "\(currentStreak)",
-                            label: "Day\nStreak",
-                            icon: "flame.fill",
-                            color: .orange
+                            value: "\(readinessPct)%",
+                            label: "Exam\nReadiness",
+                            icon: "checkmark.seal.fill",
+                            color: .green
                         )
 
                         Divider().frame(height: 44)
 
                         progressStat(
-                            value: "\(masteredCount)/\(ChapterList.allCases.count)",
-                            label: "Chapters\nDone",
-                            icon: "checkmark.seal.fill",
-                            color: .green
+                            value: "\(totalQuestions)",
+                            label: "Total\nQuestions",
+                            icon: "doc.text.fill",
+                            color: .orange
                         )
                     }
                     .padding(.vertical, 16)
