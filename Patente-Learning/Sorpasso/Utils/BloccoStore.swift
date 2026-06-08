@@ -114,4 +114,15 @@ final class BloccoStore {
         let total = Double(blocchi.count)
         return counts.mapValues { Double($0) / total }
     }()
+
+    /// Core question id → its Blocco's chapter (for session stratification).
+    lazy var coreQuestionChapter: [String: String] = {
+        var map: [String: String] = [:]
+        for b in blocchi {
+            for q in coreQuestionsByBlocco[b.blocco_id] ?? [] {
+                map[q.id] = b.chapter
+            }
+        }
+        return map
+    }()
 }
