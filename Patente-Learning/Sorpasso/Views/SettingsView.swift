@@ -16,6 +16,9 @@ struct SettingsView: View {
     @AppStorage("soundEffectsEnabled")  private var soundEffectsEnabled  = true
     @AppStorage("reminderHour")         private var reminderHour          = 19   // 7 PM
 
+    // ── Daily session ─────────────────────────────────────────────────────
+    @ObservedObject private var sessions = DailySessionStore.shared
+
     // ── UI state ──────────────────────────────────────────────────────────
     @State private var showTimePicker     = false
     @State private var showEditProfile    = false
@@ -79,7 +82,17 @@ struct SettingsView: View {
                     }
                 }
 
-                // ── 2. Account ────────────────────────────────────────────
+                // ── 2. Daily Session ──────────────────────────────────────
+                settingsGroup(title: "DAILY SESSION") {
+                    ForEach(Array(SessionTier.allCases.enumerated()), id: \.element.id) { idx, tier in
+                        tierRow(tier)
+                        if idx < SessionTier.allCases.count - 1 {
+                            Divider().padding(.leading, 56)
+                        }
+                    }
+                }
+
+                // ── 3. Account ────────────────────────────────────────────
                 settingsGroup(title: "ACCOUNT") {
                     chevronRow(
                         icon: "person.fill",
@@ -288,6 +301,53 @@ struct SettingsView: View {
             .padding(.vertical, 14)
         }
         .buttonStyle(.plain)
+    }
+
+    @ViewBuilder
+    private func tierRow(_ tier: SessionTier) -> some View {
+        let selected = sessions.goalTier == tier
+        let forecast = sessions.forecast(for: tier)
+        Button {
+            sessions.setTier(tier)
+            HapticsManager.lightTap()
+        } label: {
+            HStack(spacing: 12) {
+                iconBadge(tierIcon(tier), color: selected ? .accentColor : .secondary)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(tier.title)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundColor(.primary)
+                    Text(tierSubtitle(tier, forecast: forecast))
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+                Spacer()
+                if selected {
+                    Image(systemName: "checkmark")
+                        .font(.subheadline.weight(.bold))
+                        .foregroundColor(.accentColor)
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func tierIcon(_ tier: SessionTier) -> String {
+        switch tier {
+        case .fastTrack50: return "hare.fill"
+        case .standard40:  return "figure.walk"
+        case .relaxed30:   return "tortoise.fill"
+        }
+    }
+
+    private func tierSubtitle(_ tier: SessionTier, forecast: ReadinessForecast) -> String {
+        if forecast.isReady { return "\(tier.detail) · exam ready" }
+        if let date = forecast.readyDate {
+            return "\(tier.detail) · ready by \(date.formatted(.dateTime.month(.abbreviated).day()))"
+        }
+        return tier.detail
     }
 
     @ViewBuilder
