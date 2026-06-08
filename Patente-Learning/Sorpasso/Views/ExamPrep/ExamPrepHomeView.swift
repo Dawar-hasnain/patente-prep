@@ -17,6 +17,10 @@ struct ExamPrepHomeView: View {
 
     @State private var searchText = ""
 
+    // Daily session
+    @State private var showSession = false
+    @State private var sessionQuestions: [Question] = []
+
     /// Blocchi matching the current query — searched across English topic,
     /// Italian topic, and chapter so users can jump straight to a concept
     /// instead of drilling the hierarchy (HIG: efficient navigation of large
@@ -35,6 +39,9 @@ struct ExamPrepHomeView: View {
         List {
             if searchText.isEmpty {
                 Section {
+                    TodaySessionCard(onStart: startSession)
+                        .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 8, trailing: 0))
+                        .listRowBackground(Color.clear)
                     ReadinessCardView()
                         .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 8, trailing: 0))
                         .listRowBackground(Color.clear)
@@ -71,6 +78,23 @@ struct ExamPrepHomeView: View {
         .navigationTitle("Study")
         .navigationBarTitleDisplayMode(.large)
         .searchable(text: $searchText, prompt: "Search topics & chapters")
+        .fullScreenCover(isPresented: $showSession) {
+            TrueFalsePracticeView(
+                title: "Today's Session",
+                questions: sessionQuestions,
+                onFinish: {
+                    DailySessionStore.shared.recordSubSessionCompleted()
+                    showSession = false
+                }
+            )
+        }
+    }
+
+    /// Build the next sub-session's queue and present the runner.
+    private func startSession() {
+        sessionQuestions = SessionBuilder.buildSession(size: DailySessionStore.shared.chunkSize)
+        guard !sessionQuestions.isEmpty else { return }
+        showSession = true
     }
 
     @ViewBuilder
