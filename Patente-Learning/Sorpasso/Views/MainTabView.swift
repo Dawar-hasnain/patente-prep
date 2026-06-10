@@ -20,6 +20,10 @@ struct MainTabView: View {
 
     // MARK: - Environment
     @EnvironmentObject private var auth: AuthManager
+    @Environment(\.scenePhase) private var scenePhase
+
+    @AppStorage("notificationsEnabled") private var notificationsEnabled = true
+    @AppStorage("reminderHour")         private var reminderHour          = 19
 
     // MARK: - State
     @State private var showSavePrompt = false
@@ -72,6 +76,13 @@ struct MainTabView: View {
         // ── Milestone check on appear and when auth state changes ────────────
         .onAppear { checkMilestone() }
         .onChange(of: auth.authState) { _ in checkMilestone() }
+        // ── Refresh the daily reminder's content when leaving the app, so the
+        //    next reminder reflects current due-count / streak / forecast. ─────
+        .onChange(of: scenePhase) { phase in
+            if phase == .background {
+                ReviewNotificationScheduler.refresh(enabled: notificationsEnabled, hour: reminderHour)
+            }
+        }
     }
 
     // MARK: - Milestone check

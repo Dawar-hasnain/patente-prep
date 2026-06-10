@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import UserNotifications
 
 struct SettingsView: View {
     // ── Preferences ───────────────────────────────────────────────────────
@@ -22,7 +21,6 @@ struct SettingsView: View {
     // ── UI state ──────────────────────────────────────────────────────────
     @State private var showTimePicker     = false
     @State private var showEditProfile    = false
-    @State private var showAbout          = false
     @State private var showResetAlert     = false
 
     var body: some View {
@@ -39,7 +37,7 @@ struct SettingsView: View {
                         isOn: $notificationsEnabled
                     )
                     .onChange(of: notificationsEnabled) { enabled in
-                        enabled ? scheduleNotification() : removePendingNotifications()
+                        ReviewNotificationScheduler.refresh(enabled: enabled, hour: reminderHour)
                     }
 
                     Divider().padding(.leading, 56)
@@ -104,27 +102,6 @@ struct SettingsView: View {
                     }
                 }
 
-                // ── 3. About ──────────────────────────────────────────────
-                settingsGroup(title: "ABOUT") {
-                    chevronRow(
-                        icon: "info.circle.fill",
-                        iconColor: .blue,
-                        title: "About Sorpasso",
-                        subtitle: nil
-                    ) {
-                        showAbout = true
-                    }
-
-                    Divider().padding(.leading, 56)
-
-                    infoRow(
-                        icon: "car.fill",
-                        iconColor: .secondary,
-                        title: "Version",
-                        value: "1.0.0"
-                    )
-                }
-
                 // ── 4. Data ───────────────────────────────────────────────
                 settingsGroup(title: "DATA") {
                     Button {
@@ -159,9 +136,6 @@ struct SettingsView: View {
         .sheet(isPresented: $showEditProfile) {
             EditProfileView()
         }
-        .sheet(isPresented: $showAbout) {
-            AboutView()
-        }
         .alert("Reset All Progress?", isPresented: $showResetAlert) {
             Button("Reset", role: .destructive) {
                 ExamProgressManager.shared.resetAll()
@@ -190,7 +164,7 @@ struct SettingsView: View {
             }
             .pickerStyle(.wheel)
             .onChange(of: reminderHour) { _ in
-                if notificationsEnabled { scheduleNotification() }
+                ReviewNotificationScheduler.refresh(enabled: notificationsEnabled, hour: reminderHour)
             }
 
             Button("Done") { showTimePicker = false }
@@ -351,21 +325,6 @@ struct SettingsView: View {
     }
 
     @ViewBuilder
-    private func infoRow(icon: String, iconColor: Color, title: String, value: String) -> some View {
-        HStack(spacing: 12) {
-            iconBadge(icon, color: iconColor)
-            Text(title)
-                .font(.subheadline.weight(.semibold))
-            Spacer()
-            Text(value)
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 14)
-    }
-
-    @ViewBuilder
     private func iconBadge(_ systemName: String, color: Color) -> some View {
         ZStack {
             RoundedRectangle(cornerRadius: 8)
@@ -392,32 +351,6 @@ struct SettingsView: View {
         return f
     }
 
-    // MARK: - Notification Helpers
-
-    private func scheduleNotification() {
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
-            guard granted else { return }
-            let content = UNMutableNotificationContent()
-            content.title = "🚗 Sorpasso Reminder"
-            content.body  = "Review a few words today to keep your streak alive!"
-            content.sound = .default
-
-            var components = DateComponents()
-            components.hour   = reminderHour
-            components.minute = 0
-
-            let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
-            let request = UNNotificationRequest(identifier: "dailyReminder", content: content, trigger: trigger)
-            center.removePendingNotificationRequests(withIdentifiers: ["dailyReminder"])
-            center.add(request)
-        }
-    }
-
-    private func removePendingNotifications() {
-        UNUserNotificationCenter.current()
-            .removePendingNotificationRequests(withIdentifiers: ["dailyReminder"])
-    }
 }
 
 // MARK: - Preview
