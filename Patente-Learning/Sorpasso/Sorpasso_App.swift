@@ -17,15 +17,10 @@ struct Sorpasso_App: App {
     @StateObject private var authManager = AuthManager.shared
 
     init() {
-        // Request notification permission early (unchanged from original)
-        UNUserNotificationCenter.current()
-            .requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-                if granted {
-                    print("✅ Notification permission granted")
-                } else if let error {
-                    print("❌ Notification error: \(error.localizedDescription)")
-                }
-            }
+        // Request permission and schedule the daily reminder with content
+        // composed from the learner's current state (due count, streak,
+        // forecast). Reschedules itself when settings change and on background.
+        ReviewNotificationScheduler.refreshFromSettings()
     }
 
     var body: some Scene {
